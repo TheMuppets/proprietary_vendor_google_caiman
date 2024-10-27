@@ -1,0 +1,8 @@
+service pixel.gnss-default /vendor/bin/hw/android.hardware.gnss-service.pixel
+    class hal
+    user gps
+    group system gps
+    disabled
+
+on boot && property:persist.vendor.gps.hal.service.name=vendor
+    start pixel.gnss-default

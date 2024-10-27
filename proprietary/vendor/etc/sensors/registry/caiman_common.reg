@@ -1,0 +1,376 @@
+#
+# Caiman sensor device configuration registry script for all stages.
+#
+# Source of truth: go/pixel-sensor-list
+#
+
+#
+# CDT Filter <CDT>:<mask>
+# CDT format: <0xPPPPSJIV> (P:Product, S:Stage, J:Major, I:Minor, V:Variant)
+# go/pixel-cdt-zuma
+# go/pixel-cdt-zuma-pro
+#
+
+?+0x90000:0xFFFF0000
+
+#
+# Buses
+#
+
+# I2C
++/dev/i2c/0
+  bus_name=i2c0
+  bus_index=0
+
+# I3C
++/dev/i3c/1
+  bus_name=i3c1
+  bus_index=1
+
+# SPI
++/dev/spi/2
+  bus_name=spi2
+  bus_index=2
+
+# PDM
++/dev/pdm
+  base_clk_hz=24576000
+
+#
+# Sensors
+#
+
+# IMU (ICM45631)
++/dev/icm45631/0
+  bus_name=i3c1
+  bus_freq_hz=400000
+  i3c_freq_hz=12300000
+  i3c_push_pull_duty_cycle=40
+  bus_addr=0x68
+  i3c_addr=0xa
+  intr_id=43
+  trigger_type=2
+  priority=0
+  spi_slew_rate_regval=5
+  i3c_slew_rate_regval=5
+  md_threshold=60
+  md_duration_samples=1
+  sd_threshold=60
+  sd_timeout_ms=5000
+  sd_batching_latency_ms=1000
+  lowG_peak_threshold=848
+  lowG_detect_timeout_ms=20
+  lowG_debounce_timeout_ms=1000
++/dev/icm45631/0/accel
+  name=ICM45631 Accelerometer
+  fac_cal_transform=0.9972 0.00549 -0.00291 -0.00428 0.99765 0.00135 0.00173 -0.00030 0.99826 -0.02160 -0.02694 0.13782
+  temp=33.82
+  temp_sensitivity=0.00087 0.00068 -0.00180
+  avg_odr_25=25.0079
++/dev/icm45631/0/gyro
+  name=ICM45631 Gyroscope
+  fac_cal_transform=1.00113 0.00442 -0.00071 -0.00503 1.00190 0.00099 0.00035 -0.00077 0.99742 -0.00033 -0.00075 0.00025
+  temp=33.82
+  temp_sensitivity=0.00004 0.00004 0.00001
+  avg_odr_25=25.00077
++/dev/icm45631/0/temp
+  name=ICM45631 Temperature
++/dev/icm45631/0/motion_detect
+  name=ICM45631 Motion Detect
++/dev/icm45631/0/stationary_detect
+  name=ICM45631 Stationary Detect
++/dev/icm45631/0/freefall_detect
+  name=ICM45631 FreeFall Detect
+
+# For MagCC
++/dev/magcc/0
+  battery_status=/sys/class/power_supply/battery/status
+  direct_charge=/sys/class/power_supply/dc-mains/online
+  usb_status=/sys/class/power_supply/usb/online
+  usb_current=/sys/class/power_supply/usb/current_now
+  usb_voltage=/sys/class/power_supply/usb/voltage_now
+  wireless_status=/sys/class/power_supply/wireless/online
+  wireless_current=/sys/class/power_supply/wireless/current_now
+  wireless_voltage=/sys/class/power_supply/wireless/voltage_now
+
+# MAG (MMC5616WA)
++/dev/mmc5616/0
+  bus_name=i3c1
+  bus_freq_hz=400000
+  i3c_freq_hz=6250000
+  i3c_push_pull_duty_cycle=60
+  bus_addr=0x30
+  i3c_addr=0x14
++/dev/mmc5616/0/mag
+  curr_comp_factors=5.512 -0.563 2.191
+  curr_comp_factors_fast=1.585 -0.239 0.261
+
+# BARO (ICP20100)
++/dev/icp20100/0
+  bus_name=i2c0
+  bus_freq_hz=400000
+  bus_addr=0x63
+  intr_id=47
+  min_period_us=25000
++/dev/icp20100/0/baro
+  fac_cal_transform=1.0 -0.02936
+  temp=30.8
+  temp_sensitivity=-0.00314
++/dev/icp20100/0/temp
+
+# ALSP (TMD3733)
++/dev/tmd3733/0
+  bus_name=i2c0
+  bus_freq_hz=400000
+  bus_addr=0x39
+  intr_id=45
+  vsync_delay_2_ns=1400000
+  anti_aliasing=1
+  is_te2_node_enabled=1
+  start_als_on_ap_power_on=1
+
++/dev/tmd3733/0/als
+  max_gain_table=11 10 10 10 10 10
+  # int{<hard_stop> <C_boost> <R_boost> <G_boost> <B_boost>}
+  # max_gain[color] = MIN(hard_stop, max_gain_table[brightness] +
+  #                                  max_gain_chan_boost[color])
+  max_gain_chan_boost=11 0 1 1 1
+  # Number of EM cycles in a 60Hz frame.
+  EM_cycle_count_60Hz=4
+  # OCS TUNE golden cal value.
+  osc_tune=-1
+  # Display leakage golden cal value.
+  leakage_at_dbv=10.9 3271.0 0 547.0
+
+  # Lux Filter parameters
+  fast_filter_size=10
+  slow_filter_size=100
+  aod_fast_filter_size=3
+  aod_slow_filter_size=3
+
+  # Prox delay itime table in microsecond.
+  # Display HS mode.
+  prox_delay_120hz=700 2200 5718 5718 5718 5718
+  prox_delay_60hz_hs=700 2200 6518 6518 6518 6518
+  prox_delay_30hz_hs=700 2200 6518 6518 6518 6518
+  # Display NS mode.
+  prox_delay_60hz_ns=1000 2200 7518 7518 7518 7518
+  prox_delay_30hz_ns=1000 2200 7518 7518 7518 7518
+
+  # Maximum lux value to report when hitting saturation at minimum gains.
+  max_lux=200000
+
+  # Histogram Configuration.
+  # Disable until ready.
+  histo_enable=1
+  # Display coordinates go from top left to bottom right.
+  histo_roi_left=370
+  histo_roi_top=180
+  histo_roi_right=470
+  histo_roi_bottom=280
+  # Weights applied to the RBG color samples to calculate luma.
+  # luma values:
+  # luma = W_R * R + W_G * G + WB * B
+  # with W_R + W_G + W_B = 1024
+  histo_weight_r=146
+  histo_weight_g=806
+  histo_weight_b=72
+
+  #
+  # Leakage calculator configuration. The general format is:
+  #   leakage = luma_term(luma, dbv) * dbv_term(dbv)
+  # The luma_term maps luma into a value and different equations may be used
+  # depending on the current DBV value.
+  # Similar, the dbv_term maps DBV into a value and may also use different
+  # equations.
+  # Each line represents one equation, and is of the format:
+  #   start-dbv end-dbv equation-type {coefficients}
+  # This means the equation applies to the DBV range [start-dbv .. end-dbv].
+  # There are two equation types currently:
+  #    0: Polynominal: c0 + c1*L + c2*L^2 + .. + ci*L^i
+  #    1: Natural Log: c0 + c1*ln(L + c2)
+  histo_luma_eq0=0 175 0 0e0
+  histo_luma_eq1=176 4096 0 0e0 0.00303
+  histo_dbv_eq0=0 175 0 0e0
+  histo_dbv_eq1=176 901 0 2.92202265e-01 -1.01047658e-03  2.64975835e-06
+  histo_dbv_eq2=902 3272 0 3.48764808e+00 -5.29080418e-03  1.87958494e-06
+  histo_dbv_eq3=3273 4096 0 11
+
+  # The maximum brightness (DBV) value up to which histogram is active.
+  # This value should match one of the itime_table_brightness values.
+  histo_max_brightness=4096
+  # Minimum change needed for a leakage value to be reported, i.e.,
+  # min_change = MAX(min_change_value, current_leakage_val * min_change_rate)
+  histo_min_change_value=0.01
+  histo_min_change_rate=0.01
+  # Histogram polling interval in ms.
+  histo_polling_interval=50
+  # Fallback luma value to use when histogram returns error (e.g., due to DRM).
+  histo_fallback_luma=128.0
+
++/dev/tmd3733/0/prox
+  min_fps=30
+  # Auto-baseline control:
+  # 0: Special factory mode that determines one baseline using special settings.
+  # 1: Manual baseline calculation using Prox samples from the chip.
+  # 2: On-chip baseline calculation ("AXTALK").
+  #
+  # In the cases 1 and 2 the baseline is regularly recalibrated triggered by a
+  # timer.
+  #
+  # Remove this property to completely disable any kind of baseline calibration.
+  auto_baseline=2
+  # BXTALK golden cal value.
+  bxtalk=168
+  # temp_coeff golden cal value.
+  temp_coeff=7
+
+# Display Info
++/dev/display_info/0
+  # Link to ALS attached to this display.
+  attached_alsp=/dev/tmd3733/0
+
+# RAINBOW (VD6282)
++/dev/vd6282/0
+  bus_name=i2c0
+  bus_freq_hz=400000
+  bus_addr=0x20
+  pdm_id=4
+  pcm_rate_hz=16000
++/dev/vd6282/0/spectral
+  auto_gain=1
+  # On-change thresholds for each color channel c: min_delta[c] ratio[c].
+  # A value of -1 disables a threshold.
+  # Change events are determined as follows:
+  #  last_count[c]: the last sample count for each channel c
+  #  count[c]: the current sample count for each channel c
+  #   => delta[c] = abs(last_count[c] - count[c])
+  #  thresh[c] = max(min_delta[c], last_count[c] * ratio[c])
+  #  if delta[c] > thresh[c] for any channel c:
+  #    Send a new sample with all current channel counts
+  r_change_thresh=-1 -1
+  g_change_thresh=100 0.1
+  b_change_thresh=-1 -1
+  c1_change_thresh=100 0.1
+  c2_change_thresh=-1 -1
+  ir_change_thresh=-1 -1
++/dev/vd6282/0/rls
+  fix_fac_cal=1
++/dev/vd6282/0/flicker
+  auto_gain=1
+  # Flicker capture modes:
+  #  0: Normal (on-chip flicker processing, PDM converting to PCM).
+  #  1: Direct1 (on-chip direct passthrough, PDM bypass, driver PCM converting).
+  #  2: Direct2 (on-chip direct passthrough, PDM converting to PCM)
+  flicker_mode=2
+
+# FIR Temperature (MLX90632)
++/dev/mlx90632/0
+  bus_name=i2c0
+  bus_freq_hz=400000
+  bus_addr=0x3b
+  window_prediction_ratio=0.936
++/dev/mlx90632/0/temp
++/dev/mlx90632/0/ext_temp
+
+# Camera VSYNC
++/dev/camera_vsync/0 # rear telephoto
+  intr_id=56
+  intr_trigger_type=2
++/dev/camera_vsync/1 # rear
+  intr_id=57
+  intr_trigger_type=2
++/dev/camera_vsync/2 # front
+  intr_id=58
+  intr_trigger_type=2
++/dev/camera_vsync/3 # rear ultra-wide-angle
+  intr_id=59
+  intr_trigger_type=2
+
+# S3908
++/dev/s3908/0
+  bus_name=spi2
+  bus_freq_hz=10000000
+  spi_mode=0
+  spi_word_size=8
+  cs_gpio=67
+  cs_clock_delay_us=1
+  gesture_type=3
+  intr_id=14
+  intr_type=1
+  panel_height_pixel=2856
+  panel_height_mm=147
+  single_tap_min_x=107
+  single_tap_max_x=1173
+  single_tap_min_y=210
+  single_tap_max_y=2646
+  single_tap_min_frame_count=3
+  single_tap_max_frame_count=31
+  single_press_motion_tolerance=255
+  single_press_max_touch_size=40
+  long_press_min_x=523
+  long_press_max_x=757
+  long_press_min_y=1951
+  long_press_max_y=2185
+  long_press_min_frame_count=1
+  long_press_motion_tolerance_inner=255
+  long_press_max_touch_size=40
+  long_press_marginal_min_x=475
+  long_press_marginal_max_x=805
+  long_press_marginal_min_y=1909
+  long_press_marginal_max_y=2233
+  long_press_monitor_channel_min_tx=6
+  long_press_monitor_channel_max_tx=9
+  long_press_monitor_channel_min_rx=24
+  long_press_monitor_channel_max_rx=27
+  long_press_min_node_count=8
+  long_press_motion_tolerance_outer=623
+  send_lptw_to_kernel=1
+
+# TBN
++/tbn
+  tbn_mode=2
+
+# VSC.
++/vsc
+  quick_pick_up_enable=1
+  single_tap_enable=1
+  long_press_enable=1
+
++/vsc/auto_brightness
+  # float[3]={LuxToEnter, LuxToExit, RemappedLux}
+  lux_remap=-1.0 -1.0 -1.0
+  # float[3]={MinDelta, MaxDelta, LuxRatio}
+  lux_debounce_up=1 5000 0.15
+  lux_debounce_down=0.1 5000 0.1
+  # ALS[2], RLS[2], Fusion[2], each containing <maxSampleAgeMsec> and <maxNumOfSamples>
+  filter_configs=500 60 500 30 500 90
+  # float[3]={MaxNumOfSamplesToFilter, minLuxThresh, luxRatio}, set to 0 to disable
+  als_startup_filter=0 0 0
+  # float[3]={zeroPoint, onePoint, endPoint}, set to 0 to disable
+  rear_lux_downscaling=0 0 0
+
++/vsc/fusion_prox_voice_call
+  # 0: Normal (fusion of Optical Prox with other sensors)
+  # 1: Optical Prox Passthrough (skips all other fusion logic)
+  # 2: Optical Prox Overwrite (runs fusion logic but outputs Optical Prox state)
+  mode=0
+
+  # Timeout when in Interactive and FalseFar state before switching to Near.
+  # Default: 1000ms
+  interactive_false_far_timeout_ms=1000
+
+  # Horizontal angle between device and earth to enter and exit Interactive
+  # state. Angles need to be less than 90 degrees, and exit >= enter.
+  # Defaults: 45 (enter) and 50 (exit)
+  interactive_thresh_angles=45 50
+
+  # Minimum horizontal angle between device and earth to qualify a valid
+  # To-Ear gesture. Should be larger than the interactive exit angle.
+  # Default: 60
+  to_ear_thresh_angle=60
+
+  # Change in horizontal angle between device and earth to trigger a From-Ear
+  # event. The initial angle to compare against is taken on a To-Ear event.
+  # Default: 30
+  from_ear_delta_thresh_angle=30

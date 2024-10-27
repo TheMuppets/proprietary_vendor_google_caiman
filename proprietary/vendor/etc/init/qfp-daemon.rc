@@ -1,0 +1,57 @@
+# Copyright (c) 2023 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service qfp-daemon /vendor/bin/hw/qfp-daemon
+    interface aidl android.hardware.biometrics.fingerprint.IFingerprint/default
+    interface aidl vendor.qti.hardware.fingerprint.IQfpExtendedFingerprint/default
+    class late_start
+    user system
+    disabled
+    group system drmrpc input wakelock
+    capabilities BLOCK_SUSPEND WAKE_ALARM
+    priority -20
+
+on post-fs-data
+    # Create directories for Fingerprint
+    mkdir /data/vendor/misc 01771 system system
+    mkdir /data/vendor/misc/qti_fp 0770 system system
+    mkdir /mnt/vendor/persist/qti_fp 0770 system system
+
+on post-fs-data
+    # Ensure system owns and can use IPC file descriptors
+    chown system system /dev/qbt_fd
+    chown system system /dev/qbt_ipc
+    chmod 0660 /dev/qbt_fd
+    chmod 0660 /dev/qbt_ipc
+
+# Factory test needs to be able to write to sysfs for toggling INT2
+on property:sys.boot_completed=1 && property:ro.vendor.factory=1
+    chmod 0666 /sys/class/spi_master/spi20/spi20.0/synaptics_tcm.0/sysfs/int2
+
+# Ensure correct persist prop is set for google device.
+on early-boot
+    setprop persist.vendor.qfp.enable_pv "12 0 0"
+
+# Update vfs_calib from system image if needed.
+on early-boot && property:persist.vendor.qfp.update_vfs_calib=1
+    copy /vendor/etc/qti_fp/vfs_calib.dat /data/vendor/misc/qti_fp/vfs_calib.dat
+    chown system system /data/vendor/misc/qti_fp/vfs_calib.dat
+    chmod /data/vendor/misc/qti_fp/vfs_calib.dat 0666
+    setprop persist.vendor.qfp.update_vfs_calib 0
+
+# Reset persist props for QFP if custom settings disabled.
+on early-boot && property:persist.vendor.qfp.enable_setprop=0
+    setprop persist.vendor.qfp ""
+    setprop persist.vendor.qfp.enable_intr2 ""
+    setprop persist.vendor.qfp.enable_fd ""
+    setprop persist.vendor.qfp.enable_td ""
+    setprop persist.vendor.qfp.enable_ntz ""
+    setprop persist.vendor.qfp.fd_events_src ""
+    setprop persist.vendor.qfp.tz_srv_name ""
+    setprop persist.vendor.qfp.tz_dev_name ""
+    setprop persist.vendor.qfp.vfs_info ""
+
+on property:ro.vendor.trusty.storage.fs_ready=1
+    # Start the TA
+    exec_background - system shell -- /vendor/bin/trusty_apploader /vendor/firmware/qfs.app

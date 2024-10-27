@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/google/apps/ModemService/native/modem_svc_rpc/shared_modem_platform.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>com.google.pixel.shared_modem_platform</name>
+        <fqname>ISharedModemPlatform/default</fqname>
+    </hal>
+</manifest>

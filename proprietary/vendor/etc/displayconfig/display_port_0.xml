@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<!-- Copyright (C) 2023 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<!-- CM4 Configuration -->
+<displayConfiguration>
+    <screenBrightnessMap>
+        <point>
+            <value>0.0</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.61</value>
+            <nits>1250.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>2050.0</nits>
+        </point>
+    </screenBrightnessMap>
+
+    <!-- 140 nits: (140-2)/(1250-2)*(0.61-0.0)+0.0 = 0.067451923 -->
+    <screenBrightnessDefault>0.067451923</screenBrightnessDefault>
+
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.61</transitionPoint>
+        <minimumLux>10000</minimumLux>
+        <timing>
+            <!-- allow for 5 minutes out of every 20 minutes -->
+            <timeWindowSecs>1200</timeWindowSecs>
+            <timeMaxSecs>300</timeMaxSecs>
+            <timeMinSecs>60</timeMinSecs>
+        </timing>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.000</sdrNits>
+                <hdrRatio>4.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>5.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>500.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
+
+    <hdrBrightnessConfig>
+        <brightnessMap>
+            <point>
+                <first>10.0</first>
+                <!-- 1600 nits: (1600-1250)/(2050-1250)*(1-0.61))+0.61 = 0.780625 -->
+                <second>0.780625</second>
+            </point>
+        </brightnessMap>
+        <brightnessIncreaseDebounceMillis>10000</brightnessIncreaseDebounceMillis>
+        <screenBrightnessRampIncrease>0.004</screenBrightnessRampIncrease>
+        <brightnessDecreaseDebounceMillis>5000</brightnessDecreaseDebounceMillis>
+        <screenBrightnessRampDecrease>0.004</screenBrightnessRampDecrease>
+    </hdrBrightnessConfig>
+
+    <densityMapping>
+        <density>
+            <height>1280</height>
+            <width>2856</width>
+            <density>480</density>
+        </density>
+        <density>
+            <height>960</height>
+            <width>2142</width>
+            <density>360</density>
+        </density>
+    </densityMapping>
+
+    <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
+
+    <ambientBrightnessChangeThresholds>
+        <brighteningThresholds>
+            <minimum>10</minimum>
+        </brighteningThresholds>
+        <darkeningThresholds>
+            <minimum>0</minimum>
+        </darkeningThresholds>
+    </ambientBrightnessChangeThresholds>
+
+    <ambientLightHorizonLong>5000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>50</ambientLightHorizonShort>
+
+    <thermalThrottling>
+        <brightnessThrottlingMap>
+            <brightnessThrottlingPoint>
+                <thermalStatus>light</thermalStatus>
+                <!-- Throttling to 724 nits: (724-2)/(1250-2)*(0.61-0.0)+0.0 = 0.352900641 -->
+                <brightness>0.352900641</brightness>
+            </brightnessThrottlingPoint>
+            <brightnessThrottlingPoint>
+                <thermalStatus>moderate</thermalStatus>
+                <!-- Throttling to 462 nits: (462-2)/(1250-2)*(0.61-0.0)+0.0 = 0.224839744 -->
+                <brightness>0.224839744</brightness>
+            </brightnessThrottlingPoint>
+            <brightnessThrottlingPoint>
+                <thermalStatus>severe</thermalStatus>
+                <!-- Throttling to 331 nits: (331-2)/(1250-2)*(0.61-0.0)+0.0 = 0.160809295 -->
+                <brightness>0.160809295</brightness>
+            </brightnessThrottlingPoint>
+            <brightnessThrottlingPoint>
+                <thermalStatus>critical</thermalStatus>
+                <!-- Throttling to 200 nits: (200-2)/(1250-2)*(0.61-0.0)+0.0 = 0.096778846 -->
+                <brightness>0.096778846</brightness>
+            </brightnessThrottlingPoint>
+        </brightnessThrottlingMap>
+    </thermalThrottling>
+
+    <refreshRate>
+       <lowerBlockingZoneConfigs>
+         <defaultRefreshRate>120</defaultRefreshRate>
+         <blockingZoneThreshold>
+           <displayBrightnessPoint>
+             <lux>5</lux>
+             <nits>5</nits>
+           </displayBrightnessPoint>
+         </blockingZoneThreshold>
+       </lowerBlockingZoneConfigs>
+    </refreshRate>
+
+    <screenBrightnessRampFastDecrease>0.7047244</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.7047244</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.05</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>
+    <luxThrottling>
+        <brightnessLimitMap>
+            <type>adaptive</type>
+            <map>
+                <point>
+                    <first>1000</first>
+                    <!-- 600 nits (600-2)/(1250-2)*(0.61-0.0)+0.0 = 0.292291666  -->
+                    <second>0.292291666</second>
+                </point>
+                <point>
+                    <first>6000</first>
+                    <!-- 850 nits (850-2)/(1250-2)*(0.61-0.0)+0.0 = 0.414487179 -->
+                    <second>0.414487179</second>
+                </point>
+                <point>
+                    <first>10000</first>
+                    <!-- 1000 nits (1000-2)/(1250-2)*(0.61-0.0)+0.0 = 0.487804487 -->
+                    <second>0.487804487</second>
+                </point>
+            </map>
+        </brightnessLimitMap>
+    </luxThrottling>
+
+    <proxSensor featureFlag="com.android.server.display.feature.flags.use_fusion_prox_sensor">
+        <type>com.google.sensor.prox_voice_call</type>
+        <name>Proximity(Voice Calls) Sensor (wake-up)</name>
+    </proxSensor>
+
+    <supportsVrr>true</supportsVrr>
+
+    <screenOffBrightnessSensor>
+        <type>com.google.sensor.binned_brightness</type>
+    </screenOffBrightnessSensor>
+    <screenOffBrightnessSensorValueToLux>
+        <item>-1</item> <!-- 0: OFF -->
+        <item>0</item>  <!-- 1: NIGHT -->
+        <item>5</item>  <!-- 2: LOW -->
+        <item>80</item> <!-- 3: HIGH -->
+        <item>1500</item> <!-- 4: SUN -->
+    </screenOffBrightnessSensorValueToLux>
+</displayConfiguration>

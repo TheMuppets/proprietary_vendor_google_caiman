@@ -1,0 +1,7 @@
+service audio-hal-parserservice /system_ext/bin/hw/vendor.google.whitechapel.audio.hal.parserservice
+    class core
+    user audioserver
+    group media
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    onrestart restart audioserver

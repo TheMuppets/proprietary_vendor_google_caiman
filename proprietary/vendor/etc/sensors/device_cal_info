@@ -1,0 +1,106 @@
+#!/system/bin/sh
+#
+# Copyright 2023 Google LLC. All Rights Reserved.
+#
+# Caiman/Komodo/Tokay Calibration Sub-Script.
+#
+# Contains CM4/KM4/TK4-specific sensor information for sensor_cal.
+
+# Sensors supported for calibration.
+SUPPORTED_SENSORS="accel als baro gyro prox rls spectral"
+NON_CAL_PHYSICAL_SENSORS="baro_temp flicker imu_temp mag"
+
+product_name=$(getprop ro.hardware)
+if [[ "${product_name}" == "caiman" || "${product_name}" == "komodo" ]]; then
+  NON_CAL_PHYSICAL_SENSORS+=" fir_temp"
+fi
+
+#######################################
+# Converts a sensor name to its path.
+# Globals:
+#   CAL_PARAMS
+#   SENSOR
+#   SENSOR_NAME
+#   SENSOR_PATH
+# Arguments:
+#   None
+# Outputs:
+#   Saves the sensor path in SENSOR_PATH.
+#   Logging based on set VERBOSITY level.
+#######################################
+sensor_cal::sensor_to_path() {
+  if [[ "${SENSOR}" == "accel" ]]; then
+    SENSOR_PATH="/fac_cal/dev/icm45631/0/accel"
+    SENSOR_NAME="icm45631"
+    LIST_NAME="ICM45631 Accelerometer"
+    # Add parameters in addition to the original ones.
+    CAL_PARAMS+=" avg_odr_25"
+  elif [[ "${SENSOR}" == "als" ]]; then
+    SENSOR_PATH="/fac_cal/dev/tmd3733/0/als"
+    SENSOR_NAME="tmd3733"
+    LIST_NAME="TMD3733 Ambient Light"
+    SENSOR_TYPE="als"
+    CAL_PARAMS=" \
+      start_delay_ns start_delay_2_ns\
+      clear_gain6_ratio clear_gain7_ratio clear_gain8_ratio clear_gain9_ratio \
+      clear_gain10_ratio clear_gain11_ratio clear_gain12_ratio \
+      red_gain6_ratio red_gain7_ratio red_gain8_ratio red_gain9_ratio \
+      red_gain10_ratio red_gain11_ratio red_gain12_ratio red_clear_ratio \
+      green_gain6_ratio green_gain7_ratio green_gain8_ratio green_gain9_ratio \
+      green_gain10_ratio green_gain11_ratio green_gain12_ratio \
+      green_clear_ratio \
+      blue_gain6_ratio blue_gain7_ratio blue_gain8_ratio blue_gain9_ratio \
+      blue_gain10_ratio blue_gain11_ratio blue_gain12_ratio blue_clear_ratio \
+      disp_leak lux_scale panel_serial panel_type \
+      vsync_delay_ns vsync_delay_2_ns leakage_at_dbv leakage_at_dbv_2 \
+      rc_trim osc_tune"
+  elif [[ "${SENSOR}" == "baro" ]]; then
+    SENSOR_PATH="/fac_cal/dev/icp20100/0/baro"
+    SENSOR_NAME="icp20100"
+    LIST_NAME="ICP20100 Pressure Sensor"
+  elif [[ "${SENSOR}" == "gyro" ]]; then
+    SENSOR_PATH="/fac_cal/dev/icm45631/0/gyro"
+    SENSOR_NAME="icm45631"
+    LIST_NAME="ICM45631 Gyroscope"
+    # Add parameters in addition to the original ones.
+    CAL_PARAMS+=" avg_odr_25"
+  elif [[ "${SENSOR}" == "prox" ]]; then
+    SENSOR_PATH="/fac_cal/dev/tmd3733/0/prox"
+    SENSOR_NAME="tmd3733"
+    LIST_NAME="TMD3733 Proximity"
+    CAL_PARAMS=" \
+      bxtalk pdata_scale vcsel_ma temp_coeff"
+  elif [[ "${SENSOR}" == "rls" ]]; then
+    SENSOR_PATH="/fac_cal/dev/vd6282/0/rls"
+    SENSOR_NAME="vd6282"
+    LIST_NAME="VD6282 Rear Light Sensor"
+    CAL_PARAMS="fac_cal_transform g_to_lux"
+  elif [[ "${SENSOR}" == "spectral" ]]; then
+    SENSOR_PATH="/fac_cal/dev/vd6282/0/spectral"
+    SENSOR_NAME="vd6282"
+    LIST_NAME="VD6282 Spectral Sensor"
+    CAL_PARAMS=" \
+      dark_r dark_g dark_b dark_ir dark_clr1 dark_clr2 \
+      rals_r rals_g rals_b rals_ir rals_clr1 rals_clr2 rals_flk"
+
+  ###############################
+  ## Non cal physical sensors. ##
+  ###############################
+  elif [[ "${SENSOR}" == "baro_temp" ]]; then
+    LIST_NAME="ICP20100 Temperature"
+  elif [[ "${SENSOR}" == "fir_temp" ]]; then
+    LIST_NAME="MLX90632 FIR Temperature"
+  elif [[ "${SENSOR}" == "flicker" ]]; then
+    LIST_NAME="VD6282 Flicker Sensor"
+  elif [[ "${SENSOR}" == "imu_temp" ]]; then
+    LIST_NAME="ICM45631 Temperature"
+  elif [[ "${SENSOR}" == "mag" ]]; then
+    LIST_NAME="MMC5616 Magnetometer"
+
+  else
+    sensor_cal::ERROR "Unknown or unimplemented sensor: ${SENSOR}"
+    sensor_cal::exit_badparam
+  fi
+
+  sensor_cal::DEBUG "Registry path: ${SENSOR_PATH}"
+}

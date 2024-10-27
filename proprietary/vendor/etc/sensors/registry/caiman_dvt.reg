@@ -1,0 +1,113 @@
+#
+# Caiman sensor device configuration registry script.
+#
+# Source of truth: go/pixel-sensor-list
+#
+
+#
+# CDT Filter <CDT>:<mask>
+# CDT format: <0xPPPPSJIV> (P:Product, S:Stage, J:Major, I:Minor, V:Variant)
+# go/pixel-cdt-zuma
+# go/pixel-cdt-zuma-pro
+#
+
+?+0x90000:0xFFFF0000
+# Exclude
+?-0x92000:0xFFFFF000  # Proto
+?-0x93000:0xFFFFF000  # EVT
+
+#
+# Record reg_script.
+#
+
++/
+reg_script=caiman_dvt.reg
+
+#
+# Sensors
+#
+
+# IMU (ICM45631)
++/dev/icm45631/0/accel
+  orientation_transform=-2 1 3
++/dev/icm45631/0/gyro
+  orientation_transform=-2 1 3
+
+# MAG (MMC5616WA)
++/dev/mmc5616/0/mag
+  orientation_transform=-1 2 -3
+  fac_cal_transform= 0.9848 0.0516 -0.0054 0.0548 0.9229 -0.0125 -0.0060 0.0840 1.0031 0 0 0
+
+# ALSP (TMD3733)
++/dev/tmd3733/0
+  vsync_delay_ns=625000
+
++/dev/tmd3733/0/als
+  lux_scale=5.24
+  c_coef=1
+  r_coef=-0.82279221
+  g_coef=0.49261751
+  b_coef=-0.6698253
+  itime_table_brightness=587 901 1115 2565 3271 4096
+  itime_table=1600000 1500000 300000 300000 300000 1600000
+
+  clear_gain12_ratio=0.0625
+  red_gain12_ratio=0.0625
+  green_gain12_ratio=0.0625
+  blue_gain12_ratio=0.0625
+
+  clear_gain11_ratio=0.125
+  red_gain11_ratio=0.125
+  green_gain11_ratio=0.125
+  blue_gain11_ratio=0.125
+
+  clear_gain10_ratio=0.2505
+  red_gain10_ratio=0.2505
+  green_gain10_ratio=0.2505
+  blue_gain10_ratio=0.2505
+
+  clear_gain9_ratio=0.5003
+  red_gain9_ratio=0.5005
+  green_gain9_ratio=0.5003
+  blue_gain9_ratio=0.5004
+
+  clear_gain8_ratio=1.0
+  red_gain8_ratio=1.0
+  green_gain8_ratio=1.0
+  blue_gain8_ratio=1.0
+
+  clear_gain7_ratio=1.9962
+  red_gain7_ratio=1.9975
+  green_gain7_ratio=1.9975
+  blue_gain7_ratio=1.9976
+
+  clear_gain6_ratio=3.9865
+  red_gain6_ratio=3.9914
+  green_gain6_ratio=3.9914
+  blue_gain6_ratio=3.9915
+
++/dev/tmd3733/0/prox
+  pulse_count=4
+  vcsel_ma=10
+  far_threshold=40
+  near_threshold=90
+  pulse_len_us=128
+  filter_len=4
+  skip_count=0
+  pdata_scale=1.78
+  gain1=8
+  gain2=2.5
+
+# RAINBOW (VD6282)
++/dev/vd6282/0/spectral
+  # Golden values for calibration.
+  golden_rals_r=1087.479195
+  golden_rals_g=1216.414530
+  golden_rals_b=298.804744
+  golden_rals_clr1=5454.977981
+  golden_rals_ir=3059.955483
+  golden_rals_clr2=5374.292995
+
++/dev/vd6282/0/rls
+  lux_scale=101.354922
+
