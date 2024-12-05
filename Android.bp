@@ -838,6 +838,13 @@ prebuilt_etc_xml {
     system_ext_specific: true,
 }
 
+sh_binary {
+    name: "oem-iptables-init",
+    owner: "google",
+    src: "proprietary/system/bin/oem-iptables-init.sh",
+    filename: "oem-iptables-init.sh",
+}
+
 cc_prebuilt_binary {
     name: "vendor.google.edgetpu_app_service@1.0-service",
     owner: "google",

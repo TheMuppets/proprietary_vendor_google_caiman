@@ -497,6 +497,7 @@ PRODUCT_PACKAGES += \
     oemrilhook \
     vendor.google.edgetpu_app_service@1.0-service.xml \
     vendor.google.whitechapel.audio.hal.parserservice.xml \
+    oem-iptables-init \
     vendor.google.edgetpu_app_service@1.0-service \
     vendor.google.whitechapel.audio.hal.parserservice
 
