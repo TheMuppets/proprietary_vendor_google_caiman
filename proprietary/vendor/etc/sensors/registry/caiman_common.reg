@@ -45,7 +45,7 @@
   bus_name=i3c1
   bus_freq_hz=400000
   i3c_freq_hz=12300000
-  i3c_push_pull_duty_cycle=40
+  i3c_push_pull_duty_cycle_pct=40
   bus_addr=0x68
   i3c_addr=0xa
   intr_id=43
@@ -98,7 +98,7 @@
   bus_name=i3c1
   bus_freq_hz=400000
   i3c_freq_hz=6250000
-  i3c_push_pull_duty_cycle=60
+  i3c_push_pull_duty_cycle_pct=60
   bus_addr=0x30
   i3c_addr=0x14
 +/dev/mmc5616/0/mag
@@ -298,33 +298,33 @@
   gesture_type=3
   intr_id=14
   intr_type=1
-  panel_height_pixel=2856
+  panel_height_pixel=28560
   panel_height_mm=147
-  single_tap_min_x=107
-  single_tap_max_x=1173
-  single_tap_min_y=210
-  single_tap_max_y=2646
+  single_tap_min_x=1070
+  single_tap_max_x=11730
+  single_tap_min_y=2100
+  single_tap_max_y=26460
   single_tap_min_frame_count=3
   single_tap_max_frame_count=31
-  single_press_motion_tolerance=255
+  single_press_motion_tolerance=2550
   single_press_max_touch_size=40
-  long_press_min_x=523
-  long_press_max_x=757
-  long_press_min_y=1951
-  long_press_max_y=2185
+  long_press_min_x=5230
+  long_press_max_x=7570
+  long_press_min_y=19510
+  long_press_max_y=21850
   long_press_min_frame_count=1
-  long_press_motion_tolerance_inner=255
+  long_press_motion_tolerance_inner=2550
   long_press_max_touch_size=40
-  long_press_marginal_min_x=475
-  long_press_marginal_max_x=805
-  long_press_marginal_min_y=1909
-  long_press_marginal_max_y=2233
+  long_press_marginal_min_x=4750
+  long_press_marginal_max_x=8050
+  long_press_marginal_min_y=19090
+  long_press_marginal_max_y=22330
   long_press_monitor_channel_min_tx=6
   long_press_monitor_channel_max_tx=9
   long_press_monitor_channel_min_rx=24
   long_press_monitor_channel_max_rx=27
   long_press_min_node_count=8
-  long_press_motion_tolerance_outer=623
+  long_press_motion_tolerance_outer=6230
   send_lptw_to_kernel=1
 
 # TBN
@@ -349,6 +349,17 @@
   als_startup_filter=0 0 0
   # float[3]={zeroPoint, onePoint, endPoint}, set to 0 to disable
   rear_lux_downscaling=0 0 0
+  # Select fusion algorithm.
+  # 0: Classic (old, using lower-lux scaling).
+  # 1: Simple (new, avoids issues of classic)
+  fusion_algo_select=1
+  # Configuration of simple fusion algorithm.
+  # float[3]={N, D, B}
+  #   [N]exit-night: sets the lux threshold below which is considered night.
+  #   [D]enter-day: sets the lux threshold above which is considered day.
+  #     i.e., lux <= N is night, N < lux < D is transition, lux >= D is day.
+  #   [B]very-low-light-boost: Additional boost factor, needs to be > 1.
+  simple_fusion_algo_config=20 40 1.25
 
 +/vsc/fusion_prox_voice_call
   # 0: Normal (fusion of Optical Prox with other sensors)

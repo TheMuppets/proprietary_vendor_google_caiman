@@ -213,7 +213,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libpixelimsmedia.so",
             ],
             shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk",
+                "vendor.google.whitechapel.audio.extension-V3-ndk",
                 "libbinder_ndk",
                 "libhidlbase",
                 "vendor.google.whitechapel.audio.audioext@4.0",
@@ -271,7 +271,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.extension-V2-ndk",
+    name: "vendor.google.whitechapel.audio.extension-V3-ndk",
     owner: "google",
     strip: {
         none: true,
@@ -279,7 +279,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/vendor.google.whitechapel.audio.extension-V2-ndk.so",
+                "proprietary/system_ext/lib64/vendor.google.whitechapel.audio.extension-V3-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -334,9 +334,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "CarrierSettings_signed_47.0.602606545",
+    name: "CarrierSettings_signed_49.0.645958608",
     owner: "google",
-    apk: "proprietary/product/priv-app/CarrierSettings_signed_47.0.602606545/CarrierSettings_signed_47.0.602606545.apk",
+    apk: "proprietary/product/priv-app/CarrierSettings_signed_49.0.645958608/CarrierSettings_signed_49.0.645958608.apk",
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -396,9 +396,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02",
+    name: "DeviceIntelligenceNetworkPrebuilt-U.32_V.7_playstore_astrea_20240725.00_RC01",
     owner: "google",
-    apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk",
+    apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt-U.32_V.7_playstore_astrea_20240725.00_RC01/DeviceIntelligenceNetworkPrebuilt-U.32_V.7_playstore_astrea_20240725.00_RC01.apk",
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -409,9 +409,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DevicePersonalizationPrebuiltPixel2024-aiai_20240329.00_RC16",
+    name: "DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08",
     owner: "google",
-    apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2024-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2024-aiai_20240329.00_RC16.apk",
+    apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08/DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08.apk",
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -860,6 +860,7 @@ cc_prebuilt_binary {
                 "libbase",
                 "libbinder",
                 "libbinder_ndk",
+                "libcrypto",
                 "libutils",
                 "packagemanager_aidl-cpp",
                 "libc++",
@@ -887,9 +888,9 @@ cc_prebuilt_binary {
                 "proprietary/system_ext/bin/hw/vendor.google.whitechapel.audio.hal.parserservice",
             ],
             shared_libs: [
-                "av-audio-types-aidl-V1-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.audio.core-V2-ndk",
+                "av-audio-types-aidl-V2-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.audio.core-V3-ndk",
                 "libbase",
                 "libbinder_ndk",
                 "libc++",
@@ -1140,7 +1141,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "aocx-ndk",
+    name: "aoc_aconfig_flags_c_lib",
     owner: "google",
     strip: {
         none: true,
@@ -1148,7 +1149,35 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/aocx-ndk.so",
+                "proprietary/vendor/lib64/aoc_aconfig_flags_c_lib.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "aocx-V1-ndk",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/aocx-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -1385,10 +1414,11 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libbinder_ndk",
+                "liblog",
+                "libbase",
                 "libnativewindow",
                 "libutils",
                 "android.hardware.graphics.mapper@4.0",
-                "liblog",
                 "libdrm",
                 "libgralloctypes",
                 "libhidlbase",
@@ -1396,7 +1426,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "android.hardware.graphics.common-V5-ndk",
-                "libbase",
                 "libdmabufheap",
                 "libz",
                 "libc++",
@@ -2212,31 +2241,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOpenCL",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOpenCL.so",
-            ],
-            shared_libs: [
-                "libGLES_mali",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib_aion_buffer",
     owner: "google",
     strip: {
@@ -2253,6 +2257,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libbinder_ndk",
                 "libhidlbase",
+                "libvndksupport",
                 "android.hardware.graphics.common@1.2",
                 "libcutils",
                 "libdmabufheap",
@@ -2575,9 +2580,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libdarwinn_hal.so",
             ],
             shared_libs: [
-                "libdl",
                 "liblog",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -2773,8 +2778,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libedgetpu_tflite_compiler.so",
             ],
             shared_libs: [
-                "libdl",
                 "libm",
+                "libdl",
                 "liblog",
                 "libc",
             ],
@@ -3072,7 +3077,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libgooglerilaudio.so",
             ],
             shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
+                "vendor.google.whitechapel.audio.extension-V3-ndk_vendor",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
@@ -3272,9 +3277,8 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libm",
                 "libz",
-                "android.frameworks.stats-V1-ndk",
+                "android.frameworks.stats-V2-ndk",
                 "com.google.edgetpu_app_service-V4-ndk_vendor",
-                "vendor-pixelatoms-cpp",
                 "libutils",
                 "libhidlbase",
                 "libc++",
@@ -3916,7 +3920,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsitril.so",
             ],
             shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
+                "vendor.google.whitechapel.audio.extension-V3-ndk_vendor",
                 "libril_gfeature",
                 "libbinder_ndk",
                 "libgooglerilaudio",
@@ -4117,12 +4121,12 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libaoc",
+                "libevent",
+                "libui",
                 "libcutils",
                 "libhardware",
                 "liblog",
                 "libutils",
-                "libevent",
-                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -4249,6 +4253,16 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/sensors.usf.so",
             ],
             shared_libs: [
+                "android.hardware.thermal-V1-ndk",
+                "android.frameworks.stats-V2-ndk",
+                "android.hardware.common-V2-ndk",
+                "com.google.hardware.pixel.display-V9-ndk",
+                "libaoc",
+                "libbinder_ndk",
+                "libhidltransport",
+                "libhwbinder",
+                "libsensorsuez",
+                "libsueznanoappclients",
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@2.0",
                 "android.hardware.sensors@2.1",
@@ -4261,16 +4275,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libusf",
                 "libutils",
-                "android.hardware.thermal-V1-ndk",
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "com.google.hardware.pixel.display-V9-ndk",
-                "libaoc",
-                "libbinder_ndk",
-                "libhidltransport",
-                "libhwbinder",
-                "libsensorsuez",
-                "libsueznanoappclients",
                 "libc++",
                 "libc",
                 "libm",
@@ -4552,8 +4556,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-    stem: "vendor.google.whitechapel.audio.extension-V2-ndk",
+    name: "vendor.google.whitechapel.audio.extension-V3-ndk_vendor",
+    stem: "vendor.google.whitechapel.audio.extension-V3-ndk",
     owner: "google",
     strip: {
         none: true,
@@ -4561,279 +4565,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.extension-V2-ndk.so",
+                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.extension-V3-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.audio",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.audio.so",
-            ],
-            shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.soundtrigger3-V2-ndk",
-                "android.hardware.bluetooth.audio-V4-ndk",
-                "android.hardware.audio.effect-V2-ndk",
-                "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "libaudioaidlcommon",
-                "libaudioroutev2",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl",
-                "libcutils",
-                "libexpat",
-                "libfmq",
-                "liblog",
-                "libstagefright_foundation",
-                "libtinyalsav2",
-                "libutils",
-                "libxml2",
-                "vendor.google.whitechapel.audio.hal.soundtrigger",
-                "vendor.google.whitechapel.audio.hal.utils",
-                "vendor.google.whitechapel.audio.hal.utils.adaptedinfo.repeated_thread",
-                "vendor.google.whitechapel.audio.hal.utils.aoc",
-                "vendor.google.whitechapel.audio.hal.utils.bluenote",
-                "vendor.google.whitechapel.audio.hal.utils.pipe",
-                "vendor.google.whitechapel.audio.hal.utils.soundcardstate",
-                "libdmabufheap",
-                "libtinycompress",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.audio.sound_dose.aoc",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.audio.sound_dose.aoc.so",
-            ],
-            shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "libbase",
-                "liblog",
-                "libutils",
-                "vendor.google.whitechapel.audio.hal.audio",
-                "vendor.google.whitechapel.audio.hal.utils",
-                "vendor.google.whitechapel.audio.hal.utils.pipe",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.effect",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.effect.so",
-            ],
-            shared_libs: [
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.audio.effect-V2-ndk",
-                "libaudioaidlranges",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "vendor.google.whitechapel.audio.hal.utils.aoc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.services.extension",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.services.extension.so",
-            ],
-            shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-                "android.media.soundtrigger.types-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.soundtrigger3-V2-ndk",
-                "android.hardware.audio.effect-V2-ndk",
-                "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioaidlcommon",
-                "libaudioroutev2",
-                "libbase",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl",
-                "libcutils",
-                "libexpat",
-                "libfmq",
-                "liblog",
-                "libstagefright_foundation",
-                "libtinyalsav2",
-                "libutils",
-                "vendor.google.whitechapel.audio.hal.audio",
-                "vendor.google.whitechapel.audio.hal.effect",
-                "vendor.google.whitechapel.audio.hal.soundtrigger",
-                "vendor.google.whitechapel.audio.hal.utils",
-                "vendor.google.whitechapel.audio.hal.utils.aoc",
-                "vendor.google.whitechapel.audio.hal.utils.pipe",
-                "vendor.google.whitechapel.audio.hal.utils.soundcardstate",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.services",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.services.so",
-            ],
-            shared_libs: [
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-                "android.media.soundtrigger.types-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.soundtrigger3-V2-ndk",
-                "android.hardware.audio.effect-V2-ndk",
-                "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioaidlcommon",
-                "libaudioroutev2",
-                "libbase",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl",
-                "libcutils",
-                "libexpat",
-                "libfmq",
-                "liblog",
-                "libstagefright_foundation",
-                "libtinyalsav2",
-                "libutils",
-                "vendor.google.whitechapel.audio.hal.audio",
-                "vendor.google.whitechapel.audio.hal.effect",
-                "vendor.google.whitechapel.audio.hal.soundtrigger",
-                "vendor.google.whitechapel.audio.hal.utils",
-                "vendor.google.whitechapel.audio.hal.utils.aoc",
-                "vendor.google.whitechapel.audio.hal.utils.pipe",
-                "vendor.google.whitechapel.audio.hal.utils.soundcardstate",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.google.whitechapel.audio.hal.soundtrigger",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.google.whitechapel.audio.hal.soundtrigger.so",
-            ],
-            shared_libs: [
-                "android.media.soundtrigger.types-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.soundtrigger3-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "liblog",
-                "vendor.google.whitechapel.audio.hal.utils",
-                "vendor.google.whitechapel.audio.hal.utils.aoc",
-                "vendor.google.whitechapel.audio.hal.utils.bluenote",
-                "vendor.google.whitechapel.audio.hal.utils.soundcardstate",
-                "libaoc",
                 "libc++",
                 "libc",
                 "libm",
@@ -4888,9 +4623,7 @@ cc_prebuilt_library_shared {
                 "vendor.google.battery_mitigation-V1-ndk",
                 "android.frameworks.sensorservice-V1-ndk",
                 "android.hardware.health-V1-ndk",
-                "android.hardware.thermal-V1-ndk",
-                "android.hardware.thermal@1.0",
-                "android.hardware.thermal@2.0",
+                "android.hardware.thermal-V2-ndk",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
@@ -4927,6 +4660,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcutils",
                 "liblog",
+                "libpower",
                 "libc++",
                 "libc",
                 "libm",
@@ -4955,6 +4689,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcutils",
                 "liblog",
+                "libpower",
                 "libc++",
                 "libc",
                 "libm",
@@ -5009,9 +4744,9 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcutils",
                 "liblog",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "android.hardware.audio.common-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.audio.core-V3-ndk",
+                "android.hardware.audio.common-V4-ndk",
                 "libbinder_ndk",
                 "libtinyalsav2",
                 "libpower",
@@ -5080,7 +4815,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.google.wireless_charger.service-V1-ndk",
+    name: "vendor.google.wireless_charger.service-V2-ndk",
     owner: "google",
     strip: {
         none: true,
@@ -5088,7 +4823,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.google.wireless_charger.service-V1-ndk.so",
+                "proprietary/vendor/lib64/vendor.google.wireless_charger.service-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -5522,6 +5257,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "com.google.android.imageprocessing.hal-default.xml",
+    owner: "google",
+    src: "proprietary/vendor/etc/vintf/manifest/com.google.android.imageprocessing.hal-default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "com.google.edgetpu.dba-service.xml",
     owner: "google",
     src: "proprietary/vendor/etc/vintf/manifest/com.google.edgetpu.dba-service.xml",
@@ -5724,10 +5468,11 @@ cc_prebuilt_binary {
                 "libbase",
                 "libevent",
                 "liblog",
-                "aocx-ndk",
                 "libbinder_ndk",
                 "libutils",
                 "libpower",
+                "aoc_aconfig_flags_c_lib",
+                "aocx-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -5863,33 +5608,30 @@ cc_prebuilt_binary {
                 "vendor.google.battery_mitigation-V1-ndk",
                 "android.frameworks.sensorservice-V1-ndk",
                 "android.hardware.health-V1-ndk",
-                "android.hardware.thermal-V1-ndk",
-                "android.hardware.thermal@1.0",
-                "android.hardware.thermal@2.0",
+                "android.hardware.thermal-V2-ndk",
                 "libhidlbase",
                 "libsensorndkbridge",
+                "libaudioaidlranges",
+                "vendor.google.whitechapel.audio.extension-V3-ndk_vendor",
                 "vendor.google.whitechapel.audio.hal.utils.adaptedinfo.repeated_thread",
-                "vendor.google.whitechapel.audio.hal.audio.sound_dose.aoc",
-                "vendor.google.whitechapel.audio.extension-V2-ndk_vendor",
-                "android.media.soundtrigger.types-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.soundtrigger3-V2-ndk",
-                "android.hardware.audio.effect-V2-ndk",
-                "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "android.hardware.audio.common-V3-ndk",
+                "vendor.google.whitechapel.audio.hal.utils.bluenote",
+                "android.media.soundtrigger.types-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.soundtrigger3-V3-ndk",
+                "android.hardware.audio.effect-V3-ndk",
+                "android.hardware.audio.core.sounddose-V3-ndk",
+                "android.hardware.audio.core-V3-ndk",
+                "android.hardware.audio.common-V4-ndk",
                 "android.frameworks.stats-V2-ndk",
                 "libaudioroutev2",
                 "libbluetooth_audio_session_aidl",
                 "libexpat",
-                "vendor.google.whitechapel.audio.hal.audio",
-                "vendor.google.whitechapel.audio.hal.effect",
-                "vendor.google.whitechapel.audio.hal.soundtrigger",
+                "server_configurable_flags",
                 "vendor.google.whitechapel.audio.hal.utils",
                 "vendor.google.whitechapel.audio.hal.utils.aoc",
                 "vendor.google.whitechapel.audio.hal.utils.pipe",
                 "vendor.google.whitechapel.audio.hal.utils.soundcardstate",
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V5-ndk",
                 "libalsautilsv2",
                 "libaudio_aidl_conversion_common_ndk",
                 "libaudioaidlcommon",
@@ -5909,10 +5651,12 @@ cc_prebuilt_binary {
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl",
                 "libaudioserviceexampleimpl",
-                "libtinycompress",
-                "vendor.google.whitechapel.audio.hal.services",
-                "vendor.google.whitechapel.audio.hal.services.extension",
                 "vendor.google.whitechapel.audio.hal.utils.adaptedinfo",
+                "aocx-V1-ndk",
+                "libaoc",
+                "libpower",
+                "libdmabufheap",
+                "libtinycompress",
                 "libc++",
                 "libc",
                 "libm",
@@ -6018,6 +5762,7 @@ cc_prebuilt_binary {
                 "android.hardware.contexthub-V3-ndk",
                 "chre_atoms_log",
                 "chremetrics-cpp",
+                "libaconfig_storage_read_api_cc",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
@@ -6028,7 +5773,6 @@ cc_prebuilt_binary {
                 "libusf",
                 "libutils",
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
                 "vendor_chre_atoms_log",
                 "vendor_chre_metrics-cpp",
                 "libc++",
@@ -6664,7 +6408,6 @@ cc_prebuilt_binary {
                 "libvndksupport",
                 "libbinder",
                 "libbinder_ndk",
-                "libhidlbase",
                 "android.hardware.media.c2@1.2",
                 "android.hardware.media.c2-V1-ndk",
                 "libcodec2_vndk",
@@ -6774,21 +6517,17 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
             ],
             shared_libs: [
-                "android.hardware.media.c2@1.2",
                 "android.hardware.media.c2-V1-ndk",
-                "android.hardware.media.omx@1.0",
+                "libcodec2_aidl",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "server_configurable_flags",
                 "libavservices_minijail",
                 "libbinder",
                 "libbinder_ndk",
-                "libcodec2_aidl",
-                "libcodec2_hidl@1.2",
                 "libcodec2_vndk",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libstagefright_omx",
                 "libstagefright_xmlparser",
+                "liblog",
                 "libutils",
                 "libExynosC2ComponentStore",
                 "libion_google",
@@ -6824,13 +6563,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
             ],
             shared_libs: [
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libhidlbase",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libbase",
@@ -7096,7 +6828,8 @@ cc_prebuilt_binary {
                 "libutils-default",
                 "libcutils",
                 "vendor.google.wireless_charger-V2-ndk",
-                "vendor.google.wireless_charger.service-V1-ndk",
+                "vendor.google.wireless_charger.service-V2-ndk",
+                "server_configurable_flags",
                 "libc++",
                 "libc",
                 "libm",
@@ -7303,6 +7036,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libmodem_svc_proto_legacy_soong",
                 "libprotobuf-cpp-full",
+                "libjsoncpp",
                 "libc++",
                 "libc",
                 "libm",
@@ -7359,7 +7093,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libbinder_ndk",
                 "libtrusty_metrics",
-                "vendor-pixelatoms-cpp",
                 "libbinder",
                 "libbinder_trusty",
                 "libtrusty",

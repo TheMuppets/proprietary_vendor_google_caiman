@@ -14,5 +14,8 @@
     <!-- #R stands for retail -->
     <EccEntry mnc="#R" number="112" category="0" condition="00000001" />
     <EccEntry mnc="#R" number="911" category="0" condition="00000001" />
-    <EccEntry mnc="#R" number="999" category="0" condition="00000001" />
+    <EccEntry mnc="#R" number="150" category="4" condition="00000001" />
+    <EccEntry mnc="#R" number="155" category="2" condition="00000001" />
+    <EccEntry mnc="#R" number="156" category="8" condition="00000001" />
+    <EccEntry mnc="#R" number="158" category="1" condition="00000001" />
 </EccTable>

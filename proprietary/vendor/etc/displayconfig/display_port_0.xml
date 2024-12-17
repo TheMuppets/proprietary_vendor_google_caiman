@@ -184,4 +184,12 @@
         <item>80</item> <!-- 3: HIGH -->
         <item>1500</item> <!-- 4: SUN -->
     </screenOffBrightnessSensorValueToLux>
+
+    <dozeBrightnessSensorValueToBrightness>
+        <item>-1</item> <!-- 0: OFF -->
+        <item>0.0</item> <!-- 1: NIGHT, 2 nits  -->
+        <item>0.00391025641</item> <!-- 2: LOW, 10 nits (10-2)/(1250-2)*(0.61-0)+0 -->
+        <item>0.02346153846</item> <!-- 3: HIGH, 50 nits (50-2)/(1250-2)*(0.61+0)+0 -->
+        <item>0.02346153846</item> <!-- 4: SUN, 50 nits (50-2)/(1250-2)*(0.61-0)+0 -->
+    </dozeBrightnessSensorValueToBrightness>
 </displayConfiguration>

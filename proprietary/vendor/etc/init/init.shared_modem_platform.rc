@@ -17,8 +17,12 @@ on post-fs-data
     mkdir /data/vendor/radio/modem_temp_file 0775 radio system
     mkdir /mnt/vendor/modem_userdata/replay 0775 radio system
 
+on boot
+    rm /data/vendor/radio/modem_svc_pid
+
 on property:vendor.modem.crash_detected=1
     stop init.shared_modem_platform
+    rm /data/vendor/radio/modem_svc_pid
     setprop vendor.modem.crash_detected 0
     start init.shared_modem_platform
 

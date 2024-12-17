@@ -4,9 +4,4 @@
 <config>
     <!-- The Playstore visibility filter identifying a device supports FIR proximity sensors -->
     <feature name="com.google.android.feature.FIR.PROXIMITY" />
-
-    <!-- Health Intelligence package can bind to PCC open-source network component. -->
-    <allow-association target="com.google.android.pixel.health" allowed="com.google.android.as.oss" />
-    <!-- PCC open-source network component can bind back to the Health Intelligence package. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.pixel.health" />
 </config>

@@ -102,14 +102,25 @@ tmomvno_nl
 
 tmobile_nl
 20416"8F
+
+
+tmobile_nl
+20416"FF
 
 
 tmomvno_nl
 20416BEN NL
+
+
+tmobile_nl
+20416Odido
 
 
 tmobile_nl
 20416
+
+	lebara_nl
+20417
 
 
 telfort_nl
@@ -201,6 +212,9 @@ Lycamobile
 webbing_hk
 20801"
 536E617065
+
+1and1_de
+208012894936
 
 
 rakuten_jp
@@ -211,6 +225,9 @@ rakuten_jp
 
 	orange_fr
 20802
+
+netcomgroup_fr
+20804
 *
 truphone_zz
 20809"547275554B3030656E
@@ -560,8 +577,8 @@ telekom_hr
 
 telekom_hr
 21901T-Mobile HR
-
-21902
+
+telemach_hr
 21902
 
 a1_hr
@@ -699,15 +716,15 @@ fastweb_it
 
 22210SPN=ERG
 22210ERG
-,
-22210SPN=POSTEMOBILE
-22210POSTEMOBILE
 
 homobile_it
 22210ho.
 
 vodafone_it
 22210
+&
+postemobile_it
+22233PosteMobile
 $
 lycamobile_it
 22235
@@ -776,6 +793,15 @@ sunrise_ch
 
 lycamobile_ch
 22854
+
+mucho_ch
+22858Mucho
+(
+nexphone_ch
+22865"4E657870686F6E65
+ 
+nexphone_ch
+22865Nexphone
 
 
 tmobile_cz
@@ -1169,6 +1195,9 @@ telavox_se
 
 telavox_se
 24006Telavox
+
+vimla_se
+24006
 
 sky_gb
 24007"0C
@@ -1187,9 +1216,6 @@ telavox_se
 
 tele2_se
 24007
-
-vimla_se
-24008Vimla
 
 
 telenor_se
@@ -1203,7 +1229,7 @@ telenor_se
 $
 lycamobile_se
 24012
-Lycamobile
+LycaMobile
  
 24024SPN=TELE2
 24024TELE2
@@ -1499,7 +1525,7 @@ Lycamobile
 $
 lycamobile_pt
 26804
-Lycamobile
+LycaMobile
 
 meo_pt
 26806
@@ -1545,6 +1571,9 @@ Lycamobile
 
 27211GID1=0A
 27211"0A
+
+48_ie
+27211"FFFF
 
 48_ie
 2721148
@@ -1604,8 +1633,9 @@ beeline_am
 
 a1_bg
 28401
-
-28403
+
+
+vivacom_bg
 28403
 
 	yettel_bg
@@ -1722,6 +1752,13 @@ telekom_me
 
 fido_ca
 302370
+(
+eeyoumobility_ca
+302480
+3024800002
+#
+ssimobile_ca
+302480	302480017
 
 shaw_ca
 302490"53
@@ -1871,9 +1908,8 @@ verizon_us
 
 310013
 310013
-
-
-testing_us
+
+spectrummsotest_us
 310014
 
 unionwireless_us
@@ -2030,15 +2066,30 @@ tmobile_us
 
 pwg_us
 310240"4358
+
+
+tmomvno_us
+310240"4753
+
+
+tmomvno_us
+310240"4D4B
 
 qlink_us
 310240"514C
+
+	simple_us
+310240"534D
 
 ultra_us
 310240"6132
 %
 republicwireless_us
 310240"6134
+
+
+tmomvno_us
+310240"6135
 
 boosttmo_us
 310240"6230
@@ -2087,6 +2138,14 @@ tmobile_us
 
 plintron_us
 310240"7032
+
+
+tmomvno_us
+310240"7033
+
+
+tmomvno_us
+310240"7477
 
 pwg_us
 310240"7531
@@ -2096,6 +2155,10 @@ tmobile_us
 
 ultra_us
 310240"7601
+
+
+tmomvno_us
+310240"7A73
  
 tracfonetmo_us
 310240"DDFF
@@ -2298,8 +2361,8 @@ tmobile_us
 !
 reachmobileatt_us
 310280"30
-
-attmvnos_us
+
+ztar_us
 310280"4102
 !
 redpocketatt_us
@@ -2461,8 +2524,8 @@ dishatt_us
 
 dishatt_us
 310410"3448
-
-attmvnos_us
+
+ztar_us
 310410"4102
 !
 redpocketatt_us
@@ -2548,6 +2611,9 @@ tmobile_us
 
 	inland_us
 310580
+0
+tracfoneverizon_us
+310590"BA01270000000000
 (
 
 xfinity_us
@@ -2559,6 +2625,9 @@ xfinity_us
 
 verizon_us
 310590
+0
+tracfoneverizon_us
+310591"BA01270000000000
 (
 
 xfinity_us
@@ -2566,6 +2635,30 @@ xfinity_us
 )
 xfinity2_us
 310591"BA01640000000000
+0
+tracfoneverizon_us
+310592"BA01270000000000
+0
+tracfoneverizon_us
+310593"BA01270000000000
+0
+tracfoneverizon_us
+310594"BA01270000000000
+0
+tracfoneverizon_us
+310595"BA01270000000000
+0
+tracfoneverizon_us
+310596"BA01270000000000
+0
+tracfoneverizon_us
+310597"BA01270000000000
+0
+tracfoneverizon_us
+310598"BA01270000000000
+0
+tracfoneverizon_us
+310599"BA01270000000000
 (
 
 xfinity_us
@@ -2680,8 +2773,8 @@ tmobile_us
 !
 reachmobileatt_us
 310950"30
-
-attmvnos_us
+
+ztar_us
 310950"4102
 !
 redpocketatt_us
@@ -2834,8 +2927,8 @@ dishatt_us
 
 dishatt_us
 311180"3448
-
-attmvnos_us
+
+ztar_us
 311180"4102
 !
 redpocketatt_us
@@ -2930,9 +3023,8 @@ $
 
 311390
 311390
-
-
-testing_us
+
+spectrummsotest_us
 311400
 .
 311410SPN=CHATMOBRSA2
@@ -2978,6 +3070,9 @@ $
 )
 xfinity2_us
 311480"BA01640000000000
+)
+mediacom_us
+311480"BA01700000000000
 (
 
 visible_us
@@ -3151,9 +3246,9 @@ webbing_hk
 &
 311610SPN=SRTCOMM
 311610SRTCOMM
-4
-311650SPN=UNITEDWIRELESS
-311650UNITEDWIRELESS
+.
+unitedwireless_us
+311650United Wireless
 
 assurance_us
 311660"1A53
@@ -3325,6 +3420,9 @@ $
 
 dish5gsa_us
 313340"7530
+
+optimera_us
+313380
 
 	altice_us
 313390
@@ -3341,8 +3439,8 @@ $
 
 liberty_pr
 313790
-
-spectrumcbrs_us
+
+spectrummso_us
 314020
 
 xfinitymso_us
@@ -4823,6 +4921,9 @@ rakuten_jp
 
 uqmobile_jp
 44051"20
+
+jcommobile_jp
+44051"22
 
 povo_jp
 44051"26
@@ -4832,17 +4933,17 @@ rakuten_jp
 
 44052
 44052
-
-kddi_jp
+
+kddi5gsa_jp
 44054"10
 
 uqmobile5gsa_jp
 44054"20
-
-povo_jp
+
+povo5gsa_jp
 44054"26
-
-kddimvno_jp
+
+kddimvno5gsa_jp
 44054
 
 44100
@@ -5150,6 +5251,10 @@ Lycamobile
 *
 truphone_zz
 50538"547275554B3030656E
+
+
+telstra_au
+50539
 
 
 telstra_au
@@ -6275,4 +6380,4 @@ webbing_hk
 90198
 
 verizononsitelte_us
-999480˝≥ù¬ﬂ"ª¡û¥
+999480Ö‹Û˚Ê"«§¥∑
