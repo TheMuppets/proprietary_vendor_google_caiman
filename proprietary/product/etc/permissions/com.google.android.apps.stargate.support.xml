@@ -1,0 +1,4 @@
+<permissions>
+    <!-- This system feature is required for getting Satellite Gateway Play Store updates. -->
+    <feature name="com.google.android.apps.stargate.SUPPORTED" />
+</permissions>

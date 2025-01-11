@@ -524,6 +524,32 @@ android_app_import {
 }
 
 android_app_import {
+    name: "SCONE-v37764",
+    owner: "google",
+    apk: "proprietary/product/priv-app/SCONE-v37764/SCONE-v37764.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "SatelliteGatewayPrebuilt",
+    owner: "google",
+    apk: "proprietary/product/priv-app/SatelliteGatewayPrebuilt/SatelliteGatewayPrebuilt.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
     name: "TetheringEntitlement",
     owner: "google",
     apk: "proprietary/product/priv-app/TetheringEntitlement/TetheringEntitlement.apk",
@@ -685,6 +711,18 @@ android_app_import {
 }
 
 android_app_import {
+    name: "PixelSatelliteService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelSatelliteService/PixelSatelliteService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
     name: "RilConfigService",
     owner: "google",
     apk: "proprietary/system_ext/priv-app/RilConfigService/RilConfigService.apk",
@@ -715,6 +753,18 @@ android_app_import {
     apk: "proprietary/system_ext/priv-app/ShannonRcs/ShannonRcs.apk",
     preprocessed: true,
     presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "VendorSatelliteService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/VendorSatelliteService/VendorSatelliteService.apk",
+    certificate: "platform",
     dex_preopt: {
         enabled: false,
     },

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pixel SOS Service feature for accounting/billing purposes -->
+<config>
+    <feature name="com.google.android.feature.SATELLITE_SOS_PROVIDER_1" />
+</config>

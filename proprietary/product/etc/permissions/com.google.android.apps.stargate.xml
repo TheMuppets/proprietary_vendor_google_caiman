@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2024 Google Inc. All Rights Reserved-->
+<permissions>
+  <privapp-permissions package="com.google.android.apps.stargate">
+        <permission name="android.permission.SATELLITE_COMMUNICATION"/>
+        <permission name="android.permission.BIND_SATELLITE_GATEWAY_SERVICE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.LOCATION_BYPASS"/>
+        <permission name="com.google.android.apps.stargate.permission.SEND_EMERGENCY_INTENTS"/>
+        <permission name="com.google.android.apps.stargate.permission.END_EMERGENCY_INTENTS"/>
+        <permission name="com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS"/>
+        <permission name="com.google.android.apps.stargate.permission.END_NON_EMERGENCY_INTENTS"/>
+        <permission name="com.google.android.apps.messaging.emergency.permission.START_ESOS_CONVERSATION"/>
+    </privapp-permissions>
+</permissions>
