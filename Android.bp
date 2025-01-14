@@ -699,6 +699,18 @@ android_app_import {
 }
 
 android_app_import {
+    name: "PixelIwlan",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelIwlan/PixelIwlan.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
     name: "PixelQualifiedNetworksService",
     owner: "google",
     apk: "proprietary/system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk",
