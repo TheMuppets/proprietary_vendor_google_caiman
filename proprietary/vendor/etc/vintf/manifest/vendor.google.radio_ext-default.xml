@@ -2,7 +2,7 @@
     Input:
         vendor/google/interfaces/radioext/aidl/default/vendor.google.radio_ext-default.xml
 -->
-<manifest version="8.0" type="device">
+<manifest version="9.0" type="device">
     <hal format="aidl">
         <name>vendor.google.radio_ext</name>
         <fqname>IRadioExt/default</fqname>

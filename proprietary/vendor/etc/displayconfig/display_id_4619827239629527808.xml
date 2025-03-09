@@ -128,18 +128,6 @@
         </brightnessThrottlingMap>
     </thermalThrottling>
 
-    <refreshRate>
-       <lowerBlockingZoneConfigs>
-         <defaultRefreshRate>120</defaultRefreshRate>
-         <blockingZoneThreshold>
-           <displayBrightnessPoint>
-             <lux>5</lux>
-             <nits>5</nits>
-           </displayBrightnessPoint>
-         </blockingZoneThreshold>
-       </lowerBlockingZoneConfigs>
-    </refreshRate>
-
     <screenBrightnessRampFastDecrease>0.7047244</screenBrightnessRampFastDecrease>
     <screenBrightnessRampFastIncrease>0.7047244</screenBrightnessRampFastIncrease>
     <screenBrightnessRampSlowDecrease>0.05</screenBrightnessRampSlowDecrease>
