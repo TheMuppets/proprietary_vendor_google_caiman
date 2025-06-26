@@ -155,63 +155,6 @@
         </brightnessLimitMap>
     </luxThrottling>
 
-    <evenDimmer enabled="true">
-      <!-- (2-1)/(1250-1)*0.61 = 0.00048839071 -->
-      <transitionPoint>0.00048839071</transitionPoint>
-
-      <brightnessMapping>
-          <brightnessPoint>
-            <nits>1.0</nits>
-            <backlight>0.0</backlight>
-            <brightness>0.0</brightness>
-          </brightnessPoint>
-          <brightnessPoint>
-            <nits>2.0</nits>
-            <backlight>0.000000000001</backlight>
-            <brightness>0.00048839071</brightness>
-          </brightnessPoint>
-          <brightnessPoint>
-            <nits>1250.0</nits>
-            <backlight>0.61</backlight>
-            <brightness>0.61</brightness>
-          </brightnessPoint>
-          <brightnessPoint>
-            <nits>2050.0</nits>
-            <backlight>1.0</backlight>
-            <brightness>1.0</brightness>
-          </brightnessPoint>
-      </brightnessMapping>
-      <luxToMinimumNitsMap>
-          <point>
-            <value>0</value><nits>0.24</nits>
-          </point>
-          <point>
-            <value>10</value><nits>1.0</nits>
-          </point>
-          <point>
-            <value>50</value><nits>2.0</nits>
-          </point>
-          <point>
-            <value>1000</value><nits>2.0</nits>
-          </point>
-          <point>
-            <value>3000</value><nits>2.6</nits>
-          </point>
-          <point>
-            <value>6000</value><nits>4.8</nits>
-          </point>
-          <point>
-            <value>10000</value><nits>7.8</nits>
-          </point>
-          <point>
-            <value>20000</value><nits>15.0</nits>
-          </point>
-          <point>
-            <value>50000</value><nits>36.7</nits>
-          </point>
-      </luxToMinimumNitsMap>
-    </evenDimmer>
-
     <proxSensor featureFlag="com.android.server.display.feature.flags.use_fusion_prox_sensor">
         <type>com.google.sensor.prox_voice_call</type>
         <name>Proximity(Voice Calls) Sensor (wake-up)</name>

@@ -5,12 +5,20 @@
 service qfp-daemon /vendor/bin/hw/qfp-daemon
     interface aidl android.hardware.biometrics.fingerprint.IFingerprint/default
     interface aidl vendor.qti.hardware.fingerprint.IQfpExtendedFingerprint/default
+    interface aidl com.google.hardware.biometrics.fingerprint.debug.IFingerprintDebug/default
     class late_start
     user system
     disabled
     group system drmrpc input wakelock
     capabilities BLOCK_SUSPEND WAKE_ALARM
     priority -20
+
+service init-qfp-sh /vendor/bin/init.qfp.sh
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
 
 on post-fs-data
     # Create directories for Fingerprint
@@ -25,20 +33,19 @@ on post-fs-data
     chmod 0660 /dev/qbt_fd
     chmod 0660 /dev/qbt_ipc
 
-# Factory test needs to be able to write to sysfs for toggling INT2
+# Run script to copy vfs_calib from system image on debug builds
+on early-boot && property:ro.debuggable=1
+    start init-qfp-sh
+
+# Factory tests needs to be able to write to sysfs for toggling INT2
 on property:sys.boot_completed=1 && property:ro.vendor.factory=1
     chmod 0666 /sys/class/spi_master/spi20/spi20.0/synaptics_tcm.0/sysfs/int2
+    chmod 0666 /sys/devices/platform/synaptics_tcm.0/sysfs/int2
+    chmod 0666 /proc/focaltech_touch/int2
 
 # Ensure correct persist prop is set for google device.
 on early-boot
     setprop persist.vendor.qfp.enable_pv "12 0 0"
-
-# Update vfs_calib from system image if needed.
-on early-boot && property:persist.vendor.qfp.update_vfs_calib=1
-    copy /vendor/etc/qti_fp/vfs_calib.dat /data/vendor/misc/qti_fp/vfs_calib.dat
-    chown system system /data/vendor/misc/qti_fp/vfs_calib.dat
-    chmod /data/vendor/misc/qti_fp/vfs_calib.dat 0666
-    setprop persist.vendor.qfp.update_vfs_calib 0
 
 # Reset persist props for QFP if custom settings disabled.
 on early-boot && property:persist.vendor.qfp.enable_setprop=0
