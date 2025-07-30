@@ -573,6 +573,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleFUSIONPro \
     HotwordEnrollmentXGoogleFUSIONPro \
     OemDmTrigger \
+    PixelCameraServicesConnectivityClient \
     SCONE-v45900 \
     SatelliteGatewayPrebuilt \
     TetheringEntitlement \
