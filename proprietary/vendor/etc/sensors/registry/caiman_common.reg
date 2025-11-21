@@ -385,3 +385,8 @@
   # event. The initial angle to compare against is taken on a To-Ear event.
   # Default: 30
   from_ear_delta_thresh_angle=30
+
++/vsc/aad_prox
+  # 0: Normal (fusion of Optical Prox with ultrasound presence detector)
+  # 1: Optical Prox Passthrough (skips all other fusion logic)
+  mode=1

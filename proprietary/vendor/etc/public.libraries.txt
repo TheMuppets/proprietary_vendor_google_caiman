@@ -6,3 +6,4 @@ lib_aion_buffer.so
 lib_jpg_encoder.so
 libgxp.so
 libedgetpu_tachyon.google.so
+libedgetpu_litert.so

@@ -1,6 +1,6 @@
 [build-info]
-	date = 2025-05-08T05:39:39+0000
+	date = 2025-07-30T01:13:44+00:00
 	user = android-build
-	uname = "Linux polygon-bot-102 4.4.0-124-generic #148~14.04.1-Ubuntu SMP Thu May 3 07:26:53 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux"
-	modem = e3682d366d6fdee8f12c8756bcd7195f5c4f199f
-	config = 14f0a3a22323247120f4330693eca54243674c5e
+	uname = "Linux polygon-default-bot-1219 5.15.0-1075-gcp #84~20.04.1-Ubuntu SMP Thu Jan 16 20:44:47 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux"
+	modem = c513012c18cd4e7417dd5b07a253c3087801e7f7
+	config = 8e1fd349672e9ea475c7a069193eec5af0cc1c99
