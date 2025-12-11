@@ -2660,6 +2660,36 @@
       "Value": "765"
     },
     {
+      "PowerHint": "FP_STORAGE_ACCESS",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FP_STORAGE_ACCESS",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 1000,
+      "Value": "1197000"
+    },
+    {
+      "PowerHint": "FP_STORAGE_ACCESS",
+      "Node": "CPUMidClusterMaxFreq",
+      "Duration": 1000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "FP_STORAGE_ACCESS",
+      "Node": "CPUMidClusterMinFreq",
+      "Duration": 1000,
+      "Value": "1836000"
+    },
+    {
+      "PowerHint": "FP_STORAGE_ACCESS",
+      "Node": "DsuMinFreq",
+      "Duration": 1000,
+      "Value": "1800000"
+    },
+    {
       "PowerHint": "ML_ACC",
       "Node": "MLUclampBoost",
       "Duration": 2000,

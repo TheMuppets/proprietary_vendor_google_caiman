@@ -51,6 +51,9 @@ on init
     write /proc/sys/net/ipv4/tcp_mem "44259 59012 88518"
     write /proc/sys/net/ipv4/udp_mem "88518 118025 177036"
 
+    # Disable TCP cubic HYSTART_ACK_TRAIN and HYSTART_DELAY for high data performance.
+    write /sys/module/tcp_cubic/parameters/hystart_detect 0
+
     write /sys/class/net/rmnet0/queues/rx-0/rps_cpus fe
     write /sys/class/net/rmnet1/queues/rx-0/rps_cpus fe
     write /sys/class/net/rmnet2/queues/rx-0/rps_cpus fe
@@ -107,12 +110,13 @@ on init
     write /sys/kernel/metrics/cpuidle_histogram/enable 1
 
 # ZRAM setup: use EH in 4kb kernels.
-on init && property:ro.boot.hardware.cpu.pagesize=4096
-    write /sys/block/zram0/comp_algorithm lz77eh
+on load_persist_props_action && property:ro.boot.hardware.cpu.pagesize=4096
+    write /sys/block/zram0/comp_algorithm ${persist.device_config.vendor_system_native_boot.comp_algorithm:-lz77eh}
 
 # ZRAM setup: do not use EH in 16kb kernels.
 on init && property:ro.boot.hardware.cpu.pagesize=16384
     write /sys/block/zram0/comp_algorithm lzo-rle
+    setprop mmd.zram.comp_algorithm "lzo-rle"
 
 on post-fs
     # Ensure device is ready and start storageproxyd
@@ -395,9 +399,7 @@ on property:debug.touch_sensitivity_mode=1
     setprop persist.vendor.touch_sensitivity_mode 1
 
 on property:sys.boot_completed=1
-    # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.${ro.board.platform}
-    write /proc/sys/vm/swappiness 60
 
     # Adjust watermark level
     write /proc/sys/vm/watermark_scale_factor 200
@@ -587,14 +589,6 @@ on property:vendor.thermal.link_ready=1
     chown system system /dev/thermal/cdev-by-name/thermal-uclamp-4/cur_state
     chown system system /dev/thermal/cdev-by-name/thermal-uclamp-7/cur_state
 
-on property:vendor.thermal.link_ready=1 && property:vendor.pixel.system.phenotype.Thermal__shutdown_exp_enabled=true
-    setprop vendor.thermal.config "thermal_info_config_lpm.json"
-    restart vendor.thermal-hal
-
-on property:vendor.thermal.link_ready=1 && property:vendor.pixel.system.phenotype.Thermal__shutdown_exp_enabled=false
-    setprop vendor.thermal.config "thermal_info_config.json"
-    restart vendor.thermal-hal
-
 on charger
     # Use charger thermal config
     setprop vendor.thermal.config "thermal_info_config_charge.json"
@@ -640,6 +634,7 @@ on property:vendor.all.modules.ready=1
     chown system system /sys/bus/i2c/devices/9-0043/calibration/f0_stored
     chown system system /sys/bus/i2c/devices/9-0043/calibration/q_stored
     chown system system /sys/bus/i2c/devices/9-0043/calibration/redc_stored
+    chown system system /sys/bus/i2c/devices/9-0043/calibration/dvl_peq_coefficients
     chown system system /sys/bus/i2c/devices/9-0043/default/vibe_state
     chown system system /sys/bus/i2c/devices/9-0043/default/num_waves
     chown system system /sys/bus/i2c/devices/9-0043/default/braking_time_bank
@@ -651,6 +646,10 @@ on property:vendor.all.modules.ready=1
     chown system system /sys/bus/i2c/devices/9-0043/default/f0_comp_enable
     chown system system /sys/bus/i2c/devices/9-0043/default/redc_comp_enable
     chown system system /sys/bus/i2c/devices/9-0043/default/delay_before_stop_playback_us
+    chown system system /sys/bus/i2c/devices/9-0043/firmware/fw_algo_id
+    chown system system /sys/bus/i2c/devices/9-0043/firmware/fw_ctrl_name
+    chown system system /sys/bus/i2c/devices/9-0043/firmware/fw_mem_block_type
+    chown system system /sys/bus/i2c/devices/9-0043/firmware/fw_ctrl_val
     enable vendor.vibrator.cs40l26
 
 # Battery health

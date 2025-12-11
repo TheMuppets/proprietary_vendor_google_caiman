@@ -54,6 +54,14 @@ on late-init && property:ro.boot.hardware.revision=PROTO1.0
 on late-init && property:ro.boot.hardware.revision=PROTO1.1
     setprop vendor.thermal.config "thermal_info_config_proto.json"
 
+on property:vendor.thermal.link_ready=1 && property:vendor.pixel.system.phenotype.Thermal__shutdown_exp_enabled=true
+    setprop vendor.thermal.config "thermal_info_config_lpm.json"
+    restart vendor.thermal-hal
+
+on property:vendor.thermal.link_ready=1 && property:vendor.pixel.system.phenotype.Thermal__shutdown_exp_enabled=false
+    setprop vendor.thermal.config "thermal_info_config.json"
+    restart vendor.thermal-hal
+
 # Toggle high_sensitivity according to touch_sensitivity_mode
 on property:persist.vendor.touch_sensitivity_mode=0 && property:sys.boot_completed=1
     write /sys/devices/virtual/goog_touch_interface/gti.0/screen_protector_mode_enabled 0

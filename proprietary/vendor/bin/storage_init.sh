@@ -3,9 +3,11 @@
 # This script is for storage related init service including the below
 #  - adjusting storage total size to the nearest power of 2.
 #  - adjusting reserved_segments with 12 x {zone size} for ZUFS.
+#  - Under 128GB devices, halve the value of logd.logpersistd.size
 #
 
 ufs_size_prop="ro.boot.hardware.ufs"
+logpersistd_size_prop="logd.logpersistd.size"
 
 ufs_size_str=`getprop "ro.boot.hardware.ufs"`
 ufs_size=`echo "$ufs_size_str" | sed 's/[^0-9].*//'`
@@ -65,6 +67,12 @@ if [[ $? -eq 0 ]] && [[ -e "$sysfs_userdata/carve_out" ]]; then
 	reserved_blocks=$((difference * (1024 * 1024 * 1024 / block_size)))
 	echo "1" > $sysfs_userdata/carve_out
 	echo "$reserved_blocks" > $sysfs_userdata/reserved_blocks
+fi
+
+if [[ "$ufs_size" -le 128 ]]; then
+	local log_buf_size=`getprop $logpersistd_size_prop`
+	log_buf_size=$((log_buf_size / 2))
+	setprop $logpersistd_size_prop "$log_buf_size"
 fi
 
 dm_dev_name=$(basename "$(readlink "$sysfs_userdata")")

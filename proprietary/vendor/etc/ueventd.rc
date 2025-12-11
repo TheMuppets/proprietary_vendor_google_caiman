@@ -157,6 +157,7 @@
 /dev/acd-chre_ctl       	0660   system   system
 /dev/acd-chre_data_tx   	0220   system   system
 /dev/acd-chre_data_rx   	0440   system   system
+/dev/acd-chre_data_rx_nonwake	0440   system   system
 
 # BT
 /dev/acd-com.google.bt  		          0660   system     system

@@ -83,9 +83,6 @@ on init
     chown system system /sys/devices/platform/google,charger/dd_state
     chown system system /sys/devices/platform/google,charger/dd_settings
 
-    # for parsing thismeal.bin
-    chown system system /vendor/bin/hw/battery_mitigation
-
 on early-boot
     # Wait for insmod_sh to finish all common modules
     wait_for_prop vendor.common.modules.ready 1
@@ -114,6 +111,7 @@ on early-boot
     chown system system /dev/logbuffer_cpm
     chown system system /dev/logbuffer_wc68
     chown system system /dev/logbuffer_max77779_fwupdate
+    chown system system /dev/logbuffer_bms_vimon
     chown system system /dev/logbuffer_wlc_fw_update
 
 on property:sys.boot_completed=1

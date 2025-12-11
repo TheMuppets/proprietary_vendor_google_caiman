@@ -47,6 +47,13 @@
             ]
         },
         {
+            "name": "Two-OneChan-SnkAse-Lc3_16_1_High_Reliability",
+            "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_1",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
             "name": "Two-OneChan-SnkAse-Lc3_16_1_Balanced_Reliability",
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_1",
             "qos_config_name": [
@@ -72,6 +79,13 @@
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_2",
             "qos_config_name": [
                 "QoS_Config_Low_Latency"
+            ]
+        },
+        {
+            "name": "Two-OneChan-SnkAse-Lc3_16_2_High_Reliability",
+            "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_2",
+            "qos_config_name": [
+               "QoS_Config_High_Reliability"
             ]
         },
         {
@@ -159,6 +173,13 @@
             ]
         },
         {
+            "name": "One-TwoChan-SnkAse-Lc3_16_1_High_Reliability",
+            "codec_config_name": "One-TwoChan-SnkAse-Lc3_16_1",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
             "name": "One-TwoChan-SnkAse-Lc3_16_1_Balanced_Reliability",
             "codec_config_name": "One-TwoChan-SnkAse-Lc3_16_1",
             "qos_config_name": [
@@ -184,6 +205,13 @@
             "codec_config_name": "One-TwoChan-SnkAse-Lc3_16_2",
             "qos_config_name": [
                 "QoS_Config_Low_Latency"
+            ]
+        },
+        {
+            "name": "One-TwoChan-SnkAse-Lc3_16_2_High_Reliability",
+            "codec_config_name": "One-TwoChan-SnkAse-Lc3_16_2",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
             ]
         },
         {
@@ -250,6 +278,13 @@
             ]
         },
         {
+            "name": "One-OneChan-SnkAse-Lc3_16_1_High_Reliability",
+            "codec_config_name": "One-OneChan-SnkAse-Lc3_16_1",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
             "name": "One-OneChan-SnkAse-Lc3_16_1_Balanced_Reliability",
             "codec_config_name": "One-OneChan-SnkAse-Lc3_16_1",
             "qos_config_name": [
@@ -275,6 +310,13 @@
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_2",
             "qos_config_name": [
                 "QoS_Config_Balanced_Reliability"
+            ]
+        },
+        {
+            "name": "One-OneChan-SnkAse-Lc3_16_2_High_Reliability",
+            "codec_config_name": "One-OneChan-SnkAse-Lc3_16_2",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
             ]
         },
         {
@@ -677,6 +719,13 @@
             ]
         },
         {
+            "name": "Two-OneChan-SnkAse-Lc3_24_2_High_Reliability",
+            "codec_config_name": "Two-OneChan-SnkAse-Lc3_24_2",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
             "name": "Two-OneChan-SnkAse-Lc3_24_2_Balanced_Reliability",
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_24_2",
             "qos_config_name": [
@@ -719,6 +768,13 @@
             ]
         },
         {
+            "name": "One-TwoChan-SnkAse-Lc3_24_2_High_Reliability",
+            "codec_config_name": "One-TwoChan-SnkAse-Lc3_24_2",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
             "name": "One-TwoChan-SnkAse-Lc3_24_2_Balanced_Reliability",
             "codec_config_name": "One-TwoChan-SnkAse-Lc3_24_2",
             "qos_config_name": [
@@ -730,6 +786,13 @@
             "codec_config_name": "One-TwoChan-SnkAse-Lc3_24_2",
             "qos_config_name": [
                 "QoS_Config_24_2_2"
+            ]
+        },
+        {
+            "name": "One-OneChan-SnkAse-Lc3_24_2_High_Reliability",
+            "codec_config_name": "One-OneChan-SnkAse-Lc3_24_2",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
             ]
         },
         {
@@ -1029,6 +1092,13 @@
         {
             "name": "One-TwoChan-SnkAse-Opus_192_High_Reliability",
             "codec_config_name": "One-TwoChan-SnkAse-Opus_192",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability"
+            ]
+        },
+        {
+            "name": "One-TwoChan-SnkAse-Opus_HiRes_High_Reliability",
+            "codec_config_name": "One-TwoChan-SnkAse-Opus_HiRes",
             "qos_config_name": [
                 "QoS_Config_High_Reliability"
             ]
@@ -4367,7 +4437,61 @@
                             "compound_value": {
                                 "value": [
                                     224,
-                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 2
+                }
+            ]
+        },
+        {
+            "name": "One-TwoChan-SnkAse-Opus_HiRes",
+            "subconfigurations": [
+                {
+                    "ase_cnt": 1,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 255,
+                        "vendor_company_id": 224,
+                        "vendor_codec_id": 1
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    10
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    236,
+                                    4
                                 ]
                             }
                         },

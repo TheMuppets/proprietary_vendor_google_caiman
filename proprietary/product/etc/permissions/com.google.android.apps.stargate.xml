@@ -4,6 +4,7 @@
   <privapp-permissions package="com.google.android.apps.stargate">
         <permission name="android.permission.SATELLITE_COMMUNICATION"/>
         <permission name="android.permission.BIND_SATELLITE_GATEWAY_SERVICE"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
         <permission name="android.permission.LOCATION_BYPASS"/>

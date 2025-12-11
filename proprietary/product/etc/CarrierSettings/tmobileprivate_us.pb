@@ -1,5 +1,5 @@
 
-tmobileprivate_us‚ £œŒ*(
+tmobileprivate_us‚´ù*(
 T-Mobile USfast.t-mobile.comp€ "M+
 #carrier_nr_availabilities_int_array:
 cellular_usage_setting_intBâº±½

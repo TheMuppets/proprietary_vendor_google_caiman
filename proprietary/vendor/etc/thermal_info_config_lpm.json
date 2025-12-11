@@ -64,6 +64,17 @@
             "Multiplier": 1.0
         },
         {
+            "Name": "VIRTUAL-SKIN-MODEL-UPPER-CLAMPED",
+            "Type": "UNKNOWN",
+            "VirtualSensor": true,
+            "Hidden": true,
+            "Formula": "MINIMUM",
+            "Combination": ["65000", "VIRTUAL-SKIN-MODEL"],
+            "CombinationType": ["CONSTANT", "SENSOR"],
+            "Coefficient": [1.0, 1.0],
+            "Multiplier": 1
+        },
+        {
             "Name": "VIRTUAL-SKIN",
             "Type": "SKIN",
             "Version": "6.1",
