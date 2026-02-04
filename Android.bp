@@ -615,6 +615,18 @@ android_app_import {
 }
 
 android_app_import {
+    name: "MoseyApp",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/MoseyApp/MoseyApp.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
     name: "MyVerizonServices",
     owner: "google",
     apk: "proprietary/system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk",
@@ -4061,6 +4073,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmosey_daemon_ffi",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmosey_daemon_ffi.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnos_citadeld_proxy",
     owner: "google",
     strip: {
@@ -6367,6 +6403,15 @@ prebuilt_etc_xml {
     name: "manifest_input.processor-service.xml",
     owner: "google",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_input.processor-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_mosey.xml",
+    owner: "google",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_mosey.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -8701,6 +8746,30 @@ cc_prebuilt_binary {
                 "libc++",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mosey_server",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/mosey_server",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libc",
                 "libdl",
             ],
         },

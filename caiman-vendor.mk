@@ -560,6 +560,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2024.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2024.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2024_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2024_midyear.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/satellite_sos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/satellite_sos.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/default-permissions/default-permissions-com.google.android.mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.google.android.mosey.xml \
     vendor/google/caiman/proprietary/system_ext/etc/default-permissions/default-permissions-euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-euiccpixel.xml \
     vendor/google/caiman/proprietary/system_ext/etc/init/init.gs_watchdogd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.gs_watchdogd.rc \
     vendor/google/caiman/proprietary/system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc \
@@ -581,6 +582,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.rcsservice.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/google-ril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/google-ril.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/oemrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/oemrilhook.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/permissions/privapp-permissions-com.google.android.mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.google.android.mosey.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se-lineage.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/privapp-permissions-satellite.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-satellite.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vzw_mvs_permissions.xml \
@@ -627,6 +629,7 @@ PRODUCT_PACKAGES += \
     EuiccGoogleOverlay \
     EuiccSupportPixel-P23 \
     EuiccSupportPixelPermissions \
+    MoseyApp \
     MyVerizonServices \
     OemRilService \
     PixelDisplayService \
@@ -906,6 +909,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/libg3a_gaf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libg3a_gaf.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/libg3a_ghawb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libg3a_ghawb.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/mosey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mosey.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pcie_power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pcie_power.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pixel-experiments-recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-experiments-recovery.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pixel-gnss-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-gnss-default.rc \
@@ -3952,6 +3956,7 @@ PRODUCT_PACKAGES += \
     libmetrics_logger \
     libmodem_ml_svc_proto \
     libmodem_svc_proto_legacy_soong \
+    libmosey_daemon_ffi \
     libnos_citadeld_proxy \
     liboemcrypto \
     liboemservice \
@@ -4050,6 +4055,7 @@ PRODUCT_PACKAGES += \
     manifest_aocx.xml \
     manifest_gralloc_aidl2.xml \
     manifest_input.processor-service.xml \
+    manifest_mosey.xml \
     manifest_radioext.xml \
     memtrack.xml \
     pixel-display-default.xml \
@@ -4139,6 +4145,7 @@ PRODUCT_PACKAGES += \
     liboemservice_proxy_default \
     modem_logging_control \
     modem_ml_svc_sit \
+    mosey_server \
     pcie_power_control \
     pixel-experiments-recovery \
     pixelstats-vendor \
