@@ -4,6 +4,7 @@
 #  - adjusting storage total size to the nearest power of 2.
 #  - adjusting reserved_segments with 12 x {zone size} for ZUFS.
 #  - Under 128GB devices, halve the value of logd.logpersistd.size
+#  - adjusting max_sectors_kb for rootdisk and zoned_device
 #
 
 ufs_size_prop="ro.boot.hardware.ufs"
@@ -61,58 +62,103 @@ diff_from_nearest_lower_power_of_2() {
 	fi
 }
 
-difference=$(diff_from_nearest_lower_power_of_2 "$ufs_size")
+# Function to adjust max_sectors_kb if it's larger than optimal_io_size
+adjust_max_sectors() {
+	local dev=$1
+	local max_sectors_kb_path="/sys/block/$dev/queue/max_sectors_kb"
+	local optimal_io_size_path="/sys/block/$dev/queue/optimal_io_size"
 
-if [[ $? -eq 0 ]] && [[ -e "$sysfs_userdata/carve_out" ]]; then
-	reserved_blocks=$((difference * (1024 * 1024 * 1024 / block_size)))
-	echo "1" > $sysfs_userdata/carve_out
-	echo "$reserved_blocks" > $sysfs_userdata/reserved_blocks
-fi
+	if [[ ! -f "$max_sectors_kb_path" ]] || [[ ! -f "$optimal_io_size_path" ]]; then
+		return
+	fi
 
-if [[ "$ufs_size" -le 128 ]]; then
-	local log_buf_size=`getprop $logpersistd_size_prop`
-	log_buf_size=$((log_buf_size / 2))
-	setprop $logpersistd_size_prop "$log_buf_size"
-fi
+	local max_sectors_kb=$(cat "$max_sectors_kb_path")
+	local optimal_io_size=$(cat "$optimal_io_size_path")
 
-dm_dev_name=$(basename "$(readlink "$sysfs_userdata")")
-proc_disk_map="/proc/fs/f2fs/$dm_dev_name/disk_map"
-sysfs_reserved_segs="$sysfs_userdata/reserved_segments"
-zufs=`getprop "ro.boot.zufs_provisioned"`
+	if [[ -n "$optimal_io_size" ]] && [[ "$optimal_io_size" -gt 0 ]]; then
+		local optimal_io_size_kb=$((optimal_io_size / 1024))
+		if [[ "$max_sectors_kb" -gt "$optimal_io_size_kb" ]]; then
+			echo "$optimal_io_size_kb" > "$max_sectors_kb_path"
+			echo "Set max_sectors_kb to $optimal_io_size_kb for $dev"
+		fi
+	fi
+}
 
-if [ "$zufs" != "true" ]; then
-	echo "Storage is not ZUFS."
-	exit 0
-fi
+adjust_storage_size() {
+	difference=$(diff_from_nearest_lower_power_of_2 "$ufs_size")
 
-if [ ! -f "$proc_disk_map" ]; then
-	echo "$proc_disk_map is not found."
-	exit 0
-fi
+	if [[ $? -eq 0 ]] && [[ -e "$sysfs_userdata/carve_out" ]]; then
+		reserved_blocks=$((difference * (1024 * 1024 * 1024 / block_size)))
+		echo "1" > $sysfs_userdata/carve_out
+		echo "$reserved_blocks" > $sysfs_userdata/reserved_blocks
+	fi
+}
 
-reserved_segs=$(grep "Section size" "$proc_disk_map" | awk '{print $4}' | grep -oE '^[0-9]+$')
-if [ -z "$reserved_segs" ]; then
-	echo "Invalid section size: $reserved_segs"
-	exit 0
-fi
+adjust_log_buffer() {
+	if [[ "$ufs_size" -le 128 ]]; then
+		local log_buf_size=`getprop $logpersistd_size_prop`
+		log_buf_size=$((log_buf_size / 2))
+		setprop $logpersistd_size_prop "$log_buf_size"
+	fi
+}
 
-# Make it segment count by dividing by 2MB and mutiply it by 12 zones
-reserved_segs=$(( (reserved_segs / 2) * 12 ))
+configure_zufs() {
+	dm_dev_name=$(basename "$(readlink "$sysfs_userdata")")
+	proc_disk_map="/proc/fs/f2fs/$dm_dev_name/disk_map"
+	sysfs_reserved_segs="$sysfs_userdata/reserved_segments"
+	zufs=`getprop "ro.boot.zufs_provisioned"`
 
-if [ ! -f "$sysfs_reserved_segs" ]; then
-	echo "$sysfs_reserved_segs is not found."
-	exit 0
-fi
+	if [ "$zufs" != "true" ]; then
+		echo "Storage is not ZUFS."
+		return 0
+	fi
 
-sysfs_val=$(cat "$sysfs_reserved_segs" | grep -oE '^[0-9]+$')
+	if [ ! -f "$proc_disk_map" ]; then
+		echo "$proc_disk_map is not found."
+		return 0
+	fi
 
-if [ -z "$sysfs_val" ]; then
-	echo "Invalid reserved_segments: $sysfs_val"
-	exit 0
-fi
+	reserved_segs=$(grep "Section size" "$proc_disk_map" | awk '{print $4}' | grep -oE '^[0-9]+$')
+	if [ -z "$reserved_segs" ]; then
+		echo "Invalid section size: $reserved_segs"
+		return 0
+	fi
 
-if [ "$sysfs_val" -gt "$reserved_segs" ]; then
-	echo "$reserved_segs" > "$sysfs_reserved_segs"
-	echo "Set reserved_segments with $reserved_segs"
-fi
+	# Make it segment count by dividing by 2MB and mutiply it by 12 zones
+	reserved_segs=$(( (reserved_segs / 2) * 12 ))
 
+	if [ ! -f "$sysfs_reserved_segs" ]; then
+		echo "$sysfs_reserved_segs is not found."
+		return 0
+	fi
+
+	sysfs_val=$(cat "$sysfs_reserved_segs" | grep -oE '^[0-9]+$')
+
+	if [ -z "$sysfs_val" ]; then
+		echo "Invalid reserved_segments: $sysfs_val"
+		return 0
+	fi
+
+	if [ "$sysfs_val" -gt "$reserved_segs" ]; then
+		echo "$reserved_segs" > "$sysfs_reserved_segs"
+		echo "Set reserved_segments with $reserved_segs"
+	fi
+}
+
+configure_max_sectors() {
+	# Adjust max_sectors_kb for rootdisk and zoned_device if they exist
+	if [[ -e "/dev/sys/block/by-name/rootdisk" ]]; then
+		rootdisk_dev=$(basename "$(readlink -f "/dev/sys/block/by-name/rootdisk")")
+		adjust_max_sectors "$rootdisk_dev"
+	fi
+
+	if [[ -e "/dev/sys/block/by-name/zoned_device" ]]; then
+		zoned_dev=$(basename "$(readlink -f "/dev/sys/block/by-name/zoned_device")")
+		adjust_max_sectors "$zoned_dev"
+	fi
+}
+
+adjust_storage_size
+adjust_log_buffer
+configure_zufs
+configure_max_sectors

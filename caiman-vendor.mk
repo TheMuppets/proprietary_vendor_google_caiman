@@ -6,7 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/caiman
 
 PRODUCT_COPY_FILES += \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/019mobile_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/019mobile_il.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/1and1_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/1and1_de.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/1global_bootstrap.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/1global_bootstrap.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/2degrees_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/2degrees_nz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/321communications_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/321communications_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/48_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/48_ie.pb \
@@ -27,9 +29,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/alcom_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/alcom_fi.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/alestra_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/alestra_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/aliv_bs.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/aliv_bs.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/alkafeel_iq.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/alkafeel_iq.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/altice_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/altice_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/alticeroaming_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/alticeroaming_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/andorratelecom_ad.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/andorratelecom_ad.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/annatel_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/annatel_il.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/antel_uy.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/antel_uy.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/appalachian_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/appalachian_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/apt_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/apt_tw.pb \
@@ -47,23 +51,35 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/attmvnos_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/attmvnos_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/attmvnos_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/attmvnos_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/axis_id.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/axis_id.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/b1_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/b1_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bait_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bait_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bark_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bark_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/base_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/base_be.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/batelco_bh.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/batelco_bh.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/bbix_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bbix_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bell_ca.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/best_la.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/best_la.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/bhtelecom_ba.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bhtelecom_ba.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/bics_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bics_be.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bite_lt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bite_lt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bite_lv.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bite_lv.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bluegrass_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bluegrass_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bob_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bob_at.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/bonbon_hr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bonbon_hr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/boost_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boost_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/boostmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boostmobile_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/boosttmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boosttmo_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bouygues_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bouygues_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/bouyguesb2b_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bouyguesb2b_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/brisanet_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/brisanet_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/bsnl_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bsnl_in.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/btb_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/btb_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/btc_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/btc_gb.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cablemovil_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cablemovil_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cablenet_cy.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cablenet_cy.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cablewireless_sc.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cablewireless_sc.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cape_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cape_ca.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cape_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cape_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/caribbean_vg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/caribbean_vg.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/carolinawest_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/carolinawest_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/carrier_list.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/carrier_list.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/celcom_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/celcom_my.pb \
@@ -71,23 +87,36 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cellcom_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellcom_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cellcommno_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellcommno_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cellfie_ge.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellfie_ge.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cellhire_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellhire_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cellmobile_gr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellmobile_gr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/celluarone_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/celluarone_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/chatr_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/chatr_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/chinamobile_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/chinamobile_hk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cht_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cht_tw.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/citymesh_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/citymesh_be.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/citymesh_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/citymesh_se.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cjsc_tj.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cjsc_tj.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_ar.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_ar.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_cl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_cl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_co.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_co.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_pe.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_pe.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/claro_pr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_pr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cloud9_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cloud9_gb.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cloudcore_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cloudcore_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cogeco_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cogeco_ca.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/com4_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/com4_no.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/comcastbusiness_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/comcastbusiness_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/commonmvnxatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/commonmvnxatt_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/compax_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/compax_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/congstar_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/congstar_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/consumercellularatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/consumercellularatt_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/consumercellulartmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/consumercellulartmo_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/coopvoce_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coopvoce_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/coppervalley_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coppervalley_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/cordova_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cordova_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/coriolis_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coriolis_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/correios_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/correios_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cox_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cox_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cricket5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket5g_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/cricket_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket_us.pb \
@@ -106,7 +135,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/digimobil_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/digimobil_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/dish5gsa_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dish5gsa_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/dish_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dish_us.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/dishatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dishatt_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/dito_ph.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dito_ph.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/dna_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dna_fi.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/docomo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/docomo_jp.pb \
@@ -120,17 +148,26 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/eir_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/eir_ie.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/elisa_ee.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/elisa_ee.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/elisa_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/elisa_fi.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/emnify_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/emnify_br.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/emnify_li.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/emnify_li.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/emnify_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/emnify_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/enetworks_gy.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/enetworks_gy.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/enreach_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/enreach_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/enreach_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/enreach_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/entel_cl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/entel_cl.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/entel_pe.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/entel_pe.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/epic_mt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/epic_mt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/eplus_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/eplus_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/erate_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/erate_no.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/esimgo_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/esimgo_gb.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/esimgotravel_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/esimgotravel_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/esn_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/esn_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/etisalat_ae.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/etisalat_ae.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/euskaltel_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/euskaltel_es.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/etisalat_af.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/etisalat_af.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/etl_ls.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/etl_ls.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/evolve_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/evolve_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/execulink_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/execulink_ca.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/faiba_ke.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/faiba_ke.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/fastweb_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fastweb_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/fet_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fet_tw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/fi_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fi_at.pb \
@@ -160,7 +197,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/google5glab_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/google5glab_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/grameenphone_bd.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/grameenphone_bd.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/gta_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/gta_us.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/guuk_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/guuk_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/h3_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/h3_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/h3_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_hk.pb \
@@ -170,22 +206,29 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/h3_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_se.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/h3g27202_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3g27202_ie.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/halebop_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/halebop_se.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/halotel_tz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/halotel_tz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/helium_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/helium_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/help_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/help_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/homobile_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/homobile_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/hotmobile_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/hotmobile_il.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ice_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ice_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ice_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ice_no.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/idc_md.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idc_md.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/idea_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idea_in.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/idmobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idmobile_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/iliad_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/iliad_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/indosat_id.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/indosat_id.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/inland_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/inland_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ipdirections_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ipdirections_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/iway_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/iway_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/iwireless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/iwireless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/izziatt_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/izziatt_mx.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/jamil_ke.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jamil_ke.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/jazz_pk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jazz_pk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/jazztel_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jazztel_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/jcommobile_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jcommobile_jp.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/joonto_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/joonto_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/jt_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jt_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kajeetmvno_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kajeetmvno_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kddi5gsa_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddi5gsa_jp.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kddi_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddi_jp.pb \
@@ -195,39 +238,49 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/koodo_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/koodo_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kpn_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kpn_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kt_kr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kt_kr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ktrn_rw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ktrn_rw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/kyivstar_ua.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kyivstar_ua.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_de.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_fr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_nl.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lebara_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lebara_sa.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/legos_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/legos_fr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lguplus_kr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lguplus_kr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/liberty_pr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/liberty_pr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/libertymobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/libertymobile_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lifecell_ua.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lifecell_ua.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/limitless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/limitless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/linemo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/linemo_jp.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/llamaya_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/llamaya_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lmt_lv.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lmt_lv.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lobster_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lobster_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lowi_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lowi_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/luckymobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/luckymobile_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lum_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lum_ca.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lyca_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lyca_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lyca_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lyca_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_dk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_pt.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_ru.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_ru.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_se.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/lycamobile_ug.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/lycamobile_ug.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/m1_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/m1_sg.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/magticom_ge.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/magticom_ge.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/manxcontract_im.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/manxcontract_im.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/manxprepaid_im.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/manxprepaid_im.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/masmovil_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/masmovil_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/maxis_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/maxis_my.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mci_ir.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mci_ir.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mediacom_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mediacom_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/megacom_kg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/megacom_kg.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/megamovil_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/megamovil_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/melita_mt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/melita_mt.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/membersmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/membersmobile_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/meo_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/meo_pt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/metropcs_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/metropcs_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mettel_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mettel_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/miatel_ru.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/miatel_ru.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mobi_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobi_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mobifone_vn.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobifone_vn.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mobily_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobily_sa.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/moldcell_md.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/moldcell_md.pb \
@@ -237,21 +290,37 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/movistar_co.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_co.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/movistar_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/movistar_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_mx.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/movistar_pe.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_pe.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtel_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtel_at.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtel_ba.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtel_ba.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtel_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtel_ch.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtel_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtel_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtel_me.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtel_me.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtn_gh.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtn_gh.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtn_ng.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtn_ng.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtn_zm.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtn_zm.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtx_lu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtx_lu.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/mtx_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mtx_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mucho_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mucho_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/mvnoconnect_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mvnoconnect_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/naf_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/naf_no.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/natcom_ht.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/natcom_ht.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ncell_np.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ncell_np.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nema_fo.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nema_fo.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/neotel_nr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/neotel_nr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/netcomgroup_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/netcomgroup_fr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/netgsm_tr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/netgsm_tr.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/netplus_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/netplus_ch.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/netwo_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/netwo_fr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/newww_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/newww_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nexphone_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nexphone_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nextech_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nextech_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/no_sim.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/no_sim.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/noble_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/noble_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nos_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nos_pt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nova_gr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nova_gr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nova_is.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nova_is.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ntplc_th.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ntplc_th.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/nymobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nymobile_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/o2_cz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2_cz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/o2_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2_de.pb \
@@ -260,6 +329,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/o2prepaid_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2prepaid_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/o2prepaid_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2prepaid_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/omantel_om.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/omantel_om.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ondo_mn.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ondo_mn.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/one5g_sl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/one5g_sl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/one_al.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/one_al.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/one_me.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/one_me.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/onecall_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/onecall_no.pb \
@@ -267,6 +338,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ooredoo_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ooredoo_kw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ooredoo_mv.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ooredoo_mv.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ooredoo_qa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ooredoo_qa.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/optima_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/optima_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/optimera_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/optimera_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/optus_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/optus_au.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/orange_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/orange_be.pb \
@@ -285,27 +357,39 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/orange_tn.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/orange_tn.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/orangentn_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/orangentn_fr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/others.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/others.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/otz_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/otz_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/ourtelekom_sb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ourtelekom_sb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/oxio_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/oxio_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/paradisemobile_bm.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/paradisemobile_bm.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/paradisemobile_ky.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/paradisemobile_ky.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/partner_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/partner_il.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/pcmobilebell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pcmobilebell_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/pelephone_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pelephone_il.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/pepephone_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pepephone_es.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/pinebelt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pinebelt_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/play_pl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/play_pl.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/plintron_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/plintron_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/plintron_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/plintron_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/plus_pl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/plus_pl.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/pmci_pw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pmci_pw.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/pn_xx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pn_xx.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/popcorn_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/popcorn_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/post_lu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/post_lu.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/postemobile_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/postemobile_it.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/postmobile_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/postmobile_ie.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/povo5gsa_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/povo5gsa_jp.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/povo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/povo_jp.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/profile1_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/profile1_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/profile2_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/profile2_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/profile3_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/profile3_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/profile4_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/profile4_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/proximus_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/proximus_be.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ptvtelecom_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ptvtelecom_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/publicmobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/publicmobile_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/pwg_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pwg_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/qlink_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/qlink_us.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/r_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/r_es.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/racc_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/racc_es.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/rain_za.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rain_za.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/rakuten_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rakuten_jp.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/rcell_sy.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rcell_sy.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/reach_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/reach_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/reallycommunications_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/reallycommunications_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/redpocketatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/redpocketatt_us.pb \
@@ -315,12 +399,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/robi_bd.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/robi_bd.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/roccstar_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/roccstar_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/rockisland_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rockisland_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/rockwireless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rockwireless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/rogers5g_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rogers5g_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/rogers_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rogers_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/rogerswpn_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rogerswpn_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/salt_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/salt_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/salt_li.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/salt_li.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sasktel_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sasktel_ca.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/selam_tr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/selam_tr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/setar_aw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/setar_aw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sfr_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sfr_fr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/shaw_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/shaw_ca.pb \
@@ -329,6 +415,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/simple_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/simple_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/simyo_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/simyo_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/singtel_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/singtel_sg.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/sipgate_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sipgate_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/skinny_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/skinny_nz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/skt_kr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/skt_kr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sky_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sky_gb.pb \
@@ -342,17 +429,21 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/smartone_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/smartone_hk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/smarty_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/smarty_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/softbank_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/softbank_jp.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/solnet_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/solnet_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/solomobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/solomobile_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spark_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spark_nz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spectrum_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spectrum_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/spectrumbusiness_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spectrumbusiness_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spectrummso_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spectrummso_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spectrummsotest_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spectrummsotest_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/spitfire_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spitfire_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spmtelecom_pm.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spmtelecom_pm.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sprint_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprint_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sprintprepaid_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintprepaid_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sprintwholesale_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintwholesale_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spusu_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spusu_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spusu_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spusu_ch.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/spusu_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spusu_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spusu_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spusu_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/spusu_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/spusu_it.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ssimobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ssimobile_ca.pb \
@@ -363,10 +454,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/strata_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/strata_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/sunrise_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sunrise_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/superdrug_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/superdrug_gb.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/sweno_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sweno_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/swisscom_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/swisscom_ch.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/swisscom_li.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/swisscom_li.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/swisscommvno_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/swisscommvno_ch.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/t26_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/t26_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/t2_si.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/t2_si.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/talkmobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/talkmobile_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tango_lu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tango_lu.pb \
@@ -374,6 +465,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tbaytel_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tbaytel_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tchibo_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tchibo_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tchibo_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tchibo_de.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tcl_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tcl_gb.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tcl_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tcl_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tdc_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tdc_dk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telavox_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telavox_be.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telavox_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telavox_se.pb \
@@ -383,8 +476,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tele2_lt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tele2_lt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tele2_lv.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tele2_lv.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tele2_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tele2_se.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/telecable2_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telecable2_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telecom_ar.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telecom_ar.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/teleena_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/teleena_zz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telekom_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telekom_gr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_gr.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telekom_hr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_hr.pb \
@@ -409,25 +502,34 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telia_lt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_lt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telia_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_no.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telia_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_se.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/teliab2b_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/teliab2b_se.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telkomsel_id.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telkomsel_id.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tello_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tello_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/telna_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telna_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/telnyx_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telnyx_be.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/telnyx_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telnyx_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telstra_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telstra_au.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/telus_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telus_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tesco_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tesco_gb.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/test001_amarisoft.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/test001_amarisoft.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/test001_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/test001_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/textnow_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/textnow_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tgs_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tgs_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/three_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/three_dk.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/thumbcellular_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/thumbcellular_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tigo_co.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tigo_co.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tim_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tim_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tim_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tim_it.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tinkoff_ru.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tinkoff_ru.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmobile_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmobile_cz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_cz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmobile_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmobileprivate_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobileprivate_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmoericssonlab_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmoericssonlab_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmomvno_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmomvno_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tmomvno_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmomvno_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/tnm_mw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tnm_mw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tracfoneatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfoneatt_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tracfonetmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfonetmo_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/tracfoneverizon_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfoneverizon_us.pb \
@@ -449,11 +551,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/ultra_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ultra_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/umobile_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/umobile_my.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/unifi_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unifi_my.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/unifique_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unifique_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/unionwireless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unionwireless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/unitedwireless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unitedwireless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/uqmobile5gsa_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uqmobile5gsa_jp.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/uqmobile_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uqmobile_jp.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/uscc_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uscc_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/utc_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/utc_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/verizon_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/verizon_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/verizononsitelte_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/verizononsitelte_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/verymobile_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/verymobile_it.pb \
@@ -465,8 +569,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vinaphone_vn.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vinaphone_vn.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/virgin_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgin_ca.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/virgin_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgin_gb.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/virgin_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgin_kw.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/virgin_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgin_us.pb \
-    vendor/google/caiman/proprietary/product/etc/CarrierSettings/virgintelco_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgintelco_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/visible_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/visible_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/visiblev_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/visiblev_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/viti_pf.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/viti_pf.pb \
@@ -474,6 +578,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vivo_br.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vivo_br.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_al.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_al.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_au.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_ck.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_ck.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_cz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_cz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_es.pb \
@@ -487,6 +592,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_nl.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_nz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_om.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_om.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_pf.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_pf.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_pt.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_qa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_qa.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafone_ro.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_ro.pb \
@@ -494,12 +600,20 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/vodafonelab_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafonelab_de.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/walmart_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/walmart_mx.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/webbing_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/webbing_hk.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/wecom_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/wecom_il.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/wim_mx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/wim_mx.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/wind_do.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/wind_do.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/windtre_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/windtre_it.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/wireless_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/wireless_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/wom_cl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/wom_cl.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/worldmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/worldmobile_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/worldmobile_zz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/worldmobile_zz.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/xfera_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xfera_es.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/xfinity2_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xfinity2_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/xfinity_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xfinity_us.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/xfinitymso_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xfinitymso_us.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/xphone_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xphone_il.pb \
+    vendor/google/caiman/proprietary/product/etc/CarrierSettings/yas_tz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yas_tz.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/yes_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yes_my.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/yesss_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yesss_at.pb \
     vendor/google/caiman/proprietary/product/etc/CarrierSettings/yettel_bg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yettel_bg.pb \
@@ -516,6 +630,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_PRODUCT)/etc/ambient/matcher_tah.leveldb \
     vendor/google/caiman/proprietary/product/etc/default-permissions/default-permissions-stargate.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-stargate.xml \
+    vendor/google/caiman/proprietary/product/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml \
+    vendor/google/caiman/proprietary/product/etc/default-permissions/default-permissions_nowplaying.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_nowplaying.xml \
     vendor/google/caiman/proprietary/product/etc/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
     vendor/google/caiman/proprietary/product/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
     vendor/google/caiman/proprietary/product/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg \
@@ -539,12 +655,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.services.xml \
     vendor/google/caiman/proprietary/product/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/features-verizon.xml \
     vendor/google/caiman/proprietary/product/etc/permissions/privapp-permissions-google-p-lineage.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p-lineage.xml \
+    vendor/google/caiman/proprietary/product/etc/permissions/privapp-permissions_com.google.android.apps.carrier.carrierwifi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions_com.google.android.apps.carrier.carrierwifi.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/allowlist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.android.omadm.service.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/allowlist_com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.shannon.imsservice.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/firproximity.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/firproximity.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/nowplaying_app_26q1.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nowplaying_app_26q1.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2017.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2017.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2018.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2018.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2019.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019.xml \
@@ -559,10 +677,25 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2023_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2023_midyear.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2024.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2024.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/pixel_experience_2024_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2024_midyear.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-camera-services-base.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-camera-services-base.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-camera-services-common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-camera-services-common.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oem.oemrilhookservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oem.oemrilhookservice.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oemril.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oemril.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.shannon.imsservice.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.shannon.rcsservice.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.verizon.services.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-com.vzw.apnlib.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-com.vzw.apnlib.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-pixel-2024-common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-pixel-2024-common.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-pixel-carrier.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-pixel-carrier.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml \
+    vendor/google/caiman/proprietary/product/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml \
     vendor/google/caiman/proprietary/product/etc/sysconfig/satellite_sos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/satellite_sos.xml \
+    vendor/google/caiman/proprietary/recovery/system/etc/init/android.hardware.boot-service.default_recovery-pixel.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.boot-service.default_recovery-pixel.rc \
+    vendor/google/caiman/proprietary/recovery/system/etc/init/android.hardware.health-service.zumapro_recovery.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.health-service.zumapro_recovery.rc \
     vendor/google/caiman/proprietary/system_ext/etc/default-permissions/default-permissions-com.google.android.mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.google.android.mosey.xml \
     vendor/google/caiman/proprietary/system_ext/etc/default-permissions/default-permissions-euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-euiccpixel.xml \
     vendor/google/caiman/proprietary/system_ext/etc/init/init.gs_watchdogd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.gs_watchdogd.rc \
+    vendor/google/caiman/proprietary/system_ext/etc/init/mosey.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mosey.rc \
     vendor/google/caiman/proprietary/system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc \
     vendor/google/caiman/proprietary/system_ext/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -587,6 +720,16 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/privapp-permissions-satellite.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-satellite.xml \
     vendor/google/caiman/proprietary/system_ext/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vzw_mvs_permissions.xml \
     vendor/google/caiman/proprietary/system_ext/etc/public.libraries-google.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-google.txt \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-com.verizon.mips.services.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-com.verizon.mips.services.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-gril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-gril.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-hotword-google-fusion-pro.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-hotword-google-fusion-pro.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-pixeldisplayservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-pixeldisplayservice.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-pixelimsmedia.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-pixelimsmedia.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled-packages-ril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-ril.xml \
+    vendor/google/caiman/proprietary/system_ext/etc/sysconfig/preinstalled_packages_connectivity_thermal_power_manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled_packages_connectivity_thermal_power_manager.xml \
+    vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/DKA_0302_24.up:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/DKA_0302_24.up \
+    vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/DKA_0303_02x_24.up:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/DKA_0303_02x_24.up \
+    vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/DKA_0303_03x_24.up:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/DKA_0303_03x_24.up \
     vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/Felica_Tag_66_Changer.apdu:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/Felica_Tag_66_Changer.apdu \
     vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/SUSA_RC2_24.up:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/SUSA_RC2_24.up \
     vendor/google/caiman/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
@@ -597,29 +740,31 @@ PRODUCT_PACKAGES += \
     com.google.edgetpu_app_service-V6-ndk \
     com.google.edgetpu_vendor_service-V2-ndk \
     libmediaadaptor \
+    libmosey_daemon_ffi \
     libpixeldisplaymanager_jni \
     libpixelimsmedia \
     vendor.google.whitechapel.audio.audioext@4.0 \
-    vendor.google.whitechapel.audio.extension-V7-ndk \
+    vendor.google.whitechapel.audio.extension-V8-ndk \
+    NowPlayingPrebuilt \
     VZWAPNLib \
-    AICorePrebuilt-aicore_20250130.00_RC01 \
+    AICorePrebuilt-aicore_20260302.01_RC00 \
     AppDirectedSMSService \
     CarrierSettings \
     CarrierWifi \
     ConnMO \
     DCMO \
     DMService \
-    DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02 \
-    DevicePersonalizationPrebuiltPixel2024-playstore_aiai_20250306.00_RC10 \
+    DeviceIntelligenceNetworkPrebuiltAstrea \
+    DevicePersonalizationAiAiPrebuiltPixel2024 \
     DiagMon \
     EuiccGoogle \
-    HealthIntelligencePrebuilt-1762 \
+    HealthIntelligencePrebuilt-1 \
     HotwordEnrollmentOKGoogleFUSIONPro \
     HotwordEnrollmentXGoogleFUSIONPro \
     OemDmTrigger \
-    PixelCameraServicesConnectivityClient \
-    SCONE-v51348 \
-    SatelliteGatewayPrebuilt \
+    PixelCameraServices \
+    SCONE-v69510 \
+    SatelliteGateway-Phone-v91522000 \
     TetheringEntitlement \
     WfcActivation \
     OemRilHookService \
@@ -636,7 +781,6 @@ PRODUCT_PACKAGES += \
     PixelImsMediaService \
     PixelQualifiedNetworksService \
     PixelSatelliteService \
-    RilConfigService \
     ShannonIms \
     ShannonRcs \
     VendorSatelliteService \
@@ -654,12 +798,19 @@ PRODUCT_PACKAGES += \
     google-ril \
     oemrilhook \
     aocx_framework_compatibility_matrix_system_ext \
+    camera_interference_avoidance_framework_compatibility_matrix_system_ext \
     imageprocessing_hal_framework_compatibility_matrix_system_ext \
     com.google.pixel.camera.services@1.0-service-google.xml \
+    manifest_mosey.xml \
     vendor.google.edgetpu_app_service@1.0-service.xml \
+    android.hardware.boot-service.default_recovery-pixel.xml \
+    android.hardware.health-service.zumapro_recovery.xml \
     gs_watchdogd \
     vendor.google.edgetpu_app_service@1.0-service \
-    vendor.google.whitechapel.audio.hal.parserservice
+    vendor.google.whitechapel.audio.hal.parserservice \
+    mosey_server \
+    android.hardware.boot-service.default_recovery-pixel \
+    android.hardware.health-service.zumapro_recovery
 
 PRODUCT_PACKAGES += \
     product_priv-app_DMService_lib_arm64_libdmengine_so \
@@ -737,6 +888,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/chre/health.so:$(TARGET_COPY_OUT_VENDOR)/etc/chre/health.so \
     vendor/google/caiman/proprietary/vendor/etc/chre/imu_cal.napp_header:$(TARGET_COPY_OUT_VENDOR)/etc/chre/imu_cal.napp_header \
     vendor/google/caiman/proprietary/vendor/etc/chre/imu_cal.so:$(TARGET_COPY_OUT_VENDOR)/etc/chre/imu_cal.so \
+    vendor/google/caiman/proprietary/vendor/etc/chre/instant_sense.napp_header:$(TARGET_COPY_OUT_VENDOR)/etc/chre/instant_sense.napp_header \
+    vendor/google/caiman/proprietary/vendor/etc/chre/instant_sense.so:$(TARGET_COPY_OUT_VENDOR)/etc/chre/instant_sense.so \
     vendor/google/caiman/proprietary/vendor/etc/chre/ip_health.napp_header:$(TARGET_COPY_OUT_VENDOR)/etc/chre/ip_health.napp_header \
     vendor/google/caiman/proprietary/vendor/etc/chre/ip_health.so:$(TARGET_COPY_OUT_VENDOR)/etc/chre/ip_health.so \
     vendor/google/caiman/proprietary/vendor/etc/chre/libchre_log_database.bin:$(TARGET_COPY_OUT_VENDOR)/etc/chre/libchre_log_database.bin \
@@ -772,6 +925,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_216.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_216.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_218.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_218.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_219.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_219.xml \
+    vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_220.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_220.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_222.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_222.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_226.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_226.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_228.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_228.xml \
@@ -808,6 +962,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_460.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_460.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_466.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_466.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_505.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_505.xml \
+    vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_520.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_520.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_525.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_525.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_647.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_647.xml \
     vendor/google/caiman/proprietary/vendor/etc/database/DbEcc_704.xml:$(TARGET_COPY_OUT_VENDOR)/etc/database/DbEcc_704.xml \
@@ -842,6 +997,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/displayconfig/display_port_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_port_0.xml \
     vendor/google/caiman/proprietary/vendor/etc/docv.csv:$(TARGET_COPY_OUT_VENDOR)/etc/docv.csv \
     vendor/google/caiman/proprietary/vendor/etc/earcheek_classifier.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/earcheek_classifier.tflite \
+    vendor/google/caiman/proprietary/vendor/etc/edgetpu/custom_kernel.pbtxt:$(TARGET_COPY_OUT_VENDOR)/etc/edgetpu/custom_kernel.pbtxt \
     vendor/google/caiman/proprietary/vendor/etc/fstab.efs:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.efs \
     vendor/google/caiman/proprietary/vendor/etc/fstab.efs.from_data:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.efs.from_data \
     vendor/google/caiman/proprietary/vendor/etc/fstab.modem:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.modem \
@@ -855,19 +1011,25 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.aoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.aoc.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.authsecret-service.citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret-service.citadel.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.bluetooth-service.bcmbtlinux.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service.bcmbtlinux.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.boot-service.default-pixel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.default-pixel.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.contexthub-service.generic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.contexthub-service.generic.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.dumpstate.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate.3-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.graphics.allocator2-aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator2-aidl-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.health-service.zumapro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.zumapro.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.input.processor-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.input.processor-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.oemlock-service.citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock-service.citadel.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.power-service.pixel-libperfmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.pixel-libperfmgr.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.power.stats-service.pixel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power.stats-service.pixel.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.qorvo.uwb-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.qorvo.uwb-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.secure_element-service.uicc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element-service.uicc.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.security.keymint-service.citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.citadel.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal-service.pixel.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.usb-service-i2c6.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service-i2c6.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.usb.gadget-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.vibrator-service.cs40l26.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator-service.cs40l26.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/android.hardware.weaver-service.citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service.citadel.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/aocd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aocd.rc \
@@ -877,9 +1039,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/citadeld.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/citadeld.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/com.google.edgetpu.tachyon-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.google.edgetpu.tachyon-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/com.google.input.gia.giacore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.google.input.gia.giacore.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/devcoredump_action.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/devcoredump_action.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/dmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmd.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/dump_power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dump_power.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/google.hardware.media.c2@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/google.hardware.media.c2@2.0-service.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/gpuflag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuflag.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/hw/init.caiman.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.caiman.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/hw/init.persist.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.persist.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/hw/init.zumapro.board.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.zumapro.board.rc \
@@ -890,6 +1054,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/init.camera.set-interrupts-ownership.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.camera.set-interrupts-ownership.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.display_logbuffer.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.display_logbuffer.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.fingerprint.dump.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.dump.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/init.gia.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gia.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gnss.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.liboemservice_proxy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.liboemservice_proxy.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.modem_logging_control.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.modem_logging_control.rc \
@@ -901,19 +1066,23 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/init.sscoredump.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sscoredump.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.storage.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.touch.gti0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.gti0.rc \
-    vendor/google/caiman/proprietary/vendor/etc/init/init.touch.predump.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.predump.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/init.usboffmode.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usboffmode.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.usf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usf.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init.vendor_telephony.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor_telephony.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/init.watermark-scale-factor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.watermark-scale-factor.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/init_dauntless.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_dauntless.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/libg3a_gabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libg3a_gabc.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/libg3a_gaf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libg3a_gaf.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/libg3a_ghawb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libg3a_ghawb.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
-    vendor/google/caiman/proprietary/vendor/etc/init/mosey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mosey.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/mte_launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mte_launcher.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pcie_power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pcie_power.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/pixel-bgtasks-experiment.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-bgtasks-experiment.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pixel-experiments-recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-experiments-recovery.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pixel-gnss-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-gnss-default.rc \
-    vendor/google/caiman/proprietary/vendor/etc/init/pixel-ubp-experiment.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-ubp-experiment.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/pixel-sched-proxy-exec-experiment.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-sched-proxy-exec-experiment.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/pixel-thermal-symlinks.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-thermal-symlinks.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/pixel-zram-comp-algorithm-experiment.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixel-zram-comp-algorithm-experiment.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pixelstats-vendor.zumapro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pixelstats-vendor.zumapro.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/pktrouter.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pktrouter.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/qfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qfp-daemon.rc \
@@ -924,12 +1093,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/init/trusty_metricsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusty_metricsd.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/twoshay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/twoshay.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/uwb-calib.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/uwb-calib.rc \
-    vendor/google/caiman/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.aam.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.aam.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.battery_mitigation-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.battery_mitigation-default.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.edgetpu_vendor_service@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.edgetpu_vendor_service@1.0-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.google_battery-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.google_battery-default.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.modem_ml_svc_sit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.modem_ml_svc_sit.rc \
+    vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.plat_security-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.plat_security-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.radio_ext-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radio_ext-default.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.radioext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radioext@1.0-service.rc \
     vendor/google/caiman/proprietary/vendor/etc/init/vendor.google.wireless_charger-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wireless_charger-default.rc \
@@ -948,6 +1118,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/google/caiman/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     vendor/google/caiman/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/google/caiman/proprietary/vendor/etc/memory-limiter-config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/memory-limiter-config.xml \
     vendor/google/caiman/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/google/caiman/proprietary/vendor/etc/modem/Pixel_stability.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_stability.cfg \
     vendor/google/caiman/proprietary/vendor/etc/modem/Pixel_stability.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_stability.nprf \
@@ -968,7 +1139,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/open_carrier_info.dat:$(TARGET_COPY_OUT_VENDOR)/etc/open_carrier_info.dat \
     vendor/google/caiman/proprietary/vendor/etc/panel_config_google-cm4_cal0.pb:$(TARGET_COPY_OUT_VENDOR)/etc/panel_config_google-cm4_cal0.pb \
     vendor/google/caiman/proprietary/vendor/etc/panel_ctrl_google-cm4_cal0.pb:$(TARGET_COPY_OUT_VENDOR)/etc/panel_ctrl_google-cm4_cal0.pb \
-    vendor/google/caiman/proprietary/vendor/etc/permissions/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml \
+    vendor/google/caiman/proprietary/vendor/etc/permissions/android.hardware.strongbox_keystore_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore_v3.xml \
     vendor/google/caiman/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     vendor/google/caiman/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.singlereg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.singlereg.xml \
     vendor/google/caiman/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -977,6 +1148,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/permissions/com.google.android.hardwareinfo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.google.android.hardwareinfo.xml \
     vendor/google/caiman/proprietary/vendor/etc/permissions/vendor.android.hardware.camera.preview-dis.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.android.hardware.camera.preview-dis.xml \
     vendor/google/caiman/proprietary/vendor/etc/pixelstats_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/pixelstats_config.json \
+    vendor/google/caiman/proprietary/vendor/etc/pmgd/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/pmgd/config.json \
     vendor/google/caiman/proprietary/vendor/etc/powerhint-proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-proto.json \
     vendor/google/caiman/proprietary/vendor/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
     vendor/google/caiman/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -1004,10 +1176,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/telephony/satellite_access_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/telephony/satellite_access_config.json \
     vendor/google/caiman/proprietary/vendor/etc/telephony/sats2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/telephony/sats2.dat \
     vendor/google/caiman/proprietary/vendor/etc/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+    vendor/google/caiman/proprietary/vendor/etc/thermal_info_config_bg_tasks_throttling.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_bg_tasks_throttling.json \
     vendor/google/caiman/proprietary/vendor/etc/thermal_info_config_charge.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_charge.json \
     vendor/google/caiman/proprietary/vendor/etc/thermal_info_config_lpm.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_lpm.json \
     vendor/google/caiman/proprietary/vendor/etc/thermal_info_config_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_proto.json \
     vendor/google/caiman/proprietary/vendor/etc/touchflow.pb:$(TARGET_COPY_OUT_VENDOR)/etc/touchflow.pb \
+    vendor/google/caiman/proprietary/vendor/etc/tracing_descriptors.gz:$(TARGET_COPY_OUT_VENDOR)/etc/tracing_descriptors.gz \
     vendor/google/caiman/proprietary/vendor/etc/twoshay_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/twoshay_config.json \
     vendor/google/caiman/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/google/caiman/proprietary/vendor/etc/uwb/calibration-CE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/calibration-CE.conf \
@@ -1022,7 +1196,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/etc/uwb/manifest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/manifest.conf \
     vendor/google/caiman/proprietary/vendor/etc/uwb/regions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/regions.conf \
     vendor/google/caiman/proprietary/vendor/etc/vt_estimation_model.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/vt_estimation_model.tflite \
-    vendor/google/caiman/proprietary/vendor/etc/vt_prediction_lstm_model.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/vt_prediction_lstm_model.tflite \
     vendor/google/caiman/proprietary/vendor/etc/waves_config.ini:$(TARGET_COPY_OUT_VENDOR)/etc/waves_config.ini \
     vendor/google/caiman/proprietary/vendor/etc/waves_preset.mps:$(TARGET_COPY_OUT_VENDOR)/etc/waves_preset.mps \
     vendor/google/caiman/proprietary/vendor/etc/wifi/coex_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/coex_table.xml \
@@ -1060,63 +1233,55 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/build.info:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/build.info \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/cfg.db:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/cfg.db \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/cfg.sha2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/cfg.sha2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/00226774b5fd43ae48d26d579450fa58c9b317bc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/00226774b5fd43ae48d26d579450fa58c9b317bc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0043366cac642467b6e30b72b6c00236ac75a4e5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0043366cac642467b6e30b72b6c00236ac75a4e5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/002792e9e8d691b427056f39d909ef289af87bb1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/002792e9e8d691b427056f39d909ef289af87bb1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/00863156ac680f7647a60dd6f3a36a4a623826e7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/00863156ac680f7647a60dd6f3a36a4a623826e7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/01083369e79d86f62e3aadb2b3009f1aeb8ddd45:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/01083369e79d86f62e3aadb2b3009f1aeb8ddd45 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/01bcd13d69c1d96179c6504fdcb866c58214d904:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/01bcd13d69c1d96179c6504fdcb866c58214d904 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/01c8a8a9e56e4b15875c4669f81b8eb5e7dc3772:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/01c8a8a9e56e4b15875c4669f81b8eb5e7dc3772 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/020f76548105d134edba5e1812801b6326f56143:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/020f76548105d134edba5e1812801b6326f56143 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0221d556f442d197d01bdb6a51e897f5b3300244:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0221d556f442d197d01bdb6a51e897f5b3300244 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/02537df3fc45267b59a891625a7e1c5a2a0bd33a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/02537df3fc45267b59a891625a7e1c5a2a0bd33a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/027a57ddd7d82a616e4874babddb588ebd9a85b1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/027a57ddd7d82a616e4874babddb588ebd9a85b1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/02c28ec5efb3d631a49a851b89c89730db361a10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/02c28ec5efb3d631a49a851b89c89730db361a10 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/02f0a6fcef8d5bff6f5fb36e7aac108ed30fb42c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/02f0a6fcef8d5bff6f5fb36e7aac108ed30fb42c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/033153d33e045cabc3c33c9a9c0b3dfb25c54d56:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/033153d33e045cabc3c33c9a9c0b3dfb25c54d56 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/034fa97341b2f3841f48ca4c52eb18439df90524:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/034fa97341b2f3841f48ca4c52eb18439df90524 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/036fedb1108e5a70f586ad42303ebfba0c855311:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/036fedb1108e5a70f586ad42303ebfba0c855311 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0412944d47aa0a124538a91d1661a826b07d91ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0412944d47aa0a124538a91d1661a826b07d91ef \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0426ebb907026d10cfe5fb469713c16ff661ad5f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0426ebb907026d10cfe5fb469713c16ff661ad5f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/048f3a016945bebe1a0d4662a1aa5c5b0fdc3322:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/048f3a016945bebe1a0d4662a1aa5c5b0fdc3322 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/049f9e339423d7ab8f17f9eab53325da1384ff48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/049f9e339423d7ab8f17f9eab53325da1384ff48 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/04aa4ebec6774e7e7af8c9702aa5ae8783357c65:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/04aa4ebec6774e7e7af8c9702aa5ae8783357c65 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/04bae239b62c058084297f112e04aa1f07209fb9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/04bae239b62c058084297f112e04aa1f07209fb9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/04ed487861a87316b060c8c2c78936b4f9b9899d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/04ed487861a87316b060c8c2c78936b4f9b9899d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/051b30eb1befd30321979b73e338f2ba73fdc90d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/051b30eb1befd30321979b73e338f2ba73fdc90d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/052148a6c03290892d5c9a7a4f1b944e308f828d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/052148a6c03290892d5c9a7a4f1b944e308f828d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/054d4e34f88f31d546bb8bb01217eeb7d4a2fc0b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/054d4e34f88f31d546bb8bb01217eeb7d4a2fc0b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/05571f4f5b49e2135fc90d53d26876fc7acf71fe:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/05571f4f5b49e2135fc90d53d26876fc7acf71fe \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/056327dadc1a9a9f431c982088c343b2b69934a3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/056327dadc1a9a9f431c982088c343b2b69934a3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0581e1cbc0051b13b8b1da89dda6a85b62fd5581:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0581e1cbc0051b13b8b1da89dda6a85b62fd5581 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0581f639cc51b8081cad9bf97e969d660f6c3517:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0581f639cc51b8081cad9bf97e969d660f6c3517 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/059f473a12317ff55cf871d69771d49482855fb7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/059f473a12317ff55cf871d69771d49482855fb7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/05bbd25db23ffc8a76da52ff834f8f080fcbcfba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/05bbd25db23ffc8a76da52ff834f8f080fcbcfba \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/064d7c1c5af7c3fd772108beadba40bacb1c1056:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/064d7c1c5af7c3fd772108beadba40bacb1c1056 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0675181d0f886b1d6a5678572655a47807490ce9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0675181d0f886b1d6a5678572655a47807490ce9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/06d448fc4f337c6bdb2a546415f51336e9a4a789:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/06d448fc4f337c6bdb2a546415f51336e9a4a789 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/06e89b35ef2228d0b7f017e7c1a93a80a957b3f3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/06e89b35ef2228d0b7f017e7c1a93a80a957b3f3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/078f9b58b86931e1aab9e0c9af88d8d760f254cd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/078f9b58b86931e1aab9e0c9af88d8d760f254cd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/07dedee90efdbf8cb08396eefcd8638b41290d2a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/07dedee90efdbf8cb08396eefcd8638b41290d2a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/080a6f4d62a8f3b77572844d48a520c2bf5490b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/080a6f4d62a8f3b77572844d48a520c2bf5490b2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/08402c62bbb9b261e098e74c5e5e51bcc3dfebd5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/08402c62bbb9b261e098e74c5e5e51bcc3dfebd5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/087157d1cfbb20f5b07b1a5f30df938886356128:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/087157d1cfbb20f5b07b1a5f30df938886356128 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/08c264b3ee6387a299fcf7b2cc9bb24073df1c86:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/08c264b3ee6387a299fcf7b2cc9bb24073df1c86 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/08caf21cc2ab3498d10b4255260594cf8701ecaa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/08caf21cc2ab3498d10b4255260594cf8701ecaa \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/08e1a1db49322a7bcad18e9dd2ed55e139662ef8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/08e1a1db49322a7bcad18e9dd2ed55e139662ef8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/09baf10e8a4d4b38fa7aab9d34dcc9c31b808ba1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/09baf10e8a4d4b38fa7aab9d34dcc9c31b808ba1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/09e34cb69419dfad484a20a3082bbd1dd82bc9c3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/09e34cb69419dfad484a20a3082bbd1dd82bc9c3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/09fc9fb011182791322e0feb41275faeddee4a2d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/09fc9fb011182791322e0feb41275faeddee4a2d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0a42ef66b11d0c379f1a15390e4960bd62b84dd8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0a42ef66b11d0c379f1a15390e4960bd62b84dd8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0aae7f3ee1cacb0fc581bf5628f5c50edf687c49:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0aae7f3ee1cacb0fc581bf5628f5c50edf687c49 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0b2296dce9ce3a46168ec91fe0004906f824f26b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0b2296dce9ce3a46168ec91fe0004906f824f26b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0b354db896e612aa36f98d78869bfb65b0382202:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0b354db896e612aa36f98d78869bfb65b0382202 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0c049730c9ac30dc65d21809f84fa7a834d73221:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0c049730c9ac30dc65d21809f84fa7a834d73221 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0c4b88695ed324b89fb491f55ca93e4009e84755:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0c4b88695ed324b89fb491f55ca93e4009e84755 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0c6091933aea2dc7acb1df388f8ff9e0ac55ea48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0c6091933aea2dc7acb1df388f8ff9e0ac55ea48 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0c82bc8d6624e9fd4fb3a323f79df1c0d1ed4c43:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0c82bc8d6624e9fd4fb3a323f79df1c0d1ed4c43 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d0600f38af79eb84619d687c4a82e77bbb156b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d0600f38af79eb84619d687c4a82e77bbb156b5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d12c459a1d0e0a23cce2e4ce75598617b84fbfb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d12c459a1d0e0a23cce2e4ce75598617b84fbfb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d5147425f6a15b26b7fe9191cde73fe17e93eb2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d5147425f6a15b26b7fe9191cde73fe17e93eb2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d6905ab635f1f407392a37a15bebb0ac875c5f5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d6905ab635f1f407392a37a15bebb0ac875c5f5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d97479ae8919e1b394332f3d88506c7672b7c4a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d97479ae8919e1b394332f3d88506c7672b7c4a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0d6969fb648019b6c5f41f2799493b94e263afeb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0d6969fb648019b6c5f41f2799493b94e263afeb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0dd9f874f68914dca40dd979cf7c7ca2a50fea08:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0dd9f874f68914dca40dd979cf7c7ca2a50fea08 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e11f182f4f5c8135545f88fe2d2f6bc13aa857c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e11f182f4f5c8135545f88fe2d2f6bc13aa857c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e215bc580a6b78093e5daa714fa2071e53bacd6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e215bc580a6b78093e5daa714fa2071e53bacd6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e29d21752b0edfae170ae33de19c866ade05678:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e29d21752b0edfae170ae33de19c866ade05678 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e3dab6c14130b8e15f42c30bd554c189aafe176:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e3dab6c14130b8e15f42c30bd554c189aafe176 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e71050cc2013bed35ac53b3eb8daa71af6e9ec9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e71050cc2013bed35ac53b3eb8daa71af6e9ec9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0e7730e2f1d614bc6bac2c6d7f694d5cfe64d568:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0e7730e2f1d614bc6bac2c6d7f694d5cfe64d568 \
@@ -1128,29 +1293,29 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0f788505555fb5f4116f8238775d31bd66e64615:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0f788505555fb5f4116f8238775d31bd66e64615 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/0fd0211d2c22e38b1bd8903e25a676e8328ff327:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/0fd0211d2c22e38b1bd8903e25a676e8328ff327 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/103d6d5f0968f8159091bbd2e39211d38717fb31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/103d6d5f0968f8159091bbd2e39211d38717fb31 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/107b4371fcdc66a2af462c016fb70a61b94b740a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/107b4371fcdc66a2af462c016fb70a61b94b740a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/10b727ccb39e6c98b80a73bf0d41d39b9835322a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/10b727ccb39e6c98b80a73bf0d41d39b9835322a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/111201df299cbbc36e6d61b321c7369cdef44375:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/111201df299cbbc36e6d61b321c7369cdef44375 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/118d1b9d53def6e86c9274ec7bd4bad65cfa08f2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/118d1b9d53def6e86c9274ec7bd4bad65cfa08f2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/119aa8ef803ab24b5368b496bbd3da73ec4f9507:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/119aa8ef803ab24b5368b496bbd3da73ec4f9507 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/11af4613fc5c242319581ee0395524b7277458ae:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/11af4613fc5c242319581ee0395524b7277458ae \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/11d5ecd79e6155ec6db8a67b5806c4a9325d158e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/11d5ecd79e6155ec6db8a67b5806c4a9325d158e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/11dce7336f5860c98509fe8a96181c9b89e33335:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/11dce7336f5860c98509fe8a96181c9b89e33335 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1279203468e3a451f10c8039422140ccc7acb37c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1279203468e3a451f10c8039422140ccc7acb37c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/12a48bd463db9442a3bf02b6850cb5c176bafa45:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/12a48bd463db9442a3bf02b6850cb5c176bafa45 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/12c38dc39947fced475fab030f63b6ac035b1116:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/12c38dc39947fced475fab030f63b6ac035b1116 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1427f3974de43231fc0f9cda371e9abd671f3840:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1427f3974de43231fc0f9cda371e9abd671f3840 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/144dc58682fa7a4beb539d07084677663bf3687f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/144dc58682fa7a4beb539d07084677663bf3687f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1477fab09da9e634fc34b5636dc6fff0cccd4339:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1477fab09da9e634fc34b5636dc6fff0cccd4339 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/14f357eb9fc0f2662511125535f4ff5725471d6e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/14f357eb9fc0f2662511125535f4ff5725471d6e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/15e7d18dc30d1ebb0d203f715f417b07f21e591b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/15e7d18dc30d1ebb0d203f715f417b07f21e591b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/16238f1b433f6b4f5d43edf543469f4210eff076:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/16238f1b433f6b4f5d43edf543469f4210eff076 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1633ed9f5900d7fd5676d052a2abb6dfac587389:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1633ed9f5900d7fd5676d052a2abb6dfac587389 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1668c173184bd365b6b2c42aceabdc5f4493df90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1668c173184bd365b6b2c42aceabdc5f4493df90 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/16693b78cfe2df6998e280b27931723a0cf72e1e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/16693b78cfe2df6998e280b27931723a0cf72e1e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/167e78557a162bb47ea3501ac8ce8fc80339d927:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/167e78557a162bb47ea3501ac8ce8fc80339d927 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/16e1395544a4ae13ab4427652f019ebf309f2abc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/16e1395544a4ae13ab4427652f019ebf309f2abc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/174b327660d8c6f3b254201f05b4c8def7e03cd8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/174b327660d8c6f3b254201f05b4c8def7e03cd8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/178fab9bc0abb9d8335260f2b8ae1b974e7e9018:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/178fab9bc0abb9d8335260f2b8ae1b974e7e9018 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/17ae7a5b6c3b9c6796ed2f5db2558265f88e6943:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/17ae7a5b6c3b9c6796ed2f5db2558265f88e6943 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/183de664e2db120aeb33af14a9b0cc132d0c5f40:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/183de664e2db120aeb33af14a9b0cc132d0c5f40 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/189a8f3b232574a9fec94ec4f428c1f2ec70dafd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/189a8f3b232574a9fec94ec4f428c1f2ec70dafd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/192b39c74056fd0b3b987ce0386cb6dcbdabd10b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/192b39c74056fd0b3b987ce0386cb6dcbdabd10b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/195b85cd886ee4b4fe6e3d2d7a1371d5543bdd7c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/195b85cd886ee4b4fe6e3d2d7a1371d5543bdd7c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/18b0f539c80176feff6e4c0a73776730357d5acb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/18b0f539c80176feff6e4c0a73776730357d5acb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/195f1cc3a40f27b6795ac69c8288725b501ef0a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/195f1cc3a40f27b6795ac69c8288725b501ef0a2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1979ce4faa564a6a756a532a7df19b607a4ee277:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1979ce4faa564a6a756a532a7df19b607a4ee277 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1990f610156d33d2b8ec1cf98445980bd7943b43:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1990f610156d33d2b8ec1cf98445980bd7943b43 \
@@ -1160,84 +1325,87 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1a0d7fa1fc889876b023b2e2ea4f71e3af4b1f1f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1a0d7fa1fc889876b023b2e2ea4f71e3af4b1f1f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1b05bdb2e1e6ea83024cecc2cc476a4113526577:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1b05bdb2e1e6ea83024cecc2cc476a4113526577 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1bd4cf5d8bc9ac3086f0eec603f8d1d3f1313a9f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1bd4cf5d8bc9ac3086f0eec603f8d1d3f1313a9f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1c10925855096c98b7f1361114d4950159e707d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1c10925855096c98b7f1361114d4950159e707d8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1c1da477e9c71f4794668a0a82f14d5bcd6ab0f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1c1da477e9c71f4794668a0a82f14d5bcd6ab0f9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1ccbcb3e9dc9a2e59a4ad26ede5d82a3e2ab52c5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1ccbcb3e9dc9a2e59a4ad26ede5d82a3e2ab52c5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1d5b63331159ce620cd990e55e712ceb708e473a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1d5b63331159ce620cd990e55e712ceb708e473a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1d713241e4c4960ad4be5af83739d16a90525174:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1d713241e4c4960ad4be5af83739d16a90525174 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1d75b4e8b54403206e0dc3ca671b55ef91087131:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1d75b4e8b54403206e0dc3ca671b55ef91087131 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1e17023ac82194b47061f2114ef33d6750dc7b6c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1e17023ac82194b47061f2114ef33d6750dc7b6c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1e20670d6c07a78a502f38636e74be2cebc0ad9b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1e20670d6c07a78a502f38636e74be2cebc0ad9b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1e35ac9a03b5ddb83be1664bb213b92d9aee93c0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1e35ac9a03b5ddb83be1664bb213b92d9aee93c0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1e65def430d65b4f15efa1f447416eb3d1781527:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1e65def430d65b4f15efa1f447416eb3d1781527 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1ec0a1815c67c815e25ae5422787a1b9a4dbdaa5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1ec0a1815c67c815e25ae5422787a1b9a4dbdaa5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1ecd83e4e6b13a7bdc04b90b206065d5b68c1049:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1ecd83e4e6b13a7bdc04b90b206065d5b68c1049 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1f72667f1a2ac7ad5c07e7b01cae2f1c64674075:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1f72667f1a2ac7ad5c07e7b01cae2f1c64674075 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1fdf0a4d04d1ade13ca171bbe967087a6429e1dc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1fdf0a4d04d1ade13ca171bbe967087a6429e1dc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1fe4fcb912d1b1cca988474f27ed79533bae9a00:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1fe4fcb912d1b1cca988474f27ed79533bae9a00 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/1ff7805a55541d673e0f594959036738916f62db:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/1ff7805a55541d673e0f594959036738916f62db \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2047f3861cc84d82d6d7ff94baffea891adb3e38:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2047f3861cc84d82d6d7ff94baffea891adb3e38 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/20554fef6021f23ee05dae25ac426bbe14c068dd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/20554fef6021f23ee05dae25ac426bbe14c068dd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/209276c0e1df9f87add4bafaed172451fc6019ce:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/209276c0e1df9f87add4bafaed172451fc6019ce \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/20a0098a90c77e3525315600f95c0ad3e08c2872:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/20a0098a90c77e3525315600f95c0ad3e08c2872 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/20a5a2d776e0391ea7bcef717e109e7cfc83b0ff:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/20a5a2d776e0391ea7bcef717e109e7cfc83b0ff \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/218ea26f5c4e06e7589e339dd06f41788503123c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/218ea26f5c4e06e7589e339dd06f41788503123c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/21aae1828abbc2159ed4402a931fcfcd36bd9a32:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/21aae1828abbc2159ed4402a931fcfcd36bd9a32 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/21d92d56b961a6ff5af26310fc27eff379b712d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/21d92d56b961a6ff5af26310fc27eff379b712d4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/21f9744415ccd13217aae6ef787e3260948638ca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/21f9744415ccd13217aae6ef787e3260948638ca \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/22104722f4d37539e5c28439124e3d8369588df4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/22104722f4d37539e5c28439124e3d8369588df4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/22d5d736839b0a8b4c5ea89bdbe6c531cd8e4c28:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/22d5d736839b0a8b4c5ea89bdbe6c531cd8e4c28 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/231c33f06a3c5bce7c9f732d691b0297d524d4e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/231c33f06a3c5bce7c9f732d691b0297d524d4e9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2345362a2daf6ef25b4506c3a2e0d560f304e22d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2345362a2daf6ef25b4506c3a2e0d560f304e22d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/23a8e765df30cd651e590318ddaf0d375255bc92:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/23a8e765df30cd651e590318ddaf0d375255bc92 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2442419e2467912c81d6cbe02499489e2b473c5d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2442419e2467912c81d6cbe02499489e2b473c5d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/24a87acd35b8040ce8a8971380bac00b8c493be2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/24a87acd35b8040ce8a8971380bac00b8c493be2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/249c922e09336eed0dd652984e771d43f37f3c95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/249c922e09336eed0dd652984e771d43f37f3c95 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/24cc481ddcf4e0a6c99a71e92e4b725ffa5ac48a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/24cc481ddcf4e0a6c99a71e92e4b725ffa5ac48a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/24f89ab678c282eaab4e291eb818d14261fb1d92:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/24f89ab678c282eaab4e291eb818d14261fb1d92 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/253688947bd2ed1b8258f1349e8d2068bd51971c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/253688947bd2ed1b8258f1349e8d2068bd51971c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/25613dfe4c1b66be6e2d45424f6181931d04ffac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/25613dfe4c1b66be6e2d45424f6181931d04ffac \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/25c4a51d87e6b6b90caf74319112ae066ecaa83e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/25c4a51d87e6b6b90caf74319112ae066ecaa83e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/25e47698106c211b5c2055b12a7f0ea47d005f55:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/25e47698106c211b5c2055b12a7f0ea47d005f55 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/26bafbf77b6b3dda401cba479a38eab9d69295a1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/26bafbf77b6b3dda401cba479a38eab9d69295a1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2704f7db05660b61e47ace5ca2b98f5a52e7cb17:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2704f7db05660b61e47ace5ca2b98f5a52e7cb17 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/27255970fbf37e11a27898c72d399ed1a64f4d40:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/27255970fbf37e11a27898c72d399ed1a64f4d40 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/27ab9e0465c276915d3f7d1023ba10a563fcd965:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/27ab9e0465c276915d3f7d1023ba10a563fcd965 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/28129a209c4402313492dc681bb87a6217bd4847:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/28129a209c4402313492dc681bb87a6217bd4847 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/28543837c4431ee74504807d32101895f556135c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/28543837c4431ee74504807d32101895f556135c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/28970ecab2311d7d3b36f58b03ccd79a650428b8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/28970ecab2311d7d3b36f58b03ccd79a650428b8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/28ae3c9cb89fa290f48b76c3f1afcb8a6895d1fc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/28ae3c9cb89fa290f48b76c3f1afcb8a6895d1fc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/29196b2a7a4b2f5f6c9728aceffa96e7f0fdbb48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/29196b2a7a4b2f5f6c9728aceffa96e7f0fdbb48 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2940214fc5f80ea9bfddc92cd81a1864ec1cfd4e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2940214fc5f80ea9bfddc92cd81a1864ec1cfd4e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/29408153a411ba8f369cb7f5f519cede7bcad2f6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/29408153a411ba8f369cb7f5f519cede7bcad2f6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/298b43f75fd3202ece1e51363af72ecbf0b841c2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/298b43f75fd3202ece1e51363af72ecbf0b841c2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2a349407e4a8f6b29e090908e4c2c18b8ec7c8b7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2a349407e4a8f6b29e090908e4c2c18b8ec7c8b7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2a3f47b1c8d025b0ec27749c40f4abfb2162bfdb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2a3f47b1c8d025b0ec27749c40f4abfb2162bfdb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2a81121a3b9ba763a274ca04063e2bfcad5cdbab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2a81121a3b9ba763a274ca04063e2bfcad5cdbab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2ad82121fd7691133f594ef21b4fb57037c93e7a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2ad82121fd7691133f594ef21b4fb57037c93e7a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2ae68aec08e1c8ac14ccebc78dcc4e3019fa87ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2ae68aec08e1c8ac14ccebc78dcc4e3019fa87ee \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2af03405877f4521d5d1bf9978c3ec8a0cd90e60:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2af03405877f4521d5d1bf9978c3ec8a0cd90e60 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2b2efd19b01da6bdb553ad3205cc0e6194e8ade5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2b2efd19b01da6bdb553ad3205cc0e6194e8ade5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2b518add72970e331dd47d0a1a00b60451040af8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2b518add72970e331dd47d0a1a00b60451040af8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2bc4a3f11785fd4b49703a53621c2650d6817510:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2bc4a3f11785fd4b49703a53621c2650d6817510 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2c03f6091a8f25bf444ad4097037a7ee87f95dfa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2c03f6091a8f25bf444ad4097037a7ee87f95dfa \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2c7f878c96c93e37f7cfa6ec6f18c23ad2f95d49:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2c7f878c96c93e37f7cfa6ec6f18c23ad2f95d49 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2c96189268b359c296277da534cc4e82ba9076fb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2c96189268b359c296277da534cc4e82ba9076fb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2d3ac0ecb4b454a1ee588702010cc4e421b43688:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2d3ac0ecb4b454a1ee588702010cc4e421b43688 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2d52995e43e391da1cde7d9384896d61f961e0e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2d52995e43e391da1cde7d9384896d61f961e0e9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2d924994da49adc2b8d52566483626aac52b6c9b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2d924994da49adc2b8d52566483626aac52b6c9b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2daa0a435e70e9a82ff9f225393638f205cac59a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2daa0a435e70e9a82ff9f225393638f205cac59a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2dd3a5707d75f8ebaf645527d2b0e3da35ea55ca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2dd3a5707d75f8ebaf645527d2b0e3da35ea55ca \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2de33ddae25249e5512246359d98e9dfd10d4756:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2de33ddae25249e5512246359d98e9dfd10d4756 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e053916f0cd7d6bd57d80b7879e4eddee75836d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e053916f0cd7d6bd57d80b7879e4eddee75836d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e0beac640bf9b23b0fc0aacb32b9e1df22c4b1f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e0beac640bf9b23b0fc0aacb32b9e1df22c4b1f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e280e4ae68596d1af57c9f2461142c5c88c756e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e280e4ae68596d1af57c9f2461142c5c88c756e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e81a93b2891e7ba77b29b18c417d7ce0d50b156:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e81a93b2891e7ba77b29b18c417d7ce0d50b156 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e6de9c78b1d79d68ac61527a19f80f740b42389:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e6de9c78b1d79d68ac61527a19f80f740b42389 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2e9d8bb08f80ddbb7985a9678b9f0d9929295879:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2e9d8bb08f80ddbb7985a9678b9f0d9929295879 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2ea62a2154bd16f4b081ffc2abd9a49b312a8f1e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2ea62a2154bd16f4b081ffc2abd9a49b312a8f1e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2eb9419e3496fd0766a7b72dcbfe7569d35cffd9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2eb9419e3496fd0766a7b72dcbfe7569d35cffd9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2ec7b925954d6c14842de2119ec26496e5c03105:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2ec7b925954d6c14842de2119ec26496e5c03105 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2eff67e29038bd02bf3832ded5202e8ae0556aca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2eff67e29038bd02bf3832ded5202e8ae0556aca \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2f32215066bf75e78af3eb4e5d9011294154936a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2f32215066bf75e78af3eb4e5d9011294154936a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2f6e83370ee2c0228c2e65c6595dc7798e85b15e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2f6e83370ee2c0228c2e65c6595dc7798e85b15e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2f78aa529400652e954561617e844cbb5a0c52d3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2f78aa529400652e954561617e844cbb5a0c52d3 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/2fe188ea4405e40595bcb51505b2c1134edd8ad0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/2fe188ea4405e40595bcb51505b2c1134edd8ad0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3075226fab428570db9fba7eca593170558a1be5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3075226fab428570db9fba7eca593170558a1be5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/312a18cf4dbdedf0844cc603c238524b1dd0ecd4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/312a18cf4dbdedf0844cc603c238524b1dd0ecd4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/319cae25bb3ff58018ab60a4939524ef09abd0f1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/319cae25bb3ff58018ab60a4939524ef09abd0f1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/31ac304c5b26f08ba768c099d3f001bd560827bb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/31ac304c5b26f08ba768c099d3f001bd560827bb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3203ec863a4181cad80103f70798abff21401aba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3203ec863a4181cad80103f70798abff21401aba \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/320c9349878c3ff6b016bec33a8be65bdb0dd822:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/320c9349878c3ff6b016bec33a8be65bdb0dd822 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/32223f47d3cf6653548f768abedac6594022ae90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/32223f47d3cf6653548f768abedac6594022ae90 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/322f93d854c76c94d021989440ad80889d04bdb2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/322f93d854c76c94d021989440ad80889d04bdb2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/32374d85eff3363d527a595027288e50cbbf7dd1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/32374d85eff3363d527a595027288e50cbbf7dd1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/32a24a2e18f317e6f4af5c25a5084dd7b17a88e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/32a24a2e18f317e6f4af5c25a5084dd7b17a88e8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/336485ee72f8d47a28931f13734091c7d214d9f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/336485ee72f8d47a28931f13734091c7d214d9f9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/337f59931917d6173f56e8ce9741c04b347d0b35:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/337f59931917d6173f56e8ce9741c04b347d0b35 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/33abd0618d698df9eb4f8cb7a132c9e679807f9b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/33abd0618d698df9eb4f8cb7a132c9e679807f9b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/34a9cc4ba1ea006b150bf3b78bcab90797826137:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/34a9cc4ba1ea006b150bf3b78bcab90797826137 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3528655397ae502669d54aea5798f31ab7ec4917:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3528655397ae502669d54aea5798f31ab7ec4917 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/354d68afd86cfbf6aa06766f62fbc5e50cae2221:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/354d68afd86cfbf6aa06766f62fbc5e50cae2221 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3695cacb79e9c83f0cce4bda3d4d6182ea91e7c5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3695cacb79e9c83f0cce4bda3d4d6182ea91e7c5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/36bcdd585c945cd6257a705cb90f19cb9f827b6f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/36bcdd585c945cd6257a705cb90f19cb9f827b6f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/36ecdafeec12187c78824a65f0f1062355557b80:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/36ecdafeec12187c78824a65f0f1062355557b80 \
@@ -1248,7 +1416,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3869cbfcd29fac8c17f5a52278986a883fc29399:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3869cbfcd29fac8c17f5a52278986a883fc29399 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/386b217ca5444777eee9911d6878eac2d13958bb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/386b217ca5444777eee9911d6878eac2d13958bb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/38f5c05e5a2f63ecf20a1dd1b3f09f58e03c3f30:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/38f5c05e5a2f63ecf20a1dd1b3f09f58e03c3f30 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/390bba2fc42ebfb1a413e5da15c58817771eb8cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/390bba2fc42ebfb1a413e5da15c58817771eb8cf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3942b9d6c14c316b75c0fe3f6bb4fe5d9b4e9f03:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3942b9d6c14c316b75c0fe3f6bb4fe5d9b4e9f03 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/39ad3110b8f84821ca22cfbd995914f2149521d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/39ad3110b8f84821ca22cfbd995914f2149521d2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/39ee49647bb20528b659d4ad32a8e3372b11bca2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/39ee49647bb20528b659d4ad32a8e3372b11bca2 \
@@ -1270,82 +1437,81 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3dff55574c4a0491b4e6276a823b7dd1c32e0f44:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3dff55574c4a0491b4e6276a823b7dd1c32e0f44 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3e2bec6a76b60691b0674c8da5ae138f1641dd4d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3e2bec6a76b60691b0674c8da5ae138f1641dd4d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3e59b61ff2c7275f33970b981f1892a18c1643fe:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3e59b61ff2c7275f33970b981f1892a18c1643fe \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3e93373da0310b3e622e19cdc0193cec325f68da:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3e93373da0310b3e622e19cdc0193cec325f68da \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3ee4e292fead6cd4e9f31ca83259e7f6c4e8004e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3ee4e292fead6cd4e9f31ca83259e7f6c4e8004e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3eaa4657179406e8c49315aa3a06739f0330c554:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3eaa4657179406e8c49315aa3a06739f0330c554 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3f1035122202486d427f71123008374a9fe38a98:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3f1035122202486d427f71123008374a9fe38a98 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3f3d161a590207bbce08b385628907ea0ab9c575:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3f3d161a590207bbce08b385628907ea0ab9c575 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3f42f70b8867153575bbd7994d4e0401517e0b29:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3f42f70b8867153575bbd7994d4e0401517e0b29 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3f5e3800c5e988dc3e79d38bc81c55f77739a1cd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3f5e3800c5e988dc3e79d38bc81c55f77739a1cd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/3fca125b7de0c8184f3f7ee95f18ab6ea4aa1095:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/3fca125b7de0c8184f3f7ee95f18ab6ea4aa1095 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4062545df04f41ff61a1c23f2c83086534d147e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4062545df04f41ff61a1c23f2c83086534d147e0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/406775b553903637569bcc2a6f52bf54dd0f0efc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/406775b553903637569bcc2a6f52bf54dd0f0efc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/40804c3e57f042fbfaa7ca60a7cd706a7b1c7503:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/40804c3e57f042fbfaa7ca60a7cd706a7b1c7503 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4116bc7bc7bf86bf639c532ddf02e99a31b4496d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4116bc7bc7bf86bf639c532ddf02e99a31b4496d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/41216795a0369120dd51df58392ea0d437997015:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/41216795a0369120dd51df58392ea0d437997015 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/413cd94f4de37330fd6a7fe92a85389369f7beae:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/413cd94f4de37330fd6a7fe92a85389369f7beae \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/41791d94797dd453e70107905a2b2e1c0a3a45f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/41791d94797dd453e70107905a2b2e1c0a3a45f8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/417b21ee082a7ccf6bb676d7b82be31d7fd1b82e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/417b21ee082a7ccf6bb676d7b82be31d7fd1b82e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/41c934afd668c1c0a01ea4d4b09c736216ac16e1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/41c934afd668c1c0a01ea4d4b09c736216ac16e1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/41f3dc8abb00be482b3ceb75ea014e0d19c4701b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/41f3dc8abb00be482b3ceb75ea014e0d19c4701b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/42e69c694e72af57606514a5da1436dd7f5c483a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/42e69c694e72af57606514a5da1436dd7f5c483a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/42ffdd88f967782c15eed37ecf026ad0fc6353d3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/42ffdd88f967782c15eed37ecf026ad0fc6353d3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/430f97244f7a8fc8e3cf1faa8c9d4490738a2a67:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/430f97244f7a8fc8e3cf1faa8c9d4490738a2a67 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/43661d30c335a3268cb29e92e29cd307ee1b4fbe:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/43661d30c335a3268cb29e92e29cd307ee1b4fbe \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/436824caae4876996b2fd6fc882f86f46cd48aee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/436824caae4876996b2fd6fc882f86f46cd48aee \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/436f4a74cf93256a012855345bf2040b6be70c07:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/436f4a74cf93256a012855345bf2040b6be70c07 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/43b7aa5c20bb1eeadf4c71ca2b8d22ae9986db73:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/43b7aa5c20bb1eeadf4c71ca2b8d22ae9986db73 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/43be3782b459516fba74660385a106e12ee8ea90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/43be3782b459516fba74660385a106e12ee8ea90 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/44110a0117dbf701d48b096174a214fc643941d3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/44110a0117dbf701d48b096174a214fc643941d3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/441a915ae1ea2da1e8b96ad63ce0e1092847b979:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/441a915ae1ea2da1e8b96ad63ce0e1092847b979 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/443b52198927317f4719fa9447284c249019e416:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/443b52198927317f4719fa9447284c249019e416 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/44609a31aefc2760eb75f30604b087769caa9473:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/44609a31aefc2760eb75f30604b087769caa9473 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/446b865dfdcdcc1ac81eef089d8fb7cdbc79f216:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/446b865dfdcdcc1ac81eef089d8fb7cdbc79f216 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4483329c0947b4f5d1322ce31e575ec7b2348ecf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4483329c0947b4f5d1322ce31e575ec7b2348ecf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4486a8da78591ca54066614690bd262ded6efaea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4486a8da78591ca54066614690bd262ded6efaea \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/453b5a5dad2b3c93cb3c148f14feffa85ad129a4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/453b5a5dad2b3c93cb3c148f14feffa85ad129a4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/455b5a07bd651900e82d93ec93083efdee9ec6f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/455b5a07bd651900e82d93ec93083efdee9ec6f8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/458357b68583458a2185c91c0306c7c07352a900:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/458357b68583458a2185c91c0306c7c07352a900 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/45a4cd4f75c74592016dc45d9f9196709781bf9a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/45a4cd4f75c74592016dc45d9f9196709781bf9a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/45b4c8e64e75aa60bb5fd1021017ffe8295810d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/45b4c8e64e75aa60bb5fd1021017ffe8295810d4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/461748b3f483fc2dcfe52cefadd5f59dc5f0449f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/461748b3f483fc2dcfe52cefadd5f59dc5f0449f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4626884ed9bc5785b684cc34d9d76af0cf468063:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4626884ed9bc5785b684cc34d9d76af0cf468063 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/462cbf4028a8937796055b85442b4bc47619003e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/462cbf4028a8937796055b85442b4bc47619003e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/46476cd23c24f10684bf6f269051e9907a8fe27b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/46476cd23c24f10684bf6f269051e9907a8fe27b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/465e40291aac3d321ebe4c276456eed603bc1ba1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/465e40291aac3d321ebe4c276456eed603bc1ba1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/472d4e5b73a0a45075d9ae2b61a6f2a82ce2c91d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/472d4e5b73a0a45075d9ae2b61a6f2a82ce2c91d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/473c8696fb93a6de72b85fa9573d853528476ff6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/473c8696fb93a6de72b85fa9573d853528476ff6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/47afabf23729e3911460d652144401fc820c2bba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/47afabf23729e3911460d652144401fc820c2bba \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/487cb1005254185e85e76fd1defdf3de7bf6edd5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/487cb1005254185e85e76fd1defdf3de7bf6edd5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/48ebdff8a8c0083f8c5f3272c19acd227a7420c6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/48ebdff8a8c0083f8c5f3272c19acd227a7420c6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/48f140fb36f71d123b2ff4e4e1f32b9ef714a1d5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/48f140fb36f71d123b2ff4e4e1f32b9ef714a1d5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/48f71ca05ae51a7c197be3df0dd87b374fba28d5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/48f71ca05ae51a7c197be3df0dd87b374fba28d5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4a0af9a0e6ecf8aad7e57292c090b3872278e761:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4a0af9a0e6ecf8aad7e57292c090b3872278e761 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4a0d255f1f2787d7a8ff390c192a113e330afd20:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4a0d255f1f2787d7a8ff390c192a113e330afd20 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4a13bbf3c382a5822d208f6186e52aa5986e02ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4a13bbf3c382a5822d208f6186e52aa5986e02ef \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4a2d55f656a8617558ca6f7969cd076ef34e0abf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4a2d55f656a8617558ca6f7969cd076ef34e0abf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4a49178aa2971bde0ba51e5431a8f5a4b3aa8ebc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4a49178aa2971bde0ba51e5431a8f5a4b3aa8ebc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4b2931ee099d5b7b82590c566ed3dec9e12e3383:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4b2931ee099d5b7b82590c566ed3dec9e12e3383 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4b3a1e4e93edec15b465573b2fac0b4bd85fc628:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4b3a1e4e93edec15b465573b2fac0b4bd85fc628 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4bad4b58be5ecdab5b39840fabd997985f128fc4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4bad4b58be5ecdab5b39840fabd997985f128fc4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4bb2f5a133ab9babd4f4a32bfcf3d462468740c0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4bb2f5a133ab9babd4f4a32bfcf3d462468740c0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4bd4f3b4d50c6325ef0dafb8767659654b6b71c9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4bd4f3b4d50c6325ef0dafb8767659654b6b71c9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4c9b943caecced7c9876ba4fe711d99c71e60d49:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4c9b943caecced7c9876ba4fe711d99c71e60d49 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4ca287ee04f236826074e6612a5bb751477ab6ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4ca287ee04f236826074e6612a5bb751477ab6ec \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4cc6c13485450761f75fb5bfd578c56a5c00d4ea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4cc6c13485450761f75fb5bfd578c56a5c00d4ea \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4cd0d2087f5d4c87aca09ecdd340d00f36b0ad1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4cd0d2087f5d4c87aca09ecdd340d00f36b0ad1a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4cd5106932210504ca2603fdf1648d031771cedb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4cd5106932210504ca2603fdf1648d031771cedb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4cecc7f960b18e8caa861b52adc303f47c0209fa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4cecc7f960b18e8caa861b52adc303f47c0209fa \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d0f9164357e8c4414d951ac10f23519eeb3fc0b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d0f9164357e8c4414d951ac10f23519eeb3fc0b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d1a352c3b172d6108623825ed409ea5029af5ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d1a352c3b172d6108623825ed409ea5029af5ec \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d22be4cdf34ac541f6c982df0cea5725ba05b43:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d22be4cdf34ac541f6c982df0cea5725ba05b43 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d5c76164b7969fd1aa4dca415f8b9a973d4edaf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d5c76164b7969fd1aa4dca415f8b9a973d4edaf \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d58c8bb5690c3103ee59ba031e5e3f3acc22940:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d58c8bb5690c3103ee59ba031e5e3f3acc22940 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d6e89827da9a9e019973ca6450c6ff72da462cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d6e89827da9a9e019973ca6450c6ff72da462cf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d86092d1a6451cb86c858ac0fea065539ffd8e4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d86092d1a6451cb86c858ac0fea065539ffd8e4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d967bf96eec7427e182e4cec9685708509557a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d967bf96eec7427e182e4cec9685708509557a9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4d9e6fc983d346e4f219910dabc376738eb0847b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4d9e6fc983d346e4f219910dabc376738eb0847b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4dcc469c85546618839a674df019b32e9b89af0d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4dcc469c85546618839a674df019b32e9b89af0d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4dd0040862987e8428d596c40d5aed3cae5b3483:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4dd0040862987e8428d596c40d5aed3cae5b3483 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4de5e2e177d2dc863fbe1c34ee8f72b2ec0bc6b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4de5e2e177d2dc863fbe1c34ee8f72b2ec0bc6b5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4e57c6cd490076665a94e3b7adfee4cea31c56a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4e57c6cd490076665a94e3b7adfee4cea31c56a0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4ea3684d73efbbc789bf6e59320c1f5b96cb4935:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4ea3684d73efbbc789bf6e59320c1f5b96cb4935 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4e5c96ee497511796634a38ee097ffa1921345a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4e5c96ee497511796634a38ee097ffa1921345a0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4eaf80ecb6c85abe44bb8eb193205f05cabe96e3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4eaf80ecb6c85abe44bb8eb193205f05cabe96e3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4ecf1fb965a7d4a1843a368feed8e359670deae5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4ecf1fb965a7d4a1843a368feed8e359670deae5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4f11778323302a45b98633df1306144c039bed42:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4f11778323302a45b98633df1306144c039bed42 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4f8cfc9fa32989d6b8ff54992cae0801e48f1f9c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4f8cfc9fa32989d6b8ff54992cae0801e48f1f9c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4f90593eb1cfb87a3b8c4abe4128c14257e1b09d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4f90593eb1cfb87a3b8c4abe4128c14257e1b09d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4fb2d0b6446f2ed45fd7e660b156062dfb0fe8f4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4fb2d0b6446f2ed45fd7e660b156062dfb0fe8f4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4fb5ab1dca1414b80c89b89e6e8e13b134b2d69b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4fb5ab1dca1414b80c89b89e6e8e13b134b2d69b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/4fd80955d6f6bdd5dfc108ee129b7cc7df25cff3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/4fd80955d6f6bdd5dfc108ee129b7cc7df25cff3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/500329abac100a953a7396b54b36be57d333022f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/500329abac100a953a7396b54b36be57d333022f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/506d09750e8221e308438fbebe7a2fd0f0a7c6ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/506d09750e8221e308438fbebe7a2fd0f0a7c6ef \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/504deda50a2c88b13e2b6897134a56aacc528338:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/504deda50a2c88b13e2b6897134a56aacc528338 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/50a06994be183ab77b14f75336cb4673d7308fe3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/50a06994be183ab77b14f75336cb4673d7308fe3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5109dcf62728e71521d9b6242bdf4eb299580ccd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5109dcf62728e71521d9b6242bdf4eb299580ccd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/51209202eefa4becfe5ebbea942e718dfa21bb95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/51209202eefa4becfe5ebbea942e718dfa21bb95 \
@@ -1354,49 +1520,51 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/515783771329a082dacff161f44fd44fb970571d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/515783771329a082dacff161f44fd44fb970571d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5159e0287aca5cfccec88400ebbf0c7679183838:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5159e0287aca5cfccec88400ebbf0c7679183838 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/51720cd65dd8d4ee5d02d7817bd0a40c53f49d54:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/51720cd65dd8d4ee5d02d7817bd0a40c53f49d54 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/517eddda60a0ae0a39e15111084876d7c7669843:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/517eddda60a0ae0a39e15111084876d7c7669843 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5185425cf7246b47564780b1d6be16a03b722cec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5185425cf7246b47564780b1d6be16a03b722cec \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/52e7d6adce8c6d7217b0323514f04dff5c92928d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/52e7d6adce8c6d7217b0323514f04dff5c92928d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/53318313501ac2e67348d94c3136ed97601436a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/53318313501ac2e67348d94c3136ed97601436a0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/53555890e6d8dc159b9702b82f6bc0e34f3447de:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/53555890e6d8dc159b9702b82f6bc0e34f3447de \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/537bcb6dc7744f406d6c6dcff599538af8f9db52:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/537bcb6dc7744f406d6c6dcff599538af8f9db52 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/538fc1e59e21944090a45ba3d6f553e6ba9f7cc4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/538fc1e59e21944090a45ba3d6f553e6ba9f7cc4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/53b254a43accdeccc11034349145594a3ae872d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/53b254a43accdeccc11034349145594a3ae872d8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/53b7b751bc027878ce11daade8b8a3c434a1c4a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/53b7b751bc027878ce11daade8b8a3c434a1c4a9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/53cdd0f4b821311be6d64cf033f29be7fa50b5d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/53cdd0f4b821311be6d64cf033f29be7fa50b5d4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5403dae1acdb1da75ccb94fb4a35980829ffb948:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5403dae1acdb1da75ccb94fb4a35980829ffb948 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/543bb1325904b9aece275705bcc5e76f9bf138f1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/543bb1325904b9aece275705bcc5e76f9bf138f1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/543e19bce853ae87b24160ec50794ac33bcbb476:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/543e19bce853ae87b24160ec50794ac33bcbb476 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5463ec08cb812b9426687595f12c5338ebc29227:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5463ec08cb812b9426687595f12c5338ebc29227 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/54889d9160131abd1e9c4aea21e2d52bde9708e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/54889d9160131abd1e9c4aea21e2d52bde9708e6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/549cdb19d88a82193642b74e0d2b6d687ef30abf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/549cdb19d88a82193642b74e0d2b6d687ef30abf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/54d56b8530b9e70560363087fe2cca562d85b9c7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/54d56b8530b9e70560363087fe2cca562d85b9c7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/551ab4332c58f92b3ec8fc0bc1d79ca1587d0b7c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/551ab4332c58f92b3ec8fc0bc1d79ca1587d0b7c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/55472686cd7af8381b1ce5328a4cc235102b9f71:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/55472686cd7af8381b1ce5328a4cc235102b9f71 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/555376f5273327137001b82690082493daf85eeb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/555376f5273327137001b82690082493daf85eeb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/558fcebfaa056632c51695fe0d596b9dc8036e34:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/558fcebfaa056632c51695fe0d596b9dc8036e34 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/559222e3b109cd228e603703150419c010c6be64:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/559222e3b109cd228e603703150419c010c6be64 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/55f68c7ec7905e382217582b8319fbf1a3a45f16:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/55f68c7ec7905e382217582b8319fbf1a3a45f16 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/56152b56a0dd58217453eb33c6ceb38ad2e88da4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/56152b56a0dd58217453eb33c6ceb38ad2e88da4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/56768342f090d45fad34b6965f07ac76a0943d7b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/56768342f090d45fad34b6965f07ac76a0943d7b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/56cb10847a0e6a2a3d4e0722891e9e33c6c448f6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/56cb10847a0e6a2a3d4e0722891e9e33c6c448f6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5724cd27ef1e87208415963d2c3ab82a56b28006:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5724cd27ef1e87208415963d2c3ab82a56b28006 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/57d9bae9613347669b07262bfc39dc7903a075f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/57d9bae9613347669b07262bfc39dc7903a075f8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/58215c2bb75931cca61bd019666aa716b972e135:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/58215c2bb75931cca61bd019666aa716b972e135 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/583264722538c74b5d359735168b36c6caf78d13:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/583264722538c74b5d359735168b36c6caf78d13 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5837e1608cc4d79354e22c7757339d0099a01535:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5837e1608cc4d79354e22c7757339d0099a01535 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/584cb56ed7af5af9308a9fde8a489e72aea20164:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/584cb56ed7af5af9308a9fde8a489e72aea20164 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5878970c211ced93080f23714726fe9313ed4204:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5878970c211ced93080f23714726fe9313ed4204 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/588c361c5fe9acf444786ed898b201beb9c2b53f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/588c361c5fe9acf444786ed898b201beb9c2b53f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/58a7f23dcb4ea8577070770cc3d30312b4ae0872:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/58a7f23dcb4ea8577070770cc3d30312b4ae0872 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/58dcbaf9fcec7e559cf32c71551b9676595710a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/58dcbaf9fcec7e559cf32c71551b9676595710a2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5900a309b539823d5c1718d6f881cf66da08d53a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5900a309b539823d5c1718d6f881cf66da08d53a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/592657f407917aa69f86fd996587f223e372ed69:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/592657f407917aa69f86fd996587f223e372ed69 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/595ae7b41d209b4dfcc940c0e9bc7cfa48532ddf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/595ae7b41d209b4dfcc940c0e9bc7cfa48532ddf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/599bb09d0e033bc9ad5434131ed876c4cd677955:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/599bb09d0e033bc9ad5434131ed876c4cd677955 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/599fb43f38dd3f6a92cf3b4e90d0a63f52399677:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/599fb43f38dd3f6a92cf3b4e90d0a63f52399677 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/59ef1318ed95aaff87c6af0b99f17407d0edabe3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/59ef1318ed95aaff87c6af0b99f17407d0edabe3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5a22663031399aa12b02ce613bf75017394789c4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5a22663031399aa12b02ce613bf75017394789c4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5ace0bda77342c678fbe0b3e6d55b0c5272fff17:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5ace0bda77342c678fbe0b3e6d55b0c5272fff17 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5afe23552c7c5f8a30c12e5944d9717f748b104b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5afe23552c7c5f8a30c12e5944d9717f748b104b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5b64cc5632c52aaafdbb9e7d3287ea680fd45942:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5b64cc5632c52aaafdbb9e7d3287ea680fd45942 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5b155c2e13b1ccef7784cddec71eb3a3d0b84e4c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5b155c2e13b1ccef7784cddec71eb3a3d0b84e4c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5bfbff79d8e204d6a8a7607e08e028646e456de0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5bfbff79d8e204d6a8a7607e08e028646e456de0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5c11e89cada221c6da115fbd4cde17117b1baf23:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5c11e89cada221c6da115fbd4cde17117b1baf23 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5c2efee31e70db8162a40f0288c489a322537c80:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5c2efee31e70db8162a40f0288c489a322537c80 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5c8c9ccbc0440c274056e53ab1e63ff425c2cba0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5c8c9ccbc0440c274056e53ab1e63ff425c2cba0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5c9ba037931f23aa7ee6d2c408b08b360880b6bc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5c9ba037931f23aa7ee6d2c408b08b360880b6bc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5ca081211a53c2c2b3a55c63c07af49062938163:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5ca081211a53c2c2b3a55c63c07af49062938163 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5cc087981ea28d4ccb0cac18fd54338f3de72b5a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5cc087981ea28d4ccb0cac18fd54338f3de72b5a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5cef7fe76ab35d90c79c862bfa1d92250d648a13:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5cef7fe76ab35d90c79c862bfa1d92250d648a13 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5d043f7c9bd64902915a1814f67a50a60d575499:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5d043f7c9bd64902915a1814f67a50a60d575499 \
@@ -1407,7 +1575,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5ea9fbd090e4c3a9a675dafec8d92d484c7bfe18:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5ea9fbd090e4c3a9a675dafec8d92d484c7bfe18 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5ec3d82e298c3a2776726f21759ebabc9097abc5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5ec3d82e298c3a2776726f21759ebabc9097abc5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5f399cacc91d9b38995d6af7cb944ff97c84e6ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5f399cacc91d9b38995d6af7cb944ff97c84e6ab \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5f6e11fad338559b10a1c75e6beec725b924d32e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5f6e11fad338559b10a1c75e6beec725b924d32e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5f7d78b19eab0ae4f9421712391af1a827d65712:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5f7d78b19eab0ae4f9421712391af1a827d65712 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/5f9457cea42f4bcbe1036f31e3547770a9676535:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/5f9457cea42f4bcbe1036f31e3547770a9676535 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6025a477a0a8006d8882b7716987b403d365e6d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6025a477a0a8006d8882b7716987b403d365e6d8 \
@@ -1415,46 +1582,47 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/60ab761a633ff71fc752341ca00596e119f8b67e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/60ab761a633ff71fc752341ca00596e119f8b67e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/61001c9df22670ba32d3bd6491a3c1cb2ffb7bff:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/61001c9df22670ba32d3bd6491a3c1cb2ffb7bff \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/61401e9363bc4e7af923684cb0e63b61d22f2a2b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/61401e9363bc4e7af923684cb0e63b61d22f2a2b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6143a5eda4f5fd046a623e8f3075330bf528734a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6143a5eda4f5fd046a623e8f3075330bf528734a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6239194eed8e7e925c5fe1119d0fe91f9b7e5d0c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6239194eed8e7e925c5fe1119d0fe91f9b7e5d0c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/614d17759dd5bd39c4e50d2a4eb201a8750eeaec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/614d17759dd5bd39c4e50d2a4eb201a8750eeaec \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/618a7d95718fbd02e30f3c6caa4a1dc9cff90159:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/618a7d95718fbd02e30f3c6caa4a1dc9cff90159 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/62430813b792802b0f784de506019ca281b5bdca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/62430813b792802b0f784de506019ca281b5bdca \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/624cfaf10b497c876730608f6271c6b42cef51db:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/624cfaf10b497c876730608f6271c6b42cef51db \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6252be89a7921f3dda8916b29c3042f5e3bdd7ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6252be89a7921f3dda8916b29c3042f5e3bdd7ab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/625b6120700486a8589ae3a277bdb09459faa3d1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/625b6120700486a8589ae3a277bdb09459faa3d1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/62f1d3208fd4984d99824c5fecec96561129ab70:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/62f1d3208fd4984d99824c5fecec96561129ab70 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/62fb5b04fd5048af6d31bd713a7f1cceb641d1fc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/62fb5b04fd5048af6d31bd713a7f1cceb641d1fc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/630b00dbe38ead00548ef8d7705e28fab4dc7aaf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/630b00dbe38ead00548ef8d7705e28fab4dc7aaf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/630ee0d38326f23045713cb1b004aff40fe6e2e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/630ee0d38326f23045713cb1b004aff40fe6e2e9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/63331d8ce77ad78511dd4ac795d6c9056f7082f2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/63331d8ce77ad78511dd4ac795d6c9056f7082f2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6338e556a432881ddc9cb69f622f9b40d97b30b9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6338e556a432881ddc9cb69f622f9b40d97b30b9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6367d19ac6c6bfad85cb3eb4c505ec5271a6fc9a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6367d19ac6c6bfad85cb3eb4c505ec5271a6fc9a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/638cee3aaf5b087f0b28125782366570d8443703:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/638cee3aaf5b087f0b28125782366570d8443703 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/63eafae9ddfb2b628d15c53208c7c1b93841c013:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/63eafae9ddfb2b628d15c53208c7c1b93841c013 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/647e3626882ab96e6e2977c04acd6e31183f38b1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/647e3626882ab96e6e2977c04acd6e31183f38b1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6483a0762da43b2b434d2c71efeaf4075bc3cefb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6483a0762da43b2b434d2c71efeaf4075bc3cefb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6493b7a73e306835fd40b81c4a25b64b5b8960de:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6493b7a73e306835fd40b81c4a25b64b5b8960de \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/64aa56f0be29bf092d7535cd211ff6405eb55b9c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/64aa56f0be29bf092d7535cd211ff6405eb55b9c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/64ee4171932026da12b2a956c61d5ee119ad4ca2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/64ee4171932026da12b2a956c61d5ee119ad4ca2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/652a66398c119e93731eb6c9596717db56f1b903:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/652a66398c119e93731eb6c9596717db56f1b903 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/65620497297f7932b43f041fbb6e08b26d7d62dd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/65620497297f7932b43f041fbb6e08b26d7d62dd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/65807051ae4ef820a7ace28a6f01de71c3ba3323:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/65807051ae4ef820a7ace28a6f01de71c3ba3323 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/65a1e5d668a7f2fce0b9d08b53b1841d73cac9b8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/65a1e5d668a7f2fce0b9d08b53b1841d73cac9b8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/65ae73e8a9b2a78e0c5b08773a1295cf4f3e31a7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/65ae73e8a9b2a78e0c5b08773a1295cf4f3e31a7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/66001f5b35b3778ed5b039c1c8b600b26ddea0eb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/66001f5b35b3778ed5b039c1c8b600b26ddea0eb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6617b51b99c5ab3df239412a9b8c81d841acd796:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6617b51b99c5ab3df239412a9b8c81d841acd796 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/664ae6b1344432d4460d4716bcd10ba17931ee92:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/664ae6b1344432d4460d4716bcd10ba17931ee92 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6651a639f8892b9dd4a3b8697940473842e4547f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6651a639f8892b9dd4a3b8697940473842e4547f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/66a642db404c9c7b57346bba41d569fb975b1308:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/66a642db404c9c7b57346bba41d569fb975b1308 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/66b5e43fd2e0369739069ac52fd5074e452a1c25:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/66b5e43fd2e0369739069ac52fd5074e452a1c25 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/67055767806f2d0dcc976e0774f79ced458972ad:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/67055767806f2d0dcc976e0774f79ced458972ad \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/675a7f9b7b4bda83baf59a32eadcfe9b95909c67:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/675a7f9b7b4bda83baf59a32eadcfe9b95909c67 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/67706a88eeaf3804ded3b520e199a648509ba228:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/67706a88eeaf3804ded3b520e199a648509ba228 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6772705537fce5ee118fda82075a2665c570c083:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6772705537fce5ee118fda82075a2665c570c083 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/67cdb2a4f0dd0737ce5cf44682f48063b8ffca9b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/67cdb2a4f0dd0737ce5cf44682f48063b8ffca9b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/67ce97fe99df7124a40ff309f6f621bd750f9e31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/67ce97fe99df7124a40ff309f6f621bd750f9e31 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/684304efa92df811e68e4eaf11a2d76417817f3a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/684304efa92df811e68e4eaf11a2d76417817f3a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/685af3a3658866f22677c08ce56f15608877566e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/685af3a3658866f22677c08ce56f15608877566e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6878901c84bc4cfa2850214dfdabe7f95507628e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6878901c84bc4cfa2850214dfdabe7f95507628e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/68a67496ea83fda867378d9bdba5523f5a7cd98f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/68a67496ea83fda867378d9bdba5523f5a7cd98f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/68a87c5a169b1ae61f3e571f6198b6e57e204a26:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/68a87c5a169b1ae61f3e571f6198b6e57e204a26 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/68aeb9bc2e9febd26bd634b925376c8553e71af8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/68aeb9bc2e9febd26bd634b925376c8553e71af8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/68de59ad9ded07685da487632137ac3385838947:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/68de59ad9ded07685da487632137ac3385838947 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/693ce85bef41068521e3a1eb447da80c4267e21a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/693ce85bef41068521e3a1eb447da80c4267e21a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/695e8083652531147b83a2ebf7a7a99df561b0d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/695e8083652531147b83a2ebf7a7a99df561b0d4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/699b7f753a1222047c2e67a1eed5a343db1bb9e7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/699b7f753a1222047c2e67a1eed5a343db1bb9e7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/69b62ae3c390b307d88a736760c2fc36f61a6ace:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/69b62ae3c390b307d88a736760c2fc36f61a6ace \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/69c4305fd219440ebbf915540bb49c10d84d35bb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/69c4305fd219440ebbf915540bb49c10d84d35bb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6a043e4d698e4878c594dbd42cc47289cfff12a7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6a043e4d698e4878c594dbd42cc47289cfff12a7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6a28460b71b47a1ad208b142a58b42332499da83:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6a28460b71b47a1ad208b142a58b42332499da83 \
@@ -1462,24 +1630,27 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6a63b7b5a4effc178f133c7faeafec6fac038fbd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6a63b7b5a4effc178f133c7faeafec6fac038fbd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6a8ae6483e0a9ee223305b0447085b83b3fc9545:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6a8ae6483e0a9ee223305b0447085b83b3fc9545 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6ab6715b20f06b28c4c9bc1ddff6477ace42fbe1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6ab6715b20f06b28c4c9bc1ddff6477ace42fbe1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6add332c10f7c149b741d65095f8971a6e6a7c22:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6add332c10f7c149b741d65095f8971a6e6a7c22 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6b1fc4371a641f2aee9bb8336d0d6387148bdfa6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6b1fc4371a641f2aee9bb8336d0d6387148bdfa6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6b2c3711eae9f2399dd8313039e3b51b1320c863:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6b2c3711eae9f2399dd8313039e3b51b1320c863 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6b52a9304eafb9ac3347aa74e305be214e29968f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6b52a9304eafb9ac3347aa74e305be214e29968f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6b8f049c6c9d7c4da607ff9ca28183be4e1dde24:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6b8f049c6c9d7c4da607ff9ca28183be4e1dde24 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6bd686a79f06c5832be5f21973549e487a880773:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6bd686a79f06c5832be5f21973549e487a880773 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6bdc59f897631af7811e3201cbc58e5999de2600:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6bdc59f897631af7811e3201cbc58e5999de2600 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6c450a514c113535523b2ec621de4beb30d7d554:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6c450a514c113535523b2ec621de4beb30d7d554 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6bf9a2fe6f13fae4126487db54bd7d0eee0c7245:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6bf9a2fe6f13fae4126487db54bd7d0eee0c7245 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6c5605287a2df002095bc32b928675ff36e8da36:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6c5605287a2df002095bc32b928675ff36e8da36 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6cc3f92f93db90de71b45c5579bab2a24cb45eea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6cc3f92f93db90de71b45c5579bab2a24cb45eea \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6d284d07c8b51c0d83252cb38ea8a5bc56432241:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6d284d07c8b51c0d83252cb38ea8a5bc56432241 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6d39242b650eb9bf446b1fb52ee6aaafd4dafbf3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6d39242b650eb9bf446b1fb52ee6aaafd4dafbf3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6d5a38ca17c036965ef92babe29145613fa9545c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6d5a38ca17c036965ef92babe29145613fa9545c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6db3a4c3c9ad5e611c378b8b97b538ad80194604:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6db3a4c3c9ad5e611c378b8b97b538ad80194604 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6de0a76b8ea00a7c8da980108a5fdc94758e2a36:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6de0a76b8ea00a7c8da980108a5fdc94758e2a36 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6e1fa20326c6d900cfca5ceb8daeae1c30b0fbe4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6e1fa20326c6d900cfca5ceb8daeae1c30b0fbe4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6e8f1d91e9be172a24836c3b4d253372d3fb7466:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6e8f1d91e9be172a24836c3b4d253372d3fb7466 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6eb2204b8668f9005e38f387ed7d317378f0d0a6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6eb2204b8668f9005e38f387ed7d317378f0d0a6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6ec9eccd4bdd828812eebe70abecf13663c1066d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6ec9eccd4bdd828812eebe70abecf13663c1066d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6f00359970eaa682de23ea38dd4e43ae3bfc3305:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6f00359970eaa682de23ea38dd4e43ae3bfc3305 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6f03aff9d3c32a3ea1ddf32903587bb32b30500b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6f03aff9d3c32a3ea1ddf32903587bb32b30500b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6f3f31b95159bfa6493db2f214de558b33ea8ae1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6f3f31b95159bfa6493db2f214de558b33ea8ae1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6f92b6ccbbeb35d132e18aa2056b5269730df0ba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6f92b6ccbbeb35d132e18aa2056b5269730df0ba \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6fb9137537239b67b2d938de1051c38da30fede3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6fb9137537239b67b2d938de1051c38da30fede3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/6fc57f2cc1a9c0b174a6443a26985efafad04b90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/6fc57f2cc1a9c0b174a6443a26985efafad04b90 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/70007ef48f324c4e76df7adeb4370456906adaf8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/70007ef48f324c4e76df7adeb4370456906adaf8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/70347859cd441f5c6fe33e8c7979d7e5b463df92:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/70347859cd441f5c6fe33e8c7979d7e5b463df92 \
@@ -1487,55 +1658,58 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/706732d86a7c6a60d4102e948f97a7f7ecc1d978:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/706732d86a7c6a60d4102e948f97a7f7ecc1d978 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/70c59bf03a5619102907954bd14e40f2dbc09783:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/70c59bf03a5619102907954bd14e40f2dbc09783 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/711c2dfc7939e2e7ffc92b939bdbf528f1367842:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/711c2dfc7939e2e7ffc92b939bdbf528f1367842 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/712dbdcc67a2aba66899e6242908307b9aac439f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/712dbdcc67a2aba66899e6242908307b9aac439f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/71536e7617572d190cbc10f454725b1207c02c1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/71536e7617572d190cbc10f454725b1207c02c1a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7159b61f1f287f4064181845ccb07e25666863a6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7159b61f1f287f4064181845ccb07e25666863a6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/71f1e2fa9237d93972bbf66dac3601584a68ef6a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/71f1e2fa9237d93972bbf66dac3601584a68ef6a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/728b8f387b090c09d9bdaafbfc81e32599a87556:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/728b8f387b090c09d9bdaafbfc81e32599a87556 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/72fb00e8feae4bbc228ec1c8bb1c9313a03fd759:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/72fb00e8feae4bbc228ec1c8bb1c9313a03fd759 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/734430dffde950512f806373f6706652c5c4bfc6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/734430dffde950512f806373f6706652c5c4bfc6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/736e8a4b84d3350b26772cb184bf9b26ea3a2052:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/736e8a4b84d3350b26772cb184bf9b26ea3a2052 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/74337ba62414cf899ebf0278f479f698a49f921d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/74337ba62414cf899ebf0278f479f698a49f921d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7453fe8be92f01fd4b500ff8a6dba16db6ab2565:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7453fe8be92f01fd4b500ff8a6dba16db6ab2565 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/745bd29be45667514b4000e9cdb70cdecad0f02c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/745bd29be45667514b4000e9cdb70cdecad0f02c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/74a33158136ff9bf2c0efbe64f1bf41757e75464:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/74a33158136ff9bf2c0efbe64f1bf41757e75464 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/74ba9a5c6006f49f53d019952fa26d9e536fd0e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/74ba9a5c6006f49f53d019952fa26d9e536fd0e8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/74d281701f2dd91c87e7ab66ffb9cdd4ef1b44dc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/74d281701f2dd91c87e7ab66ffb9cdd4ef1b44dc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/75371f0681504c428d4f6441cf77c41356287375:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/75371f0681504c428d4f6441cf77c41356287375 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7550f5a7b4b8b4f63782ed48abce31ed06fca441:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7550f5a7b4b8b4f63782ed48abce31ed06fca441 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7573a8e39a13f56d2b96b005995d274a8a3c9cf9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7573a8e39a13f56d2b96b005995d274a8a3c9cf9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/757a6b9ba7c87e0c3d9faca0ee3794259e4151d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/757a6b9ba7c87e0c3d9faca0ee3794259e4151d6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7597616a53ca3e9a78d131062643a15cbed9bfa4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7597616a53ca3e9a78d131062643a15cbed9bfa4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/75fed2fcc386747cdbff2879ea7fbe38750e8e10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/75fed2fcc386747cdbff2879ea7fbe38750e8e10 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/761dc5a090f15ee2cd414ebba65b349742a6b7fb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/761dc5a090f15ee2cd414ebba65b349742a6b7fb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/762a17b362660225fad0019763e82ac6f5aa9c47:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/762a17b362660225fad0019763e82ac6f5aa9c47 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/762bc19d49fa3712da28a0183d12cdf0530eec9e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/762bc19d49fa3712da28a0183d12cdf0530eec9e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/764e288fb723cae740222a7d0c0b2e1035a172b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/764e288fb723cae740222a7d0c0b2e1035a172b2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/76606a5f08c764f6c7edea0f8ca14d8902044768:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/76606a5f08c764f6c7edea0f8ca14d8902044768 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/76612c5163e223b2ed0e2de1a9f1c2d4cdebe502:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/76612c5163e223b2ed0e2de1a9f1c2d4cdebe502 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/766f46f712a0c944b54d9faccdfc6b911d335618:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/766f46f712a0c944b54d9faccdfc6b911d335618 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/767a8cfd4bfdbf6d73ed876eed469b05d53c4af7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/767a8cfd4bfdbf6d73ed876eed469b05d53c4af7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/768939db7b32f9d355eb4ef216b6abd5d5011c68:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/768939db7b32f9d355eb4ef216b6abd5d5011c68 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/769c1fe3bda18d41d7ce99f015a0b6823a051a3a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/769c1fe3bda18d41d7ce99f015a0b6823a051a3a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/76a0d432a110797b3d53c1cb08e0296bc0986a3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/76a0d432a110797b3d53c1cb08e0296bc0986a3f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/772b03e14185892b5cdab57bc0a74befc7947452:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/772b03e14185892b5cdab57bc0a74befc7947452 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7762862fd9c359d9ebc7316d2d16bebbc196052e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7762862fd9c359d9ebc7316d2d16bebbc196052e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7775ca7a6fb9ce273abcf6f0a63baf1a9ce4c8d7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7775ca7a6fb9ce273abcf6f0a63baf1a9ce4c8d7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/78859c3a2d2535559eb87938be13bf48c01ff4fd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/78859c3a2d2535559eb87938be13bf48c01ff4fd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/794fd88e53af3c0cb3e989a2c0ff8155268684bf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/794fd88e53af3c0cb3e989a2c0ff8155268684bf \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7992eb01a9bf66b4ca9595294890352adfb41053:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7992eb01a9bf66b4ca9595294890352adfb41053 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/79d1ff471da7c25fbfc4454638c7f82352f3515d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/79d1ff471da7c25fbfc4454638c7f82352f3515d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7a1b4ed93a67d601ef00a069c5fdfdbfd2d7a225:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7a1b4ed93a67d601ef00a069c5fdfdbfd2d7a225 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7a435f6175b566f0c68f5fbcbb65e3b5c88b583d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7a435f6175b566f0c68f5fbcbb65e3b5c88b583d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7a489ed0da8454ed9c41e34859fffd49fadd057b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7a489ed0da8454ed9c41e34859fffd49fadd057b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7a9af4088bd7b4de4d537dc4aef2afc6aa2953be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7a9af4088bd7b4de4d537dc4aef2afc6aa2953be \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7b537806c4672ce41e8a852340e0ebec7f1f1ec3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7b537806c4672ce41e8a852340e0ebec7f1f1ec3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7b95597cce5986e53337950a08c079973552857a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7b95597cce5986e53337950a08c079973552857a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7ba3b7c57673cecda274993bf65896411b3cb114:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7ba3b7c57673cecda274993bf65896411b3cb114 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7ba4eba2f149bac7ba2f9f5bc15d30d27e27f33e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7ba4eba2f149bac7ba2f9f5bc15d30d27e27f33e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7bf6e4c3239007901cb6a90ff8fcd3d1727df490:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7bf6e4c3239007901cb6a90ff8fcd3d1727df490 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7bc2bab454a8e046f8499206ddc2bdeb03ecb3ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7bc2bab454a8e046f8499206ddc2bdeb03ecb3ec \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7c14ac129463ca208eb05760a5c229ede5b6561c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7c14ac129463ca208eb05760a5c229ede5b6561c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7c8f03c779d9fc41ad7f11efcfc482daf3631880:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7c8f03c779d9fc41ad7f11efcfc482daf3631880 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7cbf22e36fdc0c969bad5a3d88e29f6a55ca1e00:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7cbf22e36fdc0c969bad5a3d88e29f6a55ca1e00 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7cd04dddcd5b81030f00cea30e458c9edc8c59de:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7cd04dddcd5b81030f00cea30e458c9edc8c59de \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7cecf5df0c038056c839e2fa373193ad38653d1c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7cecf5df0c038056c839e2fa373193ad38653d1c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7d2b85ec9586b975afecbfafcb95ac58f41e1f02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7d2b85ec9586b975afecbfafcb95ac58f41e1f02 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7d683e19a003a69500afd87a0ae6f4a94c0a62a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7d683e19a003a69500afd87a0ae6f4a94c0a62a2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7d7d367dca5d7032e2cf64e03e52f1d6432a7b23:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7d7d367dca5d7032e2cf64e03e52f1d6432a7b23 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7d8c46d451658a7ae640e19e401bbd18d037d1c4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7d8c46d451658a7ae640e19e401bbd18d037d1c4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7dfeb1d3fc2bf35c0f59fa014b707a6eae11bd22:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7dfeb1d3fc2bf35c0f59fa014b707a6eae11bd22 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7e038e2d039d8dbc1754ca80defd2a6384a08f37:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7e038e2d039d8dbc1754ca80defd2a6384a08f37 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7e6c397988f83d6a01e8310560ec1147cdef4066:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7e6c397988f83d6a01e8310560ec1147cdef4066 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7f21aed629580e31e7474bbf04c5fd27ab87275b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7f21aed629580e31e7474bbf04c5fd27ab87275b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/7f23eaa63fb8f064df6a193b49b99e24ea473654:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/7f23eaa63fb8f064df6a193b49b99e24ea473654 \
@@ -1548,24 +1722,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8014921c152253e2622f73851138d84732577655:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8014921c152253e2622f73851138d84732577655 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/806aefb3e4f5fe525129187602074c526ac91c28:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/806aefb3e4f5fe525129187602074c526ac91c28 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/80dae55a40d6b08bd30fd73e2daa5aa1322355a5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/80dae55a40d6b08bd30fd73e2daa5aa1322355a5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/80efd9a2032bbbb546cf179089ab2f28324ea689:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/80efd9a2032bbbb546cf179089ab2f28324ea689 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/816b70b95f995982b91306e66baedb3e8e548964:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/816b70b95f995982b91306e66baedb3e8e548964 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8180933e678c3148327d439c8b117a40bdd8ecc6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8180933e678c3148327d439c8b117a40bdd8ecc6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/81b23d875a4b39b66c62c4c4546e9aa324719883:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/81b23d875a4b39b66c62c4c4546e9aa324719883 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/826a2fc8d6418cc9e8aebf079a2ec15557667915:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/826a2fc8d6418cc9e8aebf079a2ec15557667915 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/827839ae4c297c112b2d2cb20deec0c560728fd0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/827839ae4c297c112b2d2cb20deec0c560728fd0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/82e2aec4363cf1dd6b3e45ce06f93eaebd686abd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/82e2aec4363cf1dd6b3e45ce06f93eaebd686abd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/83211fbd761fdc54d015b9ae186ab96fe043d323:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/83211fbd761fdc54d015b9ae186ab96fe043d323 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/834bb6a810121642b3e5e763bf0ede509b3bdef4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/834bb6a810121642b3e5e763bf0ede509b3bdef4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/837abe01017e96f035a5e22116e8792de3b338e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/837abe01017e96f035a5e22116e8792de3b338e0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/83bc8a792adf85783029d6e70bcb519224c3f71e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/83bc8a792adf85783029d6e70bcb519224c3f71e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/84e3706d967c4ac5e1a88bde86dfb2e64e3a73b4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/84e3706d967c4ac5e1a88bde86dfb2e64e3a73b4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8520b968025bc3df5405fe528b30ed02fb4f044d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8520b968025bc3df5405fe528b30ed02fb4f044d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/84b08f4f10672994756ccb19cf232d1d26cf2442:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/84b08f4f10672994756ccb19cf232d1d26cf2442 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/855ef136f21b87cf38cd80f2b8344ef3996b8ecb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/855ef136f21b87cf38cd80f2b8344ef3996b8ecb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/856119f81cf3dab949551fbc07fdac6e7e0e3dfd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/856119f81cf3dab949551fbc07fdac6e7e0e3dfd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8590aaec583ed115d4da87955af7096e7b74d3ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8590aaec583ed115d4da87955af7096e7b74d3ac \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/85cae0fe162739fc5d9b452e1174d1e1dcc2c4eb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/85cae0fe162739fc5d9b452e1174d1e1dcc2c4eb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8607e7351da2aba567c0f007276440eb28230bf6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8607e7351da2aba567c0f007276440eb28230bf6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/86a44e227e4c0cfab08646ad0d7d590ecec4bd0c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/86a44e227e4c0cfab08646ad0d7d590ecec4bd0c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/86d4a6dc5d567680ead3a8c0c646ccce15e933b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/86d4a6dc5d567680ead3a8c0c646ccce15e933b5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8753975cf8dadff36ae10ea1be1977775e5e6a4f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8753975cf8dadff36ae10ea1be1977775e5e6a4f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/876767f6df0ade552dd8f4059194093b4bf58a56:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/876767f6df0ade552dd8f4059194093b4bf58a56 \
@@ -1573,35 +1742,38 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87a473d19ecbfae77e32e31dd170da81f50bd823:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87a473d19ecbfae77e32e31dd170da81f50bd823 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87a699020db486926b79d834b9dc32f029962863:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87a699020db486926b79d834b9dc32f029962863 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87a9c9439a74a22ce970df904804f9ad5ada32ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87a9c9439a74a22ce970df904804f9ad5ada32ee \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87aa5f6d246e2dfb7d64a8b7a9bac09f4d4f864b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87aa5f6d246e2dfb7d64a8b7a9bac09f4d4f864b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87d75a6d0a147525ccc44ee77f4f816564b4baef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87d75a6d0a147525ccc44ee77f4f816564b4baef \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/87c92aaf5456faebee477f1923be24cbfb0ed989:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/87c92aaf5456faebee477f1923be24cbfb0ed989 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8809b226d3a9e86814cc26f92c1ce1507db6c433:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8809b226d3a9e86814cc26f92c1ce1507db6c433 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8860f35a22497a263cfd0d3652572f871a20502f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8860f35a22497a263cfd0d3652572f871a20502f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8873c45a0222b820f6fb0c313835255bdaf0d90c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8873c45a0222b820f6fb0c313835255bdaf0d90c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8899008f1cc486b82a59163e95a2894e83fa003c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8899008f1cc486b82a59163e95a2894e83fa003c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/889c5339106a035e82aebe586b0f81d75746e995:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/889c5339106a035e82aebe586b0f81d75746e995 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/88ab3303dbbda62a1c8c69c89e434ced5981b139:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/88ab3303dbbda62a1c8c69c89e434ced5981b139 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/88cfd6d9bf0ad33a2a5205a9da269f40e2520e83:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/88cfd6d9bf0ad33a2a5205a9da269f40e2520e83 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8912aa2fe06180035dbc7ff81d2f121f527c667a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8912aa2fe06180035dbc7ff81d2f121f527c667a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8971ab6b02e391b6be01a1d71b2ed74dc34c1555:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8971ab6b02e391b6be01a1d71b2ed74dc34c1555 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8980459f8a08b9b0648a130f80730e8c2b496d31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8980459f8a08b9b0648a130f80730e8c2b496d31 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/89c976d452334e5c7f270247494834bf9ec9acdb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/89c976d452334e5c7f270247494834bf9ec9acdb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/89d349baaeb0f9b76ed4e91344eb2a4b31e368f5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/89d349baaeb0f9b76ed4e91344eb2a4b31e368f5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8a71479ee4c3b238c2c5cd1b39e837ce4d29f648:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8a71479ee4c3b238c2c5cd1b39e837ce4d29f648 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8a7b53c9656f15e0283296d13239161e1a4a5fc1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8a7b53c9656f15e0283296d13239161e1a4a5fc1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8ac2d46c99fb075330d6f1c74267dd450afa96d5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8ac2d46c99fb075330d6f1c74267dd450afa96d5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8acea1ca4136ddab95420169fa36b93da899d03c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8acea1ca4136ddab95420169fa36b93da899d03c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8ae05d114b613f00bb9525857a3dc2015c5a29a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8ae05d114b613f00bb9525857a3dc2015c5a29a0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8b002d2f23ad9caa54ba2ccb6b729123401a9c11:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8b002d2f23ad9caa54ba2ccb6b729123401a9c11 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8aea88f3eeb3c144bdfaab638c9ca1f7703aaffc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8aea88f3eeb3c144bdfaab638c9ca1f7703aaffc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8b52778c1e15fbe518b2c1ac5f1bf34c0ddf6e05:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8b52778c1e15fbe518b2c1ac5f1bf34c0ddf6e05 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8b698b844c306d2b06915c49f8bbaef4dd795d60:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8b698b844c306d2b06915c49f8bbaef4dd795d60 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8b8dd8bed1f095a6412972b16f540dc34d604d41:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8b8dd8bed1f095a6412972b16f540dc34d604d41 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c16247a94e238798ffdc273fdbf72ac1b6ff36a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c16247a94e238798ffdc273fdbf72ac1b6ff36a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c27e578434a9a37069b018a463fe4233a97212a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c27e578434a9a37069b018a463fe4233a97212a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c2ec36f7c94186c28d4e16b66653065d8d9e274:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c2ec36f7c94186c28d4e16b66653065d8d9e274 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c40d1695cd69c56cfa6d65c60c5c7ecd418c9a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c40d1695cd69c56cfa6d65c60c5c7ecd418c9a9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c5643a6567665c03241c83558be1864519d292d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c5643a6567665c03241c83558be1864519d292d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8c5f9283887d58c53f6e02aa38b406393d0771d5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8c5f9283887d58c53f6e02aa38b406393d0771d5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8cdd8e1930cb1f4f5882cc15729bc1fc473e9c29:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8cdd8e1930cb1f4f5882cc15729bc1fc473e9c29 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8d02f7116d930bc8feeedca15004b3f64bd296dd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8d02f7116d930bc8feeedca15004b3f64bd296dd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8d2e616256c1e326632ef7f848df7308302f5baf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8d2e616256c1e326632ef7f848df7308302f5baf \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8d599212635bdf8ed4e396eefc80b0bacb5bc4b0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8d599212635bdf8ed4e396eefc80b0bacb5bc4b0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8dc05120c45453eaa880c9443d00825bdd569d78:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8dc05120c45453eaa880c9443d00825bdd569d78 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8dec3b8135345a78f542d070c76c6fcbf26ef13c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8dec3b8135345a78f542d070c76c6fcbf26ef13c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8df9c1a1841553edad299f22407f592a58e41219:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8df9c1a1841553edad299f22407f592a58e41219 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8e0e0c29c88b7101596ac42e99a486fc7e05f4e4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8e0e0c29c88b7101596ac42e99a486fc7e05f4e4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8e2a9ae1482ecf1ee46f165fa755a672ff3f5f31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8e2a9ae1482ecf1ee46f165fa755a672ff3f5f31 \
@@ -1609,48 +1781,54 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8e9206a22e372628431c47d903e1d184ae803dce:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8e9206a22e372628431c47d903e1d184ae803dce \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8e9b81488b6a0b426aa54c275476c314edaa3e52:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8e9b81488b6a0b426aa54c275476c314edaa3e52 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8ea294ba7e8974c9a530dc2f91c99c37ea1f9da6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8ea294ba7e8974c9a530dc2f91c99c37ea1f9da6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8eb0af89d3bb0a911343a67add8a1aaff558db82:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8eb0af89d3bb0a911343a67add8a1aaff558db82 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8ef1cfdaf87fff03774075e2276366a60d1052d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8ef1cfdaf87fff03774075e2276366a60d1052d4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8f0fa3363f55d306fc34c4e4c192a5ed830b3669:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8f0fa3363f55d306fc34c4e4c192a5ed830b3669 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/8f6b1008c81931429c91bad46aeef34f760aa811:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/8f6b1008c81931429c91bad46aeef34f760aa811 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90112ea5cfecbbf882424ce80e3745a4ae9f4d15:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90112ea5cfecbbf882424ce80e3745a4ae9f4d15 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9058ba530783451627f418601b63596c4360b147:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9058ba530783451627f418601b63596c4360b147 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/907ce67f9b4fe86ca63118b217c8c9f55ac1ad5e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/907ce67f9b4fe86ca63118b217c8c9f55ac1ad5e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/907f39913b617a57ebdc7d8fa8e0c4565f0e696a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/907f39913b617a57ebdc7d8fa8e0c4565f0e696a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90801fbaafe9cec8cfd5170226a781dc1dcfd8bc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90801fbaafe9cec8cfd5170226a781dc1dcfd8bc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90a991190067115c9ab9304cbd8a6b973994f77d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90a991190067115c9ab9304cbd8a6b973994f77d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90b5c0e7a5b28c01ceda38818797f52c0822d824:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90b5c0e7a5b28c01ceda38818797f52c0822d824 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90e29b2d12c2d883b2d023623f36fcf749155a7d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90e29b2d12c2d883b2d023623f36fcf749155a7d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90e7fe24f5c93b09960b5410554b05a7c2fb630d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90e7fe24f5c93b09960b5410554b05a7c2fb630d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/90f9a63509d5b5825985905b8a850debb8eb86b6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/90f9a63509d5b5825985905b8a850debb8eb86b6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/910a4970bc76a35889dd479a3a7a52432e934a3d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/910a4970bc76a35889dd479a3a7a52432e934a3d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9115600b3269a05ccd5560ff32b042f077666bc5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9115600b3269a05ccd5560ff32b042f077666bc5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9127171a47f3077b065745787daeb71a4d7325eb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9127171a47f3077b065745787daeb71a4d7325eb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/914cff80f74a02c1fb66ccae1068fcbf6926afa5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/914cff80f74a02c1fb66ccae1068fcbf6926afa5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/915e7d6d6341d7b9e05f68cef1c20a3b4462bf6b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/915e7d6d6341d7b9e05f68cef1c20a3b4462bf6b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/917d8d6e548b92cbb85696ab9a88f61ae9e6c4c3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/917d8d6e548b92cbb85696ab9a88f61ae9e6c4c3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/918e03c51624be32536a9bf2ba4ac52880431231:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/918e03c51624be32536a9bf2ba4ac52880431231 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/91bee0b8421d3e716105996bc8909bbbc28a2b0a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/91bee0b8421d3e716105996bc8909bbbc28a2b0a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/91e43ca86f573b57e65d616526ef52072fe0dfe1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/91e43ca86f573b57e65d616526ef52072fe0dfe1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9204ba8b1966d76613f83a83705afcf9e51c9d56:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9204ba8b1966d76613f83a83705afcf9e51c9d56 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/92551bf520c5ae57449507305251f1dddeb36b86:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/92551bf520c5ae57449507305251f1dddeb36b86 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/92566c1ea499e46eec9205673871e951e7e87980:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/92566c1ea499e46eec9205673871e951e7e87980 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/926c8a027e86d70d2a12d3927128d3912edde2be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/926c8a027e86d70d2a12d3927128d3912edde2be \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/929d77fb4ef88c2a63871ac50f21351ba6a21df2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/929d77fb4ef88c2a63871ac50f21351ba6a21df2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/929f28627801e830b1b0d8732179bee46ffb7eef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/929f28627801e830b1b0d8732179bee46ffb7eef \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/92ba0d625d54a188616f430be1b7798d647b24ad:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/92ba0d625d54a188616f430be1b7798d647b24ad \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/935c994801c885714178cf941c1bbeae57042b58:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/935c994801c885714178cf941c1bbeae57042b58 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/937098fd582798101c4356f89173ab61e3693bc9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/937098fd582798101c4356f89173ab61e3693bc9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/938a534a1c7232db41c00cb1b7ea4e8f77bc31d7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/938a534a1c7232db41c00cb1b7ea4e8f77bc31d7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/93c009b6d331cb48361e44a7b8e77ad07f0426a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/93c009b6d331cb48361e44a7b8e77ad07f0426a2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/93c3bc199d7f2093c9f76b47cf4668a4bbc3c444:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/93c3bc199d7f2093c9f76b47cf4668a4bbc3c444 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/93f87ed21462f812da4298f7ff2fccd2751ce11f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/93f87ed21462f812da4298f7ff2fccd2751ce11f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/941b84facb51db8313b22de687b681a1847d2358:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/941b84facb51db8313b22de687b681a1847d2358 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/94207b1013229359ed710df74af648be4e16cef9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/94207b1013229359ed710df74af648be4e16cef9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/942d9f31c22e486e98402411e1754c303ce7e14d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/942d9f31c22e486e98402411e1754c303ce7e14d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9482859c7dc3d44d20a76a90e871e3588a18299b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9482859c7dc3d44d20a76a90e871e3588a18299b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/94841846f26a20d883e5d7c9a0ba0d652e7dae70:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/94841846f26a20d883e5d7c9a0ba0d652e7dae70 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/94e8491ffd59d3ced4beadfd62ce1bb708d1a685:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/94e8491ffd59d3ced4beadfd62ce1bb708d1a685 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/951120675391d3ebfc390d7a6186b560d3b74608:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/951120675391d3ebfc390d7a6186b560d3b74608 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/955408ec63b101a6fcbd24bd62c10709131003a7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/955408ec63b101a6fcbd24bd62c10709131003a7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/95a813ca371fa52d6ef6e96b3246fee32404b0b3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/95a813ca371fa52d6ef6e96b3246fee32404b0b3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/95d01e88d15611907af0c26d27f0f7b2859ec2e1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/95d01e88d15611907af0c26d27f0f7b2859ec2e1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/967e85e326fcd6c0527334f5ff329a9804f912bc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/967e85e326fcd6c0527334f5ff329a9804f912bc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/96b07bffd11c7183a1065f60751ad713bf980b12:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/96b07bffd11c7183a1065f60751ad713bf980b12 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/97789c46ddc8c092ec60a51b09028b8ef38c469e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/97789c46ddc8c092ec60a51b09028b8ef38c469e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/981c3ac4aba5ebfa98a73d78ed6cec2f403221ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/981c3ac4aba5ebfa98a73d78ed6cec2f403221ab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/982262e7c3aae1b314649beb03fd5f89fab8fed5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/982262e7c3aae1b314649beb03fd5f89fab8fed5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/986dc82ebbf5e3496223c911a31f45926d2d33ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/986dc82ebbf5e3496223c911a31f45926d2d33ac \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/987afecd2129893f5bff75121c64116948e5786d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/987afecd2129893f5bff75121c64116948e5786d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9892f49cdc9024c95860c135da90e209c03b3b99:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9892f49cdc9024c95860c135da90e209c03b3b99 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/98c088cb04201a571b170b2eff4aa1e2b2c2dcea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/98c088cb04201a571b170b2eff4aa1e2b2c2dcea \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/98f3e16b060806012195fe93e5f364d878fdcb1c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/98f3e16b060806012195fe93e5f364d878fdcb1c \
@@ -1664,6 +1842,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9b0f046657d0720f02811467ef5158aa27b35e46:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9b0f046657d0720f02811467ef5158aa27b35e46 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9b8f4fc5c35ffdc06263b4866375603f24783ae2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9b8f4fc5c35ffdc06263b4866375603f24783ae2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9b934bd51bdcbaea92a51c946e3a5baba270c923:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9b934bd51bdcbaea92a51c946e3a5baba270c923 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9bcad98767255b23a69a5a43ba3042c005dd196c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9bcad98767255b23a69a5a43ba3042c005dd196c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9be2df47e5eeaa40de0b8bcc312668372bd2a6e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9be2df47e5eeaa40de0b8bcc312668372bd2a6e0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9c49c8d1234452d8976ff427ccf5926afe382c0f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9c49c8d1234452d8976ff427ccf5926afe382c0f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9ca98453eb56226c0daa3f3f2bdb85f0121845e5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9ca98453eb56226c0daa3f3f2bdb85f0121845e5 \
@@ -1676,18 +1855,15 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9d85402ad82999191b6defbbb41c3b1b867da48e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9d85402ad82999191b6defbbb41c3b1b867da48e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9d8871fd6618461ee2108cf5229bfb7dd6942590:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9d8871fd6618461ee2108cf5229bfb7dd6942590 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9d89e6ec1fd6f3ed19f98dad9eb66393ef082b5d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9d89e6ec1fd6f3ed19f98dad9eb66393ef082b5d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9da8c32596a6aa88b9ce523b76b0b568e5256d5b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9da8c32596a6aa88b9ce523b76b0b568e5256d5b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9dc73eaba51df836d82e1feaebad0456dcd99f00:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9dc73eaba51df836d82e1feaebad0456dcd99f00 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9e50237a7a789535f0983891b696f3692d8119a3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9e50237a7a789535f0983891b696f3692d8119a3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9f0e12caab212c1885b0fdb544211b525f6cfb2a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9f0e12caab212c1885b0fdb544211b525f6cfb2a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9f243e299683d6e3c534c3eda8141cb2f3832d10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9f243e299683d6e3c534c3eda8141cb2f3832d10 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9f378a4a69a62c0ca251c50c58319f46a8b7cf18:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9f378a4a69a62c0ca251c50c58319f46a8b7cf18 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9f55887d4db8005304e059fb971af3562fdb3b20:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9f55887d4db8005304e059fb971af3562fdb3b20 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9f572f6610a7dd4e429e06c96a96c2968b9d8d03:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9f572f6610a7dd4e429e06c96a96c2968b9d8d03 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9fbad52842ab86b9446d61d222506612c93c424a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9fbad52842ab86b9446d61d222506612c93c424a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/9fbd298f3504b85ae2573cf5a1257c607a4472f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/9fbd298f3504b85ae2573cf5a1257c607a4472f9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a0380f35d1c717fd7370c0562bc483fdf39b4594:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a0380f35d1c717fd7370c0562bc483fdf39b4594 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a03a9ba8f58a18984e31db61b42715334f4175f2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a03a9ba8f58a18984e31db61b42715334f4175f2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a0a2b36926c0abdef1872645b19e0d040313e04d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a0a2b36926c0abdef1872645b19e0d040313e04d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a12c00e9ef8a2db24c19fb5d2e3629a1ba8f954c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a12c00e9ef8a2db24c19fb5d2e3629a1ba8f954c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a1441e72dc6aa3d47eea4e7747d6aad6b0162ed5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a1441e72dc6aa3d47eea4e7747d6aad6b0162ed5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a155996e1faff223b36f00bdd334799a9d8d2ec4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a155996e1faff223b36f00bdd334799a9d8d2ec4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a171ebe05194b253327c468a3882a511f5170811:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a171ebe05194b253327c468a3882a511f5170811 \
@@ -1696,17 +1872,15 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a28c62e643316c1aa481a7054839cd17b056c842:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a28c62e643316c1aa481a7054839cd17b056c842 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a2bed7f9ff80f34bafa6e528d9bf7396f8824a21:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a2bed7f9ff80f34bafa6e528d9bf7396f8824a21 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a2f40c1ebd31011497708f2d68287af4fd3263ad:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a2f40c1ebd31011497708f2d68287af4fd3263ad \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a32fe01962e7f02dcbd70b26ed3105768eb48adf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a32fe01962e7f02dcbd70b26ed3105768eb48adf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a337c13e4646250984b4c392dfe59621a21f427f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a337c13e4646250984b4c392dfe59621a21f427f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a3b6062386e3cd892d006dde94802aca4f0cd425:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a3b6062386e3cd892d006dde94802aca4f0cd425 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a4e884b1150e6cb7a6d91640999197a457c59f3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a4e884b1150e6cb7a6d91640999197a457c59f3f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a57e301a34c7856f46d9878be96d4de779254c56:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a57e301a34c7856f46d9878be96d4de779254c56 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a61b736b186dbf7ecf17948e9b1ec4519f7680e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a61b736b186dbf7ecf17948e9b1ec4519f7680e8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a642e04c2d7b1db402b577a948c75bdee9b2f9b9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a642e04c2d7b1db402b577a948c75bdee9b2f9b9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a64bb85329f9ee3b018e06d056c362ad8b60da5f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a64bb85329f9ee3b018e06d056c362ad8b60da5f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a655a0f243b8f4e3363dd9746e337f806d0b11d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a655a0f243b8f4e3363dd9746e337f806d0b11d4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a6668e534c52a501556f5e76d44a88063fe33b2d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a6668e534c52a501556f5e76d44a88063fe33b2d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a66d013644b346f1298076f17cfce6d2a75d1449:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a66d013644b346f1298076f17cfce6d2a75d1449 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a68ff29e24b85141a8c8200e479269131dd293a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a68ff29e24b85141a8c8200e479269131dd293a9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a6be41f7341db492c755d7db6ae91716928b296e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a6be41f7341db492c755d7db6ae91716928b296e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a72264689e4bfdf43496cd969ec8a570f9f00a7f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a72264689e4bfdf43496cd969ec8a570f9f00a7f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a73f7de579bb6304473db135c5f829641eb3d477:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a73f7de579bb6304473db135c5f829641eb3d477 \
@@ -1716,22 +1890,20 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a8ce7ad9c8d2af43e9d8ef8b45277b96cda6dddf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a8ce7ad9c8d2af43e9d8ef8b45277b96cda6dddf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a9a4d8680d28f834d5dca2a3827627549ccd81ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a9a4d8680d28f834d5dca2a3827627549ccd81ee \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/a9fb371eedff467f2f56bf43340625b234b7901a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/a9fb371eedff467f2f56bf43340625b234b7901a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aa96df3428fd26e573c18114ba440ca69d7a3d73:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aa96df3428fd26e573c18114ba440ca69d7a3d73 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aa9fd3bb6997354e9e98b6195a2c8a66a984b4ca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aa9fd3bb6997354e9e98b6195a2c8a66a984b4ca \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aafa4066f749a14450c2568de4798bc899c756e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aafa4066f749a14450c2568de4798bc899c756e0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ab26c299cb98ec3fec98665ce7ba225b3dcbef66:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ab26c299cb98ec3fec98665ce7ba225b3dcbef66 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/abda6a67eb18a8c29793fd84275573aa4c69ba31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/abda6a67eb18a8c29793fd84275573aa4c69ba31 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ac0f1523cbfbf43fbc7747a406488b41f2927bb8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ac0f1523cbfbf43fbc7747a406488b41f2927bb8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ac2d149f01bc35b970a7f0ff1864158716b9e310:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ac2d149f01bc35b970a7f0ff1864158716b9e310 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ac3ddcb30e47ab869ca267b464e2c84f2d912dac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ac3ddcb30e47ab869ca267b464e2c84f2d912dac \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ad057bd572b1a7f91bd3649948090e5ba733ead2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ad057bd572b1a7f91bd3649948090e5ba733ead2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ad28ed2fbf81bcb9a9c77555d35aee0c6e7595f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ad28ed2fbf81bcb9a9c77555d35aee0c6e7595f7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ad4607bba3fe05e2bba260157a1de7357bdfadfb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ad4607bba3fe05e2bba260157a1de7357bdfadfb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ad8728b3a41021fd1232bb6fdf08eaac44ef0d08:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ad8728b3a41021fd1232bb6fdf08eaac44ef0d08 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ad9b8f2368832a6383e9dc5f469401b0af8ff1c0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ad9b8f2368832a6383e9dc5f469401b0af8ff1c0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ae9782148354ae5a706353b13329437bca7e9fa3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ae9782148354ae5a706353b13329437bca7e9fa3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aebf49be09c6d3ce9a484603dd42f629a30c1767:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aebf49be09c6d3ce9a484603dd42f629a30c1767 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aed28098f0dc12b29c2c70f789c0f7086d9ebf3e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aed28098f0dc12b29c2c70f789c0f7086d9ebf3e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/aeeef987635a8ee0bd997e59fe274991ec135b1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/aeeef987635a8ee0bd997e59fe274991ec135b1a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/af056bc1fac6f6596a5441cd29cf8a35890109e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/af056bc1fac6f6596a5441cd29cf8a35890109e6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/af815115b81cda1646c2a8528cfbe2e8ea10669b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/af815115b81cda1646c2a8528cfbe2e8ea10669b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/afbdadde1d4594c7ddce28cf49f50b2f45c4f5f3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/afbdadde1d4594c7ddce28cf49f50b2f45c4f5f3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/afc0ee7fcf3f71dd354e9596fbece2cdc2dfab69:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/afc0ee7fcf3f71dd354e9596fbece2cdc2dfab69 \
@@ -1747,50 +1919,51 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b0f8298ffb978fd3879aaacfe3c83bdcee897058:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b0f8298ffb978fd3879aaacfe3c83bdcee897058 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b1e84f262dc13fe334a232554a237245a46f29b8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b1e84f262dc13fe334a232554a237245a46f29b8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b222b1e3fdf52845c597bc35a623ce21c2013e27:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b222b1e3fdf52845c597bc35a623ce21c2013e27 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b29e3cb6d22dc459fb993bb975cb1f40117e301c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b29e3cb6d22dc459fb993bb975cb1f40117e301c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b2f916c3eac81fda4f440d84b45fb5dbbc360f2a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b2f916c3eac81fda4f440d84b45fb5dbbc360f2a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b3de50451bacb48e5362b0f4ecb92360f6375d25:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b3de50451bacb48e5362b0f4ecb92360f6375d25 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b46d71e882b0807f2413309adc4c898293384fab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b46d71e882b0807f2413309adc4c898293384fab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b47ea6fa463572a843398b3f4836524d3bf068ba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b47ea6fa463572a843398b3f4836524d3bf068ba \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4a46ebec6684ba91d60194f637c96860b1dd494:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4a46ebec6684ba91d60194f637c96860b1dd494 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4abf150fbfe1fefcc3d3684818127dc317819a1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4abf150fbfe1fefcc3d3684818127dc317819a1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4df87f7b19ae467cc3fe871a17ac04fcfdacd57:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4df87f7b19ae467cc3fe871a17ac04fcfdacd57 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4e75158ddc9d3dcbe92033c8f1a619807d06c0c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4e75158ddc9d3dcbe92033c8f1a619807d06c0c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4f03ca09738f1e88117240eebcdd6a9132223c2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4f03ca09738f1e88117240eebcdd6a9132223c2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b4fd31d8d4a02dd3deafe588739169a2245489b3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b4fd31d8d4a02dd3deafe588739169a2245489b3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b507bcd85b73f01d0c76b9eef4a1bab2946fd9ba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b507bcd85b73f01d0c76b9eef4a1bab2946fd9ba \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b58d55d0a333515bdf86a9eca2bd51716e9a7d42:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b58d55d0a333515bdf86a9eca2bd51716e9a7d42 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b5cdef11db69622d8e84778cea20509098a16ef2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b5cdef11db69622d8e84778cea20509098a16ef2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b5f9e2d7bb05943cafbc8c7283e56f8f126568a1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b5f9e2d7bb05943cafbc8c7283e56f8f126568a1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b6586a4c411bb2698b3f5c9c59eb7389e4134a46:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b6586a4c411bb2698b3f5c9c59eb7389e4134a46 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b6c77ca841a56a6a55c481870a67eb46da388c2b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b6c77ca841a56a6a55c481870a67eb46da388c2b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b6ce2343c3f15ee746022727b2cd2ca59fc21459:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b6ce2343c3f15ee746022727b2cd2ca59fc21459 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b6f5d4583d6b3d7b698b70f757239649427a2c17:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b6f5d4583d6b3d7b698b70f757239649427a2c17 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b6fa0ea35b0282533d5c3dd53463731e88f17b5f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b6fa0ea35b0282533d5c3dd53463731e88f17b5f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b73a9e455d1956209a322d3960feae5965085f3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b73a9e455d1956209a322d3960feae5965085f3f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b75ab830a59476a3470c7478d026b5f2c86532c5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b75ab830a59476a3470c7478d026b5f2c86532c5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b766590cfda9581223882e37e03d6f7a1d641733:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b766590cfda9581223882e37e03d6f7a1d641733 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b77837a41673531a47f7115472b760ab352ebb62:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b77837a41673531a47f7115472b760ab352ebb62 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b7c058741bd0921ea6bf422af88bdbd0a71ec891:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b7c058741bd0921ea6bf422af88bdbd0a71ec891 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b7f12ba067a7d7c02458fffdd1f134a6befa1b2c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b7f12ba067a7d7c02458fffdd1f134a6befa1b2c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b8427811ec0967a98c828ecb842d49ac684bb958:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b8427811ec0967a98c828ecb842d49ac684bb958 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b8ed54075c5e18cbde995b98711d3ee73d547e23:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b8ed54075c5e18cbde995b98711d3ee73d547e23 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b98f0e593d8d92e2ef33ae7f1552725b2dcae043:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b98f0e593d8d92e2ef33ae7f1552725b2dcae043 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b99cfc826500a8d0d4caa08b51be238ff4ad9899:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b99cfc826500a8d0d4caa08b51be238ff4ad9899 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b9a5e8d048c983d1faecf67a8a4faf1f8bd10f98:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b9a5e8d048c983d1faecf67a8a4faf1f8bd10f98 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b9a69c0fec513f75255c673cf5c92f1f3acb07ce:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b9a69c0fec513f75255c673cf5c92f1f3acb07ce \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b9bd26df79f5df1633b6aa33227425b26272792e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b9bd26df79f5df1633b6aa33227425b26272792e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/b9ddc223139c3b50450a2be037875a81a7075908:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/b9ddc223139c3b50450a2be037875a81a7075908 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bacca7a889e56d4c45809521ce44ed09cd40c17d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bacca7a889e56d4c45809521ce44ed09cd40c17d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bacef08b3d33b0f863046cfcc55ca57457b7dca6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bacef08b3d33b0f863046cfcc55ca57457b7dca6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bad0b6af210af02fbd6d7888b0af0397bd8cab2b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bad0b6af210af02fbd6d7888b0af0397bd8cab2b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/badd420ee526696385dc8f74d83d7f67f75436f0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/badd420ee526696385dc8f74d83d7f67f75436f0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bae9235c41ab2e36613090bf1af79a01ee00dd02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bae9235c41ab2e36613090bf1af79a01ee00dd02 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/baeae4ffd8d80637848430a649dbdf7bc8d3aec3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/baeae4ffd8d80637848430a649dbdf7bc8d3aec3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/baef61ee4e7ec5d8c1564119c535bd35c2a8d0a3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/baef61ee4e7ec5d8c1564119c535bd35c2a8d0a3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb008ac7b5d622ac88baf8d2ccee6f18fa606fe8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb008ac7b5d622ac88baf8d2ccee6f18fa606fe8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb14e8576d42f80242d71a5016fd507a94cac869:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb14e8576d42f80242d71a5016fd507a94cac869 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb1635982c5ba693d8a529f8e2d902c1f3730922:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb1635982c5ba693d8a529f8e2d902c1f3730922 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb2e4aa0328b9b2e151194ded02609d4d6c85417:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb2e4aa0328b9b2e151194ded02609d4d6c85417 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb47db64b2a83f7c406c0e7dd0336116b06b5e36:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb47db64b2a83f7c406c0e7dd0336116b06b5e36 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb73c3d44ce7a585e8ec896235c3c5663898dfdc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb73c3d44ce7a585e8ec896235c3c5663898dfdc \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bb9cf705ad7fa5eca8d2b0895dbec1379ae0376d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bb9cf705ad7fa5eca8d2b0895dbec1379ae0376d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bbb76ffc8bbcdcbdb0dd8e6b81e24b18e0680e01:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bbb76ffc8bbcdcbdb0dd8e6b81e24b18e0680e01 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bc17d601f7e7f22fd273229c0f143c8abe721811:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bc17d601f7e7f22fd273229c0f143c8abe721811 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bc7f4593d8b37cfb587af75192de7adfb04a4d95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bc7f4593d8b37cfb587af75192de7adfb04a4d95 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bc8e7a0b88f1ce413015e3b03ed8e0cb49fffb93:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bc8e7a0b88f1ce413015e3b03ed8e0cb49fffb93 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bca6b70a584d95308f251d14e2367b2d3ef900b0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bca6b70a584d95308f251d14e2367b2d3ef900b0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bcfcb7cb7fdb92891b7091881f523150cc868ae5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bcfcb7cb7fdb92891b7091881f523150cc868ae5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bd00a4388086a73c9094e0715288ce22e3d0ee06:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bd00a4388086a73c9094e0715288ce22e3d0ee06 \
@@ -1810,16 +1983,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bfad83fdcfd8bc22d3b5734889e4435e7579178d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bfad83fdcfd8bc22d3b5734889e4435e7579178d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/bfcf1ed23ce1823ed16ab54e108829aa7a14170b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/bfcf1ed23ce1823ed16ab54e108829aa7a14170b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c0027da62f2c69be7861d0c12d2f3ecd4f4cc728:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c0027da62f2c69be7861d0c12d2f3ecd4f4cc728 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c003e8c99adce8de3bd6e541f6b3c2506233af71:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c003e8c99adce8de3bd6e541f6b3c2506233af71 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c00c8e10f958bcd09e28313e6e1ef6b0b24f1fc5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c00c8e10f958bcd09e28313e6e1ef6b0b24f1fc5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c042bead0a49fb2fbf0fbaeba9ec0650f1c985b3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c042bead0a49fb2fbf0fbaeba9ec0650f1c985b3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c054768407a3f7ef58f6c3b1911575fe212d5f9c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c054768407a3f7ef58f6c3b1911575fe212d5f9c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c0887b00f31d267ce975d6d3864630a02a0ea83e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c0887b00f31d267ce975d6d3864630a02a0ea83e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c0b6742265d6982e313560458a658932255beaff:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c0b6742265d6982e313560458a658932255beaff \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c0e6421c628eacd1621bea90bb6afdf315be63d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c0e6421c628eacd1621bea90bb6afdf315be63d2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c0fc260bff85932fbd1ed145dbcc81344dac0aa0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c0fc260bff85932fbd1ed145dbcc81344dac0aa0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c122b2eb3b70e53642c05e3c45eca15cc87bd98c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c122b2eb3b70e53642c05e3c45eca15cc87bd98c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c1563c48a96e146a4c611d9bf083ef6678f89b6f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c1563c48a96e146a4c611d9bf083ef6678f89b6f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c1a88d17054cc41fde020992a38f1c13e1bf7b95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c1a88d17054cc41fde020992a38f1c13e1bf7b95 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c231931b347d70653aca6d6761ce6127dbe45761:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c231931b347d70653aca6d6761ce6127dbe45761 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c2bfe56ab21ea17cf2be210aabfd5b20db5ad923:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c2bfe56ab21ea17cf2be210aabfd5b20db5ad923 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c30d568882444fad6d23e6af6aeb726e1e7f5979:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c30d568882444fad6d23e6af6aeb726e1e7f5979 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c38fec0a6866a50f3b237a4e6eb92834383c41ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c38fec0a6866a50f3b237a4e6eb92834383c41ec \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c3996aafb989fee3a0124dd90976208ac69cc107:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c3996aafb989fee3a0124dd90976208ac69cc107 \
@@ -1832,18 +2006,21 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c60a45bf44bf99df6119858bffb00ccdf9e6e470:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c60a45bf44bf99df6119858bffb00ccdf9e6e470 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c62525b49e41431ea40b5ff16549bf67f8ffd635:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c62525b49e41431ea40b5ff16549bf67f8ffd635 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c63b86afeac6c587fc96c7144577123df02e300c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c63b86afeac6c587fc96c7144577123df02e300c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c666dc9cb6be1b5a62d41d300def217f53ce0ff2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c666dc9cb6be1b5a62d41d300def217f53ce0ff2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c6b564cd5497804151091b93500407d3d12acf18:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c6b564cd5497804151091b93500407d3d12acf18 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c6e5c7d477d5afb4d308501f755cec3e335c0bf2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c6e5c7d477d5afb4d308501f755cec3e335c0bf2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c6ed327e618f1671388540265ef937c5d0b6705f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c6ed327e618f1671388540265ef937c5d0b6705f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c6f3f11ce5fa67ed388d85d51166f375968c0e0b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c6f3f11ce5fa67ed388d85d51166f375968c0e0b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c6fb8d027439600d2a75baf016ad5c2e946edee1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c6fb8d027439600d2a75baf016ad5c2e946edee1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c7138c6833e45e84aba5baf8f83c1cf88b2f3058:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c7138c6833e45e84aba5baf8f83c1cf88b2f3058 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c74c18652451135ee76d8583307d949636782d7e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c74c18652451135ee76d8583307d949636782d7e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c782da88b9a15a9474595e2dae355ab0bc58d69d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c782da88b9a15a9474595e2dae355ab0bc58d69d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c7f2c3bc828a59c54a8f52ec24dff04ec779646c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c7f2c3bc828a59c54a8f52ec24dff04ec779646c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c84c9fc6d117ed811f023a62175b0842e11470d0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c84c9fc6d117ed811f023a62175b0842e11470d0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c91ebda0ea5dbc45432b94eeced3805c1deac427:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c91ebda0ea5dbc45432b94eeced3805c1deac427 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c9e5edfb5398bca87746c28cacb754653d3c5c8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c9e5edfb5398bca87746c28cacb754653d3c5c8e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c9f022c44bb6ee68a3f9106d57754afaab522287:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c9f022c44bb6ee68a3f9106d57754afaab522287 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/c9f1032bd74ca1cc16fc102060302f7bd269d3e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/c9f1032bd74ca1cc16fc102060302f7bd269d3e8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ca064cb0d2aa4b3d92f367408e61bfc6db122bdf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ca064cb0d2aa4b3d92f367408e61bfc6db122bdf \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ca12281a12a8ac56298b8cbaeff2cd577a0edc96:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ca12281a12a8ac56298b8cbaeff2cd577a0edc96 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ca3760ba63bf0a2c5dd0dc7fe897838cc58f12a3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ca3760ba63bf0a2c5dd0dc7fe897838cc58f12a3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ca615b5807c5685185d95c2155693a2c149625e4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ca615b5807c5685185d95c2155693a2c149625e4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/caa4718fc6ad80c029c9d1def5231e3ed5d5db4a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/caa4718fc6ad80c029c9d1def5231e3ed5d5db4a \
@@ -1854,65 +2031,68 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cb2f041c1db1aababdc499155f6f8c43d01f45ed:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cb2f041c1db1aababdc499155f6f8c43d01f45ed \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cb6d6ea7d53fdcd0da6c1ba428a3b30a261b68f4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cb6d6ea7d53fdcd0da6c1ba428a3b30a261b68f4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cbe1e4baad65588200b05aa5ae726db80c8fa114:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cbe1e4baad65588200b05aa5ae726db80c8fa114 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cc31c5e266916810ad141af97d06d13f8820ef62:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cc31c5e266916810ad141af97d06d13f8820ef62 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cc3711dfc7ac8ae3e7be4f19054752c5a0f25688:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cc3711dfc7ac8ae3e7be4f19054752c5a0f25688 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cc389f08ae70e7a2d5ec579ceb37188bbbd78374:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cc389f08ae70e7a2d5ec579ceb37188bbbd78374 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cc7b2a0277135205da0e41c4794e76f51f5c62a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cc7b2a0277135205da0e41c4794e76f51f5c62a2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ccaf27c2455f58557f5a425475b84c36dca14af3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ccaf27c2455f58557f5a425475b84c36dca14af3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ccd402e06f080350a450c6895926685692ee5c2d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ccd402e06f080350a450c6895926685692ee5c2d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cd3a2f956a0cf06e3da119b44f40f58b2d19f155:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cd3a2f956a0cf06e3da119b44f40f58b2d19f155 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cd5f06c4f821a53d303a99f32417785862433e0d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cd5f06c4f821a53d303a99f32417785862433e0d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cd72152f3de1edf20440e579275e453b5e643dd1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cd72152f3de1edf20440e579275e453b5e643dd1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cdfb75fe53de9b3b16ba898704dcfbc2d212ccab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cdfb75fe53de9b3b16ba898704dcfbc2d212ccab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ce5a4be95e79bab148b0f4c48ab21674c840ab6c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ce5a4be95e79bab148b0f4c48ab21674c840ab6c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ce7346b17fd31c8075f25dc299dbd16f7ee0560b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ce7346b17fd31c8075f25dc299dbd16f7ee0560b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cebb7c3f7db740a40f553de9d706447ec23cef3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cebb7c3f7db740a40f553de9d706447ec23cef3f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ced96f92f7bcfadc1658b43e90f2fc502b7ae354:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ced96f92f7bcfadc1658b43e90f2fc502b7ae354 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cf177d90b5fc108d697d1eedae6f4c24bd5ad7d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cf177d90b5fc108d697d1eedae6f4c24bd5ad7d6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cf72f2743254993d66d0427b43835807acfad7e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cf72f2743254993d66d0427b43835807acfad7e0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cf977631cefee849cd3803897996a4eb3d09b002:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cf977631cefee849cd3803897996a4eb3d09b002 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/cfb128b01665bb1778c73d7d27dbd82e1831f173:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/cfb128b01665bb1778c73d7d27dbd82e1831f173 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d0600981b2d36ced6edae0697ddcc5d78b9a31ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d0600981b2d36ced6edae0697ddcc5d78b9a31ab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d095ae22d7c524819832e18dee50632d687fe921:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d095ae22d7c524819832e18dee50632d687fe921 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d10badcb6e5d863396fb4b8cdc56007cb5f49493:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d10badcb6e5d863396fb4b8cdc56007cb5f49493 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d122079b4c44a74fda4d231d2c18a0fa5467cf11:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d122079b4c44a74fda4d231d2c18a0fa5467cf11 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d1c290ea1e4544dec1934931fbfa1fb2060eb3a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d1c290ea1e4544dec1934931fbfa1fb2060eb3a0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d219614c12c910302582075d28dce9e9c851a4d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d219614c12c910302582075d28dce9e9c851a4d2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d282e812d725df65b2d95cdb3ef37194f676d09e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d282e812d725df65b2d95cdb3ef37194f676d09e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d303afa26256233d37870c364f4ff42f09374c5e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d303afa26256233d37870c364f4ff42f09374c5e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d320a2dd08f33ea5ecd9c430a1df3e5873ee749c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d320a2dd08f33ea5ecd9c430a1df3e5873ee749c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d339f6007d1d6e3017e70b498e0142098f730087:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d339f6007d1d6e3017e70b498e0142098f730087 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d356915f77034c4a42fb3b6d10d3d139a463e2ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d356915f77034c4a42fb3b6d10d3d139a463e2ab \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d393a4aff6aedd18a782a0e75c0cc9016d4d4c8c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d393a4aff6aedd18a782a0e75c0cc9016d4d4c8c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d38d8c05f18e087d8fff311843ac01264590e85a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d38d8c05f18e087d8fff311843ac01264590e85a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d3a9c4b81a8c69726d4e78a3d2b28760fad87562:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d3a9c4b81a8c69726d4e78a3d2b28760fad87562 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d4813a46dc46c9b732ef7061563b65258ca41cbb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d4813a46dc46c9b732ef7061563b65258ca41cbb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d4a57697ae01fca9fdc7c502aae5425a4a7947d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d4a57697ae01fca9fdc7c502aae5425a4a7947d8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d4b79ba5671e5bd4533dea31943b5af859b53f0e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d4b79ba5671e5bd4533dea31943b5af859b53f0e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d4d2ac1317eee82e9da8fadded5b4437992d57ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d4d2ac1317eee82e9da8fadded5b4437992d57ac \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d4f3e23e09003c65799c153cb2c883fe9020cc54:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d4f3e23e09003c65799c153cb2c883fe9020cc54 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d53234a0f23f5c6453d90c0ce296e83bfe166ecd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d53234a0f23f5c6453d90c0ce296e83bfe166ecd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d581751312564d76c7119884e2da62322cc35b3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d581751312564d76c7119884e2da62322cc35b3f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d5b148569a2b30c8ad9141b3895161507dbc16d9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d5b148569a2b30c8ad9141b3895161507dbc16d9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d6566622bf53fd94f880369236e462c2eeb35e6f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d6566622bf53fd94f880369236e462c2eeb35e6f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d659c22352ec9e44dd2436fa9936e5ff87f50dd6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d659c22352ec9e44dd2436fa9936e5ff87f50dd6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d68cfed4e4612869d0c6fd1c1c3d402abc1a8f6d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d68cfed4e4612869d0c6fd1c1c3d402abc1a8f6d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d6a478414148a86fbcd0890a456506ec72cd8951:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d6a478414148a86fbcd0890a456506ec72cd8951 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d7305346279f3e80f2bdcbe6f0967ac789516421:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d7305346279f3e80f2bdcbe6f0967ac789516421 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d76b372e4e46e951553ee2583335429eb0c7986f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d76b372e4e46e951553ee2583335429eb0c7986f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d793fa68ee6b3a9596bf55804660d96f3b61b004:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d793fa68ee6b3a9596bf55804660d96f3b61b004 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d7a17a425f12107f81f988f6e92b8cf95498fdbf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d7a17a425f12107f81f988f6e92b8cf95498fdbf \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d80c414b15d6b36f697385ea7944fdfb8bafffb1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d80c414b15d6b36f697385ea7944fdfb8bafffb1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d8307f02f954b8adf3ab149bff54c595c13dee12:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d8307f02f954b8adf3ab149bff54c595c13dee12 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d86863506c9653decc0d1ef5692693c340207dd3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d86863506c9653decc0d1ef5692693c340207dd3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d89b07b35cd67b463e136d52957facd96e987053:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d89b07b35cd67b463e136d52957facd96e987053 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d8a44c47f1b007f5785058df9faa561f5a72ef38:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d8a44c47f1b007f5785058df9faa561f5a72ef38 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d907b1e639125e86a82cf44be5b76a0aa5bf2c5e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d907b1e639125e86a82cf44be5b76a0aa5bf2c5e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d92b9dd176dfda690ef8a568af64e32c7fbe6d42:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d92b9dd176dfda690ef8a568af64e32c7fbe6d42 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d935ef9897f0abb1f4cc378ea9fea4bdd60e99b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d935ef9897f0abb1f4cc378ea9fea4bdd60e99b5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d9591b0cfe8c4d3efa1f15e72fe5c1153c0de082:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d9591b0cfe8c4d3efa1f15e72fe5c1153c0de082 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d9949ec6b7e67c48cb017c9f7e85cb70b061d945:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d9949ec6b7e67c48cb017c9f7e85cb70b061d945 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/d9f5e371c48eb3faf8240c09a35da731bc539b4b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/d9f5e371c48eb3faf8240c09a35da731bc539b4b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/da1153acf76174f6f86e869f533cff7f087d1f7d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/da1153acf76174f6f86e869f533cff7f087d1f7d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/da22f1b3c78df4d55630d058cc35e16e903fd2eb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/da22f1b3c78df4d55630d058cc35e16e903fd2eb \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/da5582fd5db7e1217bde0f07201e9d1f58b3deb2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/da5582fd5db7e1217bde0f07201e9d1f58b3deb2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/da59e7dfa8ef7ac76d0420ed5b3ba3edef9f00f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/da59e7dfa8ef7ac76d0420ed5b3ba3edef9f00f8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/daaf71b74e66a763e284b2b7a74799b76fe227ca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/daaf71b74e66a763e284b2b7a74799b76fe227ca \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dab2df8b52650bbeb63730d2c6f5b28de0f10da1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dab2df8b52650bbeb63730d2c6f5b28de0f10da1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dac3087902905ab72f45df6b07832322068ab219:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dac3087902905ab72f45df6b07832322068ab219 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dafc308a5ec9a4af05e89d97ad1d32924597faf4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dafc308a5ec9a4af05e89d97ad1d32924597faf4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db1eaa085b8c0a937323a2d3773f6847b3bf6fd8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db1eaa085b8c0a937323a2d3773f6847b3bf6fd8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db381dc9ec8e411bc137957d93d304fa0baea0a5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db381dc9ec8e411bc137957d93d304fa0baea0a5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db385fc8358e5d5f4a29f5d0336facce7cc70c12:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db385fc8358e5d5f4a29f5d0336facce7cc70c12 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db4ffc67ed72753d331a01cd13e39e82fa878a1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db4ffc67ed72753d331a01cd13e39e82fa878a1a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db5993c38723bf708738d3236872917f4c8611d5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db5993c38723bf708738d3236872917f4c8611d5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/db6a60459460416c833fa70ea7fb414b3402dabb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/db6a60459460416c833fa70ea7fb414b3402dabb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dc07b007c730bf040361c67edb8da4160d17f6af:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dc07b007c730bf040361c67edb8da4160d17f6af \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dc3cb23a951a65e6104883afa06c624e60de47ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dc3cb23a951a65e6104883afa06c624e60de47ef \
@@ -1920,30 +2100,35 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dcec36adf0cfbbee90b615d90090fe6388e62d06:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dcec36adf0cfbbee90b615d90090fe6388e62d06 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dd07ffbfece5965e4cea247990445462a5f13689:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dd07ffbfece5965e4cea247990445462a5f13689 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dd1064e4a1b52f2e786fa6dab2ebcd58d09359f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dd1064e4a1b52f2e786fa6dab2ebcd58d09359f9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dd58c613ca6dc040f1952c6e81a19d39b5ef578c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dd58c613ca6dc040f1952c6e81a19d39b5ef578c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dd9706daa9a88025587934eeb4be75c1de1fbcf2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dd9706daa9a88025587934eeb4be75c1de1fbcf2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ddf0c2da63143a4ae31877b81fca49f5b265da9e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ddf0c2da63143a4ae31877b81fca49f5b265da9e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/de9a7fb23e08a8a70b2fe7fe3d8c5d9699797fa0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/de9a7fb23e08a8a70b2fe7fe3d8c5d9699797fa0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/deec05ec79edc03cc18cfe10b1fd773556b4975d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/deec05ec79edc03cc18cfe10b1fd773556b4975d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/deef8f3426cd13349b31af884af90de972fbd0e3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/deef8f3426cd13349b31af884af90de972fbd0e3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/df02198bf6e584fbc2f8ebbb853d749a501c7c33:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/df02198bf6e584fbc2f8ebbb853d749a501c7c33 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/df0c9deced222382e153987ad054087d14cd7c8a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/df0c9deced222382e153987ad054087d14cd7c8a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dfaaf0cb3202a9ce2aaac2c4b6e3dc977808aa60:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dfaaf0cb3202a9ce2aaac2c4b6e3dc977808aa60 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/dfe8ef44431c6dbdbe10f0bcdef00b0893806221:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/dfe8ef44431c6dbdbe10f0bcdef00b0893806221 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e041251829264aeec3e8cd4098c20a6db27b3142:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e041251829264aeec3e8cd4098c20a6db27b3142 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e0612be03069b3c721ee33511d39a29523cdce9d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e0612be03069b3c721ee33511d39a29523cdce9d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e0724f1a15676bccfbefe1afc355a24f84fe7009:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e0724f1a15676bccfbefe1afc355a24f84fe7009 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e08e172a1b0b14aba332e495e4f06e3d17af6ceb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e08e172a1b0b14aba332e495e4f06e3d17af6ceb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e0d495312e9be26cab3e11cef8ec5b69e32b827c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e0d495312e9be26cab3e11cef8ec5b69e32b827c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e0dced181b3083c03cca38490e3444f7465baa5e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e0dced181b3083c03cca38490e3444f7465baa5e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e1175c2976f02ea602a7582cab4f4e2b4ea607b6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e1175c2976f02ea602a7582cab4f4e2b4ea607b6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e135b0029c9d671d31eed6dc1136ef18b056213f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e135b0029c9d671d31eed6dc1136ef18b056213f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e19c5a5700d64b7a44b912a28bf9bcc814b49f6f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e19c5a5700d64b7a44b912a28bf9bcc814b49f6f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e1b94d21737ba7d976132cb152c7b3b1dc004f47:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e1b94d21737ba7d976132cb152c7b3b1dc004f47 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e214fdc28b95e893bf3cd8435ec3b134747f79eb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e214fdc28b95e893bf3cd8435ec3b134747f79eb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e26a5b49bff886de826735be22b2ac2c2e042974:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e26a5b49bff886de826735be22b2ac2c2e042974 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e2828f00c7b1d03ff31ddcca2c8cf02c203cce96:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e2828f00c7b1d03ff31ddcca2c8cf02c203cce96 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e287e6283d92c3d6921def9c22b7f111549bf155:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e287e6283d92c3d6921def9c22b7f111549bf155 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e337273a9671fb9a6f4b72c07f2376d1678c9a38:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e337273a9671fb9a6f4b72c07f2376d1678c9a38 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e371c49e26da8747f05c2711a82a3f73ef3cc0a4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e371c49e26da8747f05c2711a82a3f73ef3cc0a4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e40c354843b6c19a0c462d0f3f3443de3d99a591:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e40c354843b6c19a0c462d0f3f3443de3d99a591 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e43638139315e42f673a52c8c112c7aa397c67a5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e43638139315e42f673a52c8c112c7aa397c67a5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e442012b6887280aaaaa4fa0098fc1a78cce27fc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e442012b6887280aaaaa4fa0098fc1a78cce27fc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e45c8828d38ddb264338bff0d8f936f684a876e5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e45c8828d38ddb264338bff0d8f936f684a876e5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e46c9b888d31ba2f26ef18dc68582a2ccb97cdc0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e46c9b888d31ba2f26ef18dc68582a2ccb97cdc0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e5220801a32b5ba55b001f26e86df5f150cad728:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e5220801a32b5ba55b001f26e86df5f150cad728 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e525660ea522931b7ea62685082a65f535a1ca22:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e525660ea522931b7ea62685082a65f535a1ca22 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e5a45191f6d223a90c2951930e515ad2f79c6eec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e5a45191f6d223a90c2951930e515ad2f79c6eec \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e5e8d0699595fe54de049c840bd77e6be7f6956c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e5e8d0699595fe54de049c840bd77e6be7f6956c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e5fe920245a870179891b64daa075a3e5670c6df:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e5fe920245a870179891b64daa075a3e5670c6df \
@@ -1951,37 +2136,35 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e613646c144be88376a48ace714fcdef277ad2aa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e613646c144be88376a48ace714fcdef277ad2aa \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e6514e64fb4558c9ccc1b5ef69d283beef901010:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e6514e64fb4558c9ccc1b5ef69d283beef901010 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e6cf14092d8b7002fd1c120963bf0c6d44989747:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e6cf14092d8b7002fd1c120963bf0c6d44989747 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e6d41c0052168a1365312b498d45c294c6ccb01e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e6d41c0052168a1365312b498d45c294c6ccb01e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e6fd6154479f5aeb8c7f1025cbf458802c64c2d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e6fd6154479f5aeb8c7f1025cbf458802c64c2d6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e7059c208a7a499036ae857a4d1d2472c87790fe:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e7059c208a7a499036ae857a4d1d2472c87790fe \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e72a24eb9e6d5e2d51a773a8ef57c78a8cf04343:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e72a24eb9e6d5e2d51a773a8ef57c78a8cf04343 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e7850e1506ce2ddccd31caffdeb40a4ced6aa316:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e7850e1506ce2ddccd31caffdeb40a4ced6aa316 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e7cf5a4a2b297755497666d5d3d562f0586758b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e7cf5a4a2b297755497666d5d3d562f0586758b2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e7f023bf19a25ec520feb3df99197618c6351ec5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e7f023bf19a25ec520feb3df99197618c6351ec5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e806585589e75a32f35e01efc965504952bfcc0b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e806585589e75a32f35e01efc965504952bfcc0b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e827d448e6673cd0567fd6bd9b1924b217d4801d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e827d448e6673cd0567fd6bd9b1924b217d4801d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e8cb5e2c6b660270479a4279ca2152acc79dbea4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e8cb5e2c6b660270479a4279ca2152acc79dbea4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e93a46c53e4a2194a1c1de5bb1baf2b9976027dc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e93a46c53e4a2194a1c1de5bb1baf2b9976027dc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e9452bfbdcbe850d7fa9951a13bbf7f58969f71a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e9452bfbdcbe850d7fa9951a13bbf7f58969f71a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e979a6baf0fdd28a1e27a77b31f504d59fb18866:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e979a6baf0fdd28a1e27a77b31f504d59fb18866 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/e9d3d85a123ce910b580aaa90218f1022ae2e21f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/e9d3d85a123ce910b580aaa90218f1022ae2e21f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ea1732ee48c5d1db96c3516e1f687877b062b816:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ea1732ee48c5d1db96c3516e1f687877b062b816 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ea634c55fa0c0ada3dc53087af3f9dc72f9fa22e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ea634c55fa0c0ada3dc53087af3f9dc72f9fa22e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ea382a776b0ea8fec5f4c71be8c0221b8561b9be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ea382a776b0ea8fec5f4c71be8c0221b8561b9be \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ea8f84a92bdf0ed1004a0912f45f34a4ef58119e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ea8f84a92bdf0ed1004a0912f45f34a4ef58119e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ea96cf34b497608b3dfe8e35da179e3c858cab52:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ea96cf34b497608b3dfe8e35da179e3c858cab52 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eafa67b758f8650f7b61df28f9fb41b8de4a1b13:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eafa67b758f8650f7b61df28f9fb41b8de4a1b13 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eb3b2e1c02f00372f7648fa621d72a00c351539e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eb3b2e1c02f00372f7648fa621d72a00c351539e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eb3d73c363d55b2faa3db83314ffe89edc7c95ea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eb3d73c363d55b2faa3db83314ffe89edc7c95ea \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ebc7ca8575859721fa9d4c225a156ffaa4044a0b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ebc7ca8575859721fa9d4c225a156ffaa4044a0b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eb433b27b9075b2175afc530e48bbd7295b7488d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eb433b27b9075b2175afc530e48bbd7295b7488d \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ebe0db14c8321e7b3a8eeec0d93d30aed50f529b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ebe0db14c8321e7b3a8eeec0d93d30aed50f529b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ebec7c3441d3180d160e414d4b770465d54645c8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ebec7c3441d3180d160e414d4b770465d54645c8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec2c35758d2a9faaf0aca0b27f37c2671dac9e5a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec2c35758d2a9faaf0aca0b27f37c2671dac9e5a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec2d4c6db997b83bb16b2250b9468a5b17ca5fe9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec2d4c6db997b83bb16b2250b9468a5b17ca5fe9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec2df7ac09e51e3b7f702ef19a23e2333ef9ef87:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec2df7ac09e51e3b7f702ef19a23e2333ef9ef87 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec456efadfc2b0caf1565d0f7355a0b8ddd37065:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec456efadfc2b0caf1565d0f7355a0b8ddd37065 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec5a94a35a161ea250311a219d21ea5f18c57502:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec5a94a35a161ea250311a219d21ea5f18c57502 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec5f376f6b0475d305d94656a1ab8ca13b368731:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec5f376f6b0475d305d94656a1ab8ca13b368731 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec6546b7b7b134fcec4b9a188689dc58ed013cc5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec6546b7b7b134fcec4b9a188689dc58ed013cc5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ec71cfa0dab51f19c13abebd4ea2fe32a55e731a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ec71cfa0dab51f19c13abebd4ea2fe32a55e731a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ecb5ad2d298f3022f3420b89f9f7e1af8bf2c741:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ecb5ad2d298f3022f3420b89f9f7e1af8bf2c741 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ecddaf30e27de7d7224c709817471bee6e9b77f1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ecddaf30e27de7d7224c709817471bee6e9b77f1 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ecefb5b0255c170e10b201c0187a24798cf58903:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ecefb5b0255c170e10b201c0187a24798cf58903 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ed08ba9a116700ab7305981d1c2be07dc9f31c46:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ed08ba9a116700ab7305981d1c2be07dc9f31c46 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ecffecc4b6e0389af92f791ce5bd2a94a815a217:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ecffecc4b6e0389af92f791ce5bd2a94a815a217 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ed39f6db1bc9fbe0504525aac813284ba326080a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ed39f6db1bc9fbe0504525aac813284ba326080a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ed3fe2fe8ffd5413a4adf7ee5ae839beaa53e6f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ed3fe2fe8ffd5413a4adf7ee5ae839beaa53e6f8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ed56f54f6628072a9da932678c7997b4a0b94d9e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ed56f54f6628072a9da932678c7997b4a0b94d9e \
@@ -1989,16 +2172,22 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/edbe2aaee02648ceabcce58b2d5cee3743b5a2f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/edbe2aaee02648ceabcce58b2d5cee3743b5a2f7 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ee1fd57a704398dcf4ea87b3966ea0fdeb7b1336:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ee1fd57a704398dcf4ea87b3966ea0fdeb7b1336 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ee4d700e4cf4748c5958e2857ac05a4dac1bae2b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ee4d700e4cf4748c5958e2857ac05a4dac1bae2b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ee9e36bb4a904234cec146323a4eedfdb2c8ac83:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ee9e36bb4a904234cec146323a4eedfdb2c8ac83 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eea05c16e3b257e477fa339547a57792d35edffb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eea05c16e3b257e477fa339547a57792d35edffb \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eead5a2e5d496229afbfc3e67aa16efda12e97f3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eead5a2e5d496229afbfc3e67aa16efda12e97f3 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eed89537b96dd76c35e4119d75e14c8ea3734ca5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eed89537b96dd76c35e4119d75e14c8ea3734ca5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/eeec786efd8c4aa78f93247b4ea74c0ccb8ba431:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/eeec786efd8c4aa78f93247b4ea74c0ccb8ba431 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ef23983ac387a18e37d62664928c3fe362445132:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ef23983ac387a18e37d62664928c3fe362445132 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ef75e7e308d5dac18f071d9ee14149677c8a5d31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ef75e7e308d5dac18f071d9ee14149677c8a5d31 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ef80786640b2176865f9bdfe1f909f71b2aa7842:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ef80786640b2176865f9bdfe1f909f71b2aa7842 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ef8d40aa13ca34a9beb8b85908246f316f966c61:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ef8d40aa13ca34a9beb8b85908246f316f966c61 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/efaa76dba2d2554ee141a7dfb59e598c392131a7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/efaa76dba2d2554ee141a7dfb59e598c392131a7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/efb88800b91ef1ce118b2f03c1277e3fc012e45c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/efb88800b91ef1ce118b2f03c1277e3fc012e45c \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f06696e8bbf4582d0672cff629edf9a82bcfe406:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f06696e8bbf4582d0672cff629edf9a82bcfe406 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f07601612e89681891ba2b52bc0adae63d2a9982:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f07601612e89681891ba2b52bc0adae63d2a9982 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f07e7171e56762ca05b4f9aba7a1b485189a69a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f07e7171e56762ca05b4f9aba7a1b485189a69a0 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f08ec6cc7e6f5ef34ad6c329d3c4c02ec0e5299d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f08ec6cc7e6f5ef34ad6c329d3c4c02ec0e5299d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f0aeab4982bd07872c1d52e884ce66951fd7bd3b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f0aeab4982bd07872c1d52e884ce66951fd7bd3b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f0d04219c5398e931f2b4f0d2f79f1001e718b80:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f0d04219c5398e931f2b4f0d2f79f1001e718b80 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f0fbe0e792bcaaa7b152343f6dcc077d60d3525b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f0fbe0e792bcaaa7b152343f6dcc077d60d3525b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f121914771abcf9b7a771f65498352206e69e8c6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f121914771abcf9b7a771f65498352206e69e8c6 \
@@ -2006,46 +2195,49 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f2005ef710c16a2967251820a26e7afc1bbc7060:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f2005ef710c16a2967251820a26e7afc1bbc7060 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f20abbee94a5deae79dc38c31f58655bba559a68:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f20abbee94a5deae79dc38c31f58655bba559a68 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f22a74622a5045adfe6cb5a079d540585c866df4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f22a74622a5045adfe6cb5a079d540585c866df4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f25029d13414011d3cc03ff37405b848f0a92274:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f25029d13414011d3cc03ff37405b848f0a92274 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f2da6ac222ca146817dfe7d7b5b675c628a3b095:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f2da6ac222ca146817dfe7d7b5b675c628a3b095 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f2e6cda6bf4c38e9213cba7505e575904925eec9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f2e6cda6bf4c38e9213cba7505e575904925eec9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f2ff570ad6bbc0ccb6a155c7b9d77173a5d00fab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f2ff570ad6bbc0ccb6a155c7b9d77173a5d00fab \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3742c561cc06c66effc9e918c38112eaed6cdf2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3742c561cc06c66effc9e918c38112eaed6cdf2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3a15f7b663360187cf9fed6dfebb437b6086798:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3a15f7b663360187cf9fed6dfebb437b6086798 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3a3f7c51c21c3a72aae98ee26a476c59fb9b82e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3a3f7c51c21c3a72aae98ee26a476c59fb9b82e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3a6a550fbe63e9b2454bb4fade9496210586bd2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3a6a550fbe63e9b2454bb4fade9496210586bd2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3c12dcf48e20c26bcd75e078cf08c265eb91d8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3c12dcf48e20c26bcd75e078cf08c265eb91d8e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3ccd98ca8ac3a8d57a21b61819b563a1663cb6e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3ccd98ca8ac3a8d57a21b61819b563a1663cb6e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f3d7b9ce2d71cfd0d42b175bf6371de634ab9cc6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f3d7b9ce2d71cfd0d42b175bf6371de634ab9cc6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f43af2dbe6f8d1c9a7778eb4319384bb43ef4081:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f43af2dbe6f8d1c9a7778eb4319384bb43ef4081 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f43dbe68d781eadab9f8dbf1373243e4f9e69e9f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f43dbe68d781eadab9f8dbf1373243e4f9e69e9f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f4a6a11e566abf4d89b6b054a681ed802044ae76:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f4a6a11e566abf4d89b6b054a681ed802044ae76 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f4b5df4ed71fbccd89536dddea0811cc53d32601:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f4b5df4ed71fbccd89536dddea0811cc53d32601 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f4b6c59ffe9cc23810ae4b0be49f72d0c52013dd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f4b6c59ffe9cc23810ae4b0be49f72d0c52013dd \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f593348c4801c045c723eff07a05a18954f5bab8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f593348c4801c045c723eff07a05a18954f5bab8 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f5bd6ae4f475aa8031a45a23e0bfde92331be14b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f5bd6ae4f475aa8031a45a23e0bfde92331be14b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f5eaaf6006c3309daf656cb643798e7397597cd6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f5eaaf6006c3309daf656cb643798e7397597cd6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f602182543d533bd0fb0edd01005115a65701517:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f602182543d533bd0fb0edd01005115a65701517 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f604f944ef742df43aeb9af245489bd0a2969b3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f604f944ef742df43aeb9af245489bd0a2969b3f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f670b5b0eec3b9cd44ddd74fb6f2e66e67265916:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f670b5b0eec3b9cd44ddd74fb6f2e66e67265916 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f697d82cc10f4021e6c7e0ad4453f6eefae0b4e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f697d82cc10f4021e6c7e0ad4453f6eefae0b4e6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f78771470e537cc3f8e00303aa4acf0bf0bf57e2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f78771470e537cc3f8e00303aa4acf0bf0bf57e2 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f7a5c4575ecb6453735d99b6422c20ee4338b48f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f7a5c4575ecb6453735d99b6422c20ee4338b48f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f7e98939989dd47e6b04e7a5f15eb2828a161a10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f7e98939989dd47e6b04e7a5f15eb2828a161a10 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f817d2c471b4dc2f933786fb89c800509f8f8f04:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f817d2c471b4dc2f933786fb89c800509f8f8f04 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f81d6ed4d02f28898547976add3dbff711c98a3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f81d6ed4d02f28898547976add3dbff711c98a3f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f831d7f4efcbbe63dc535232957eb91a55fea629:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f831d7f4efcbbe63dc535232957eb91a55fea629 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f84a3359b8af6ea6abb8ad8425823ffb5cdd33d9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f84a3359b8af6ea6abb8ad8425823ffb5cdd33d9 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f86831db6b9c988892332f3274409043e751ef8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f86831db6b9c988892332f3274409043e751ef8e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f8a4b5d976e1d468dab419bf635e5d6fbbad2564:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f8a4b5d976e1d468dab419bf635e5d6fbbad2564 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f90bd32efd91dc85692d7ed2660ed0bfec5f32ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f90bd32efd91dc85692d7ed2660ed0bfec5f32ee \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f8b4f7eb3da84f2faa5baf7fc4df1680f4a39c87:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f8b4f7eb3da84f2faa5baf7fc4df1680f4a39c87 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f8c54d0fd227a8fa4c6e634c54e2127afcbd4ec4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f8c54d0fd227a8fa4c6e634c54e2127afcbd4ec4 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f9924352af6e239878fb8d4fd694f67e69f01677:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f9924352af6e239878fb8d4fd694f67e69f01677 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f9c6ae454a2287fb9a65305a1f7b436587a9398a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f9c6ae454a2287fb9a65305a1f7b436587a9398a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/f9eb59fed5d73dbf177ff41b7592a6a6f5db6785:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/f9eb59fed5d73dbf177ff41b7592a6a6f5db6785 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa415adff84d1e7a339fa0f79dcdcc9b68fcbf03:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa415adff84d1e7a339fa0f79dcdcc9b68fcbf03 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa56a2e0f29bf51c5af36daa3cafdc28424f7bc3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa56a2e0f29bf51c5af36daa3cafdc28424f7bc3 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa6accf679e856b33a025dd43aaaf7ca17b72684:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa6accf679e856b33a025dd43aaaf7ca17b72684 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa876254d33cd9ef695dc5e1dd99b4b70791834f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa876254d33cd9ef695dc5e1dd99b4b70791834f \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa8f5cdd49538609bb18351ec2ffd440f1927a29:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa8f5cdd49538609bb18351ec2ffd440f1927a29 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fa912e1b31049a911c7f5e55789e265831de3f8a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fa912e1b31049a911c7f5e55789e265831de3f8a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fb0ff0f93f6616a5af0c9cd1574b47e3defa8837:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fb0ff0f93f6616a5af0c9cd1574b47e3defa8837 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fb34b01f6294d2739a68eafca4ae46b25c13f542:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fb34b01f6294d2739a68eafca4ae46b25c13f542 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fb3c9e5e5d85a6bb1f5fa01fc9255f51160da3e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fb3c9e5e5d85a6bb1f5fa01fc9255f51160da3e6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fb86533160ffa9954faf4e56ac7851d5af6c9687:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fb86533160ffa9954faf4e56ac7851d5af6c9687 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fbe463deb6dba6bc2cc65df1cf3e2044fc2c6324:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fbe463deb6dba6bc2cc65df1cf3e2044fc2c6324 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fbe5fcb4f08988d95992cdec1e308b8855a36a5e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fbe5fcb4f08988d95992cdec1e308b8855a36a5e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fc0d068e2545ea0b178024fa3b1b7c765597c227:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fc0d068e2545ea0b178024fa3b1b7c765597c227 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fc3d7c1c988bf49986abc4c8cd342e8054805558:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fc3d7c1c988bf49986abc4c8cd342e8054805558 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fc47b6445adbfa02e37c7f39adbb7985b5b113d1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fc47b6445adbfa02e37c7f39adbb7985b5b113d1 \
@@ -2053,292 +2245,294 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fca8db78b3181c4c4efe17dd026cab5d72a15598:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fca8db78b3181c4c4efe17dd026cab5d72a15598 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fca91e4ab09b9fa19654e76f1266d26839881db6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fca91e4ab09b9fa19654e76f1266d26839881db6 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fcd874811fa4ab93f7466e67e8f708a1796fcd8f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fcd874811fa4ab93f7466e67e8f708a1796fcd8f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fcf2d55d8e1a6fc3bf4d93e5eb85a8f9c2a2045b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fcf2d55d8e1a6fc3bf4d93e5eb85a8f9c2a2045b \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fcf77e35832a2ee166e0d35551e7fecafa561983:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fcf77e35832a2ee166e0d35551e7fecafa561983 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fd48ecda303ea0d8640b63279ff6ca59c67bad00:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fd48ecda303ea0d8640b63279ff6ca59c67bad00 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fd8c463b6b717f184b447f31b170e9ecbc11baf6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fd8c463b6b717f184b447f31b170e9ecbc11baf6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fdcd17e7ce9a0ee20d653534d401feeb503e0bd5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fdcd17e7ce9a0ee20d653534d401feeb503e0bd5 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fddca762c06a537728227801872a861b283c04de:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fddca762c06a537728227801872a861b283c04de \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fe6cb31c1de02834111af0a989b73fae5557c94e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fe6cb31c1de02834111af0a989b73fae5557c94e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/feb303418f7b86b0a5f06d17bfd48c1cd21a428f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/feb303418f7b86b0a5f06d17bfd48c1cd21a428f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ff095f95fb3169fdaceae3d76eecf2a5d2464f4e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ff095f95fb3169fdaceae3d76eecf2a5d2464f4e \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ff696a1b5f67f79247b2558833e54da1f17fbe5a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ff696a1b5f67f79247b2558833e54da1f17fbe5a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ff8104b13ada5e62a53bce671f5fce7da5d2724f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ff8104b13ada5e62a53bce671f5fce7da5d2724f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/ffc8faffd0df5949d3dc60effb13b8c04a3e291a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/ffc8faffd0df5949d3dc60effb13b8c04a3e291a \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs/fff855161c1243582d3044f48272bc19757fc502:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs/fff855161c1243582d3044f48272bc19757fc502 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/confseqs_symbolic_link_mapping:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/confseqs_symbolic_link_mapping \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0002c1f349690e31cae48d09d80d20e9303c202a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0002c1f349690e31cae48d09d80d20e9303c202a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/010485e82dc3e1dc9679858d155f800f184e52e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/010485e82dc3e1dc9679858d155f800f184e52e8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/03508636b16ccb15569dfb4b2ef67b9b12574815:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/03508636b16ccb15569dfb4b2ef67b9b12574815 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0393d59e789178b0794774a30e61c101826736f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0393d59e789178b0794774a30e61c101826736f7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/042f1da582442aea4d0d207e0b9776f429e612ff:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/042f1da582442aea4d0d207e0b9776f429e612ff \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/05b22df1056edb4e299b3f8a5c78946d52ede7c6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/05b22df1056edb4e299b3f8a5c78946d52ede7c6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/087c4714727496e004db81d9a81d555e302aef30:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/087c4714727496e004db81d9a81d555e302aef30 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/08983e752d87ea7fef5cab4747d80407d09a8359:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/08983e752d87ea7fef5cab4747d80407d09a8359 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/09a01649bd9e259ecc526243695210286aab20b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/09a01649bd9e259ecc526243695210286aab20b2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0bc97bea60d2564d5ce01bbed1da931fd85e53b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0bc97bea60d2564d5ce01bbed1da931fd85e53b5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0ef0353c8e82782cab3fd812a3bcbd403cd3a001:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0ef0353c8e82782cab3fd812a3bcbd403cd3a001 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0fafd88f8469b5d3a3e5905d75dfce851a4b3a90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0fafd88f8469b5d3a3e5905d75dfce851a4b3a90 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/103e18174182400574f09380dc25185376fde86d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/103e18174182400574f09380dc25185376fde86d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/11800fe83c4becb34e77c3d681a2c7a24339aa6b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/11800fe83c4becb34e77c3d681a2c7a24339aa6b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/121966da694bc08b14f480769f2058585e58fe0e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/121966da694bc08b14f480769f2058585e58fe0e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/14b05a3434a8720ff26194269f9161687344d03e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/14b05a3434a8720ff26194269f9161687344d03e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/14daccc0ca9703e55a5ad532c25029faad660915:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/14daccc0ca9703e55a5ad532c25029faad660915 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/14e54dc2364faf772ea667320f456625a046fac4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/14e54dc2364faf772ea667320f456625a046fac4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1532dd657ea84b3668d5dab4f37128cfc28eb7ae:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1532dd657ea84b3668d5dab4f37128cfc28eb7ae \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/159b5c7c046f560e17ce7a05dc007372e00e95b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/159b5c7c046f560e17ce7a05dc007372e00e95b2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1667ed2e777d5a6fa745cbd0499cddb48f976df4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1667ed2e777d5a6fa745cbd0499cddb48f976df4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/18024866b5335e282f628bb806fc0ee34b52e301:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/18024866b5335e282f628bb806fc0ee34b52e301 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/19b68b23f41162d6be92be4f367249c0f5f05f49:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/19b68b23f41162d6be92be4f367249c0f5f05f49 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1a3f923f6b7b3a9e1ff25b84a8e47ae58ed5df35:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1a3f923f6b7b3a9e1ff25b84a8e47ae58ed5df35 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1a883f4817741dd5d49c63a09ad5eb3fea081a2d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1a883f4817741dd5d49c63a09ad5eb3fea081a2d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1bb29ed52d225b8dfe9f384d387a784ebcfb5b10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1bb29ed52d225b8dfe9f384d387a784ebcfb5b10 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1cd39c7e5248039e7bb0fdd32be6ed33c39be899:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1cd39c7e5248039e7bb0fdd32be6ed33c39be899 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/208ca4d5646439904d738c6bdd29109a03f835c5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/208ca4d5646439904d738c6bdd29109a03f835c5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/20e2f62b9ce93e549dfdf3f0454a6bc1b2a13b8b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/20e2f62b9ce93e549dfdf3f0454a6bc1b2a13b8b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/20e5caa1f40546071e9d08d781a6472de9728363:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/20e5caa1f40546071e9d08d781a6472de9728363 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/20f5ee063994d85da3911aec55449a76b8d4bf53:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/20f5ee063994d85da3911aec55449a76b8d4bf53 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/210bf0039ca1160f0ddc16f2938c428efa156d0c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/210bf0039ca1160f0ddc16f2938c428efa156d0c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/24f508507fa3d49da91eaad91dca728e8787e992:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/24f508507fa3d49da91eaad91dca728e8787e992 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/27167f40fa9903548b3a9518401f08b695f6e727:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/27167f40fa9903548b3a9518401f08b695f6e727 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2780ee319623d7dfc33c31c5667cdb41cf6d357e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2780ee319623d7dfc33c31c5667cdb41cf6d357e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2a0d65458a68af6af4aa386ac1c3735feb50785e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2a0d65458a68af6af4aa386ac1c3735feb50785e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2a9807253008237a782883be1edd1b312f1eda22:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2a9807253008237a782883be1edd1b312f1eda22 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2f553f4ac34203f240f811e95a73456e53fa6deb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2f553f4ac34203f240f811e95a73456e53fa6deb \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2fb3de0a9c474856f3cc0d0e27c3eedb28d82e72:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2fb3de0a9c474856f3cc0d0e27c3eedb28d82e72 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/309fbaa25e7d586b1c994645b46796067587f695:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/309fbaa25e7d586b1c994645b46796067587f695 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/311d9c6c8ad6835d473e5af4ab6017ed68f2f3ae:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/311d9c6c8ad6835d473e5af4ab6017ed68f2f3ae \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/312baf006cabfa1e206d9b5c0045fecda53ae85a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/312baf006cabfa1e206d9b5c0045fecda53ae85a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/313acb7f24a285b337bddae074ca9374c608546c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/313acb7f24a285b337bddae074ca9374c608546c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/341ab185ef215bd5ef5bc12d63676401405b30f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/341ab185ef215bd5ef5bc12d63676401405b30f8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/342b57ca0cda0b2b7b9fe0e02867655aa7748a33:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/342b57ca0cda0b2b7b9fe0e02867655aa7748a33 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/34d3881c7a968fdf2d2b9f32e9a7bef47a0dab86:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/34d3881c7a968fdf2d2b9f32e9a7bef47a0dab86 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/36b644ec454fafdbc6867134b415117db69990ea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/36b644ec454fafdbc6867134b415117db69990ea \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/376740ab836b4c53705615fb23d28ecbd6d93844:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/376740ab836b4c53705615fb23d28ecbd6d93844 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3796b0f34ba987da6a725b4df7b88e72c8240476:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3796b0f34ba987da6a725b4df7b88e72c8240476 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/382207d4bb57e1e81543039f1135386944d87cdd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/382207d4bb57e1e81543039f1135386944d87cdd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/383fc2c98336559149aa4c34f6a8edea1cf2e3e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/383fc2c98336559149aa4c34f6a8edea1cf2e3e0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/38e5d646306aa939983a88d327765cffa36a41df:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/38e5d646306aa939983a88d327765cffa36a41df \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/39015685a11e7ee83b3097ef2f70d33b5749e493:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/39015685a11e7ee83b3097ef2f70d33b5749e493 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3b599085ab983f8d064b3d0bc197c4340f0f89ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3b599085ab983f8d064b3d0bc197c4340f0f89ec \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3c60c291aab4b33ed2abc31f3b9fe4854fe53972:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3c60c291aab4b33ed2abc31f3b9fe4854fe53972 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3d525a550d4d1914f9415b3c2cc1dd147a80e17b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3d525a550d4d1914f9415b3c2cc1dd147a80e17b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3e2025a1a6e57b466656a18e8e488c0d7f3b4694:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3e2025a1a6e57b466656a18e8e488c0d7f3b4694 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3eabcd11cd19662859dc9a7d764e134be75f98e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3eabcd11cd19662859dc9a7d764e134be75f98e9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3ee3130b05e8a5c79e469e38c9b480711df7f4a6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3ee3130b05e8a5c79e469e38c9b480711df7f4a6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3ee77cbc6ce7f0169aa1d356a983b91315be9459:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3ee77cbc6ce7f0169aa1d356a983b91315be9459 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/405e732b29e3466d711f8cfa2c9f4bc771f072ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/405e732b29e3466d711f8cfa2c9f4bc771f072ef \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/40f59601fd5a6ad08222bbdfca596fa570a11624:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/40f59601fd5a6ad08222bbdfca596fa570a11624 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/41413c0bca574cab106aaa0d5a897f80614498f6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/41413c0bca574cab106aaa0d5a897f80614498f6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/41f377b42e967904e0628717e1279c90e188812f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/41f377b42e967904e0628717e1279c90e188812f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4404a9de1858fc4304150c00131e1e1ed79b25f3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4404a9de1858fc4304150c00131e1e1ed79b25f3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4558e266067504c6bf70ad29c07fcfdb33f2c25b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4558e266067504c6bf70ad29c07fcfdb33f2c25b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/45856287353c9d87f5a606f46793407d02eda780:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/45856287353c9d87f5a606f46793407d02eda780 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/458cddfc34df648af73c4b75b4c303c65d66b741:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/458cddfc34df648af73c4b75b4c303c65d66b741 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/45a1b68581aced9c840811818ccfddc841b52ee5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/45a1b68581aced9c840811818ccfddc841b52ee5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/45ce320594dd952f1bd3fe7fb7f33955df7008a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/45ce320594dd952f1bd3fe7fb7f33955df7008a0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/461956d24602264f1249d4e286c873225220ab6c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/461956d24602264f1249d4e286c873225220ab6c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4827d62b0439e88f46d61844ce654c90cf8c0ef1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4827d62b0439e88f46d61844ce654c90cf8c0ef1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/48440c5667e64bcf8c95c720324c11b67ab2f274:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/48440c5667e64bcf8c95c720324c11b67ab2f274 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/49a9c462da5841e378975d525392562453ce00d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/49a9c462da5841e378975d525392562453ce00d8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4a3ab6aba2e896692f4507a108dd0e81cdfdcdc9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4a3ab6aba2e896692f4507a108dd0e81cdfdcdc9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4a48fe0bb024d5983eccdd32a3147a9382a6c146:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4a48fe0bb024d5983eccdd32a3147a9382a6c146 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4a8ce357ba0511d04a524c301405c844de47a0e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4a8ce357ba0511d04a524c301405c844de47a0e6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4af41ff290cbd0ee2d983a6f799b4ba1483047ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4af41ff290cbd0ee2d983a6f799b4ba1483047ec \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4c05a41f601e7c6de329fe9980fa2d16112a2ed5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4c05a41f601e7c6de329fe9980fa2d16112a2ed5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4cfc81187dce65eaf9b4012fb02cbb38d84274f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4cfc81187dce65eaf9b4012fb02cbb38d84274f7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4d13c0d0a5ef63e24becf8115531d78724bcdc4d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4d13c0d0a5ef63e24becf8115531d78724bcdc4d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4d6d4d240f57ff70bf7fd5b165943aa384f9055e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4d6d4d240f57ff70bf7fd5b165943aa384f9055e \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4dbf2103e5eb4830fe282776631537f88e3682b0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4dbf2103e5eb4830fe282776631537f88e3682b0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4e0b2ec20f7c4bd41dd315c8a857c887ca3f0a74:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4e0b2ec20f7c4bd41dd315c8a857c887ca3f0a74 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4f3b96d4571f7920ef211c6fd87f34ad6528ffb4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4f3b96d4571f7920ef211c6fd87f34ad6528ffb4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/525cd22b47e841a12c1356c8c9c097f0b8789f70:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/525cd22b47e841a12c1356c8c9c097f0b8789f70 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/535f64c208d0fbd0eb6c342e8f29023a17760360:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/535f64c208d0fbd0eb6c342e8f29023a17760360 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/548c42558daaa36adad8fa532b0f393a8d1742ff:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/548c42558daaa36adad8fa532b0f393a8d1742ff \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/54d016e37924e3b4a0015cf21339f63d6d70d337:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/54d016e37924e3b4a0015cf21339f63d6d70d337 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/54e7131fe36f0357fdb710e6584282072f2ef3e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/54e7131fe36f0357fdb710e6584282072f2ef3e0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/54e9c44bb78536ff677c35a7e60698f64b08a994:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/54e9c44bb78536ff677c35a7e60698f64b08a994 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/566ac1ae0cabe1910fd87c2e0334bb27d9ac75d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/566ac1ae0cabe1910fd87c2e0334bb27d9ac75d2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/56813c60c1baa13162318396eca94cecf518234b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/56813c60c1baa13162318396eca94cecf518234b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5736a0c1dd70c5a7f326cfec0374723961ab98f8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5736a0c1dd70c5a7f326cfec0374723961ab98f8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/581691969c7166e220a189df2af06bbaaa529e83:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/581691969c7166e220a189df2af06bbaaa529e83 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/588a5e11620dfd2e6fa8395853d2cd7c919db303:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/588a5e11620dfd2e6fa8395853d2cd7c919db303 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/58a7869e3cbdbf0edeebed62f6f25deb8928aea3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/58a7869e3cbdbf0edeebed62f6f25deb8928aea3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/59a0868b57bd9b9ab1e0dd85c9528de75b2be00d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/59a0868b57bd9b9ab1e0dd85c9528de75b2be00d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5af1b6474830683ab5d41e946e1c3a676aae3d13:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5af1b6474830683ab5d41e946e1c3a676aae3d13 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5cebab42da12d9dcb84e6dbee0f3cbff28002361:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5cebab42da12d9dcb84e6dbee0f3cbff28002361 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5cff2191be8bed14a71efe98faf222f9f6ad8b0d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5cff2191be8bed14a71efe98faf222f9f6ad8b0d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/60906bb7bb6d7b7d53ece3ee04ab67faf3976b6a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/60906bb7bb6d7b7d53ece3ee04ab67faf3976b6a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6150d3f42ae60dcb1fd67470a39391e49c520535:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6150d3f42ae60dcb1fd67470a39391e49c520535 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6179b098b270f3d5ded35d858fcf8668c5f1ab10:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6179b098b270f3d5ded35d858fcf8668c5f1ab10 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6428a440d4a95928f7ac2c13fa551d6d0a70c652:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6428a440d4a95928f7ac2c13fa551d6d0a70c652 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/651084a6477f344dfbf923a04352c4333268505b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/651084a6477f344dfbf923a04352c4333268505b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6640d406644b1de7c442ae7f28d9d08d279d983c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6640d406644b1de7c442ae7f28d9d08d279d983c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6a3fa413163e7cd84693d13c8c31f04c4e77022b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6a3fa413163e7cd84693d13c8c31f04c4e77022b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6b38146fccde65cd556bbf8bb6c316e9000c36cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6b38146fccde65cd556bbf8bb6c316e9000c36cf \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6c151e5e5d4e5db54c9aa71047d21a402f4456ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6c151e5e5d4e5db54c9aa71047d21a402f4456ac \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6c8c67faf0318e3eba31eee594d948c5fba3133f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6c8c67faf0318e3eba31eee594d948c5fba3133f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6d1cb37e4f53fe04211ad05a8af7ddb629c7a5b7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6d1cb37e4f53fe04211ad05a8af7ddb629c7a5b7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6d5c9111400174e508b10b33c96279e6860265af:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6d5c9111400174e508b10b33c96279e6860265af \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6e4f4b8936264f00e3728fa4dbc318cfafe8ff5b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6e4f4b8936264f00e3728fa4dbc318cfafe8ff5b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6ef26fec278e0a7909cca5a4748f6ceca73db1d8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6ef26fec278e0a7909cca5a4748f6ceca73db1d8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6fef881062e180e6e8e9423a8bc6ab05270b2da0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6fef881062e180e6e8e9423a8bc6ab05270b2da0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/706f50888585827a22c0194ea1d63b0ac9018bc5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/706f50888585827a22c0194ea1d63b0ac9018bc5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/71fdd632d2a01239e91e12be7fb78f9dff4e4f6d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/71fdd632d2a01239e91e12be7fb78f9dff4e4f6d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/725ee7254b8d8728baba53045b2171c9e96b55da:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/725ee7254b8d8728baba53045b2171c9e96b55da \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/72ba27d987df0d112c0fb74a50926a4b3110ea80:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/72ba27d987df0d112c0fb74a50926a4b3110ea80 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/731bc7cb8e57efaa084a4ac7b4ce5b786f747c95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/731bc7cb8e57efaa084a4ac7b4ce5b786f747c95 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/736ea2c565d91068994bdb701a41c7914848fca4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/736ea2c565d91068994bdb701a41c7914848fca4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7436ffdbb50b2efa67c62d0b99f17add2e91af95:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7436ffdbb50b2efa67c62d0b99f17add2e91af95 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7543cf0af404bcd86febfa4ad87eff163da4f1f6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7543cf0af404bcd86febfa4ad87eff163da4f1f6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/760f908e02eff078ff6d643198e17819ddc8914b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/760f908e02eff078ff6d643198e17819ddc8914b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/76ce6461f65f3368bc9ef6ed1852a3c6ac1a356c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/76ce6461f65f3368bc9ef6ed1852a3c6ac1a356c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/76efd9dc797b7537797d6d2afd801ef45b32a551:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/76efd9dc797b7537797d6d2afd801ef45b32a551 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/79774086d8d15391ca37c351a37438fd17aca921:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/79774086d8d15391ca37c351a37438fd17aca921 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7c9e5265cd260db7f79099e25984da1a2a579fa9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7c9e5265cd260db7f79099e25984da1a2a579fa9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8000d03ec2c947dd69b699a8364965c3153bfc71:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8000d03ec2c947dd69b699a8364965c3153bfc71 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/80cd93de3da781291a167599df2264c2348a3fb2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/80cd93de3da781291a167599df2264c2348a3fb2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/825194b268df2a310503c2f1457d71fff44a9718:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/825194b268df2a310503c2f1457d71fff44a9718 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8417b1b12e9361a63ee380d43b9997be1a9fe3ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8417b1b12e9361a63ee380d43b9997be1a9fe3ec \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/842a7e5b8ee2154364c44b917485bcb54cbf252d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/842a7e5b8ee2154364c44b917485bcb54cbf252d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/847f439d1a3707e3d133e83dca666760ec982384:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/847f439d1a3707e3d133e83dca666760ec982384 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/89576f629648e6653d10ff28056dba6494559e59:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/89576f629648e6653d10ff28056dba6494559e59 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/899eae9f0dc5d9adbedb1388fd17d162556acd9c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/899eae9f0dc5d9adbedb1388fd17d162556acd9c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/89cf48b3841d4a229e7c7025705d6466191e9249:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/89cf48b3841d4a229e7c7025705d6466191e9249 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8abb63f699d8162e40f765b7ac2b6a586ccf7b4f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8abb63f699d8162e40f765b7ac2b6a586ccf7b4f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8bfa7b9bdc48c3b48ce1d0cef2f8943293ad041a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8bfa7b9bdc48c3b48ce1d0cef2f8943293ad041a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8d2ddb4756c06bb575e94ca7f29703e6662e56e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8d2ddb4756c06bb575e94ca7f29703e6662e56e8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8d9b36523bf63cbbc40fdc9a0c19a30e51f1d929:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8d9b36523bf63cbbc40fdc9a0c19a30e51f1d929 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8dffa8f58a194c50ffe131a7061328611107d5e4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8dffa8f58a194c50ffe131a7061328611107d5e4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8e45bd8ee21d6e07dc2d8aac512cff13dc2400ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8e45bd8ee21d6e07dc2d8aac512cff13dc2400ac \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8f6e04a5c94b9cefb936ac4527b63c1415840562:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8f6e04a5c94b9cefb936ac4527b63c1415840562 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8f9a7b696b5a339dc54ff5fd38815783b685a47b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8f9a7b696b5a339dc54ff5fd38815783b685a47b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8fd3ffbf6282bc42a822840a24535ff6be65b6db:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8fd3ffbf6282bc42a822840a24535ff6be65b6db \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8fdbe4c784a395d7f8d930286e4189a12589e920:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8fdbe4c784a395d7f8d930286e4189a12589e920 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/923001b1658e626f23ad8e3e6b3bbf5a0e935bfc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/923001b1658e626f23ad8e3e6b3bbf5a0e935bfc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9353ad2103361eba1877ba06f81c5e389fb1866b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9353ad2103361eba1877ba06f81c5e389fb1866b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/93b16ec416101b080ec0ea0bf2b72b34a9a2e459:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/93b16ec416101b080ec0ea0bf2b72b34a9a2e459 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/93eb69198eb27ab5c9c8328a3f2c99f2e65a5d88:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/93eb69198eb27ab5c9c8328a3f2c99f2e65a5d88 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/949869134921188af8e2cd3e8680e6f2ac9e7ccf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/949869134921188af8e2cd3e8680e6f2ac9e7ccf \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/95ad872ffed387ed9d91766d76e660aaf8b1b183:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/95ad872ffed387ed9d91766d76e660aaf8b1b183 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9635f054ce8041def5f5fad64ccbc7e0eba2320a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9635f054ce8041def5f5fad64ccbc7e0eba2320a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/965473f3d42d3fbbd68b2f4eb4136b2d5d414536:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/965473f3d42d3fbbd68b2f4eb4136b2d5d414536 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/97f21c3295dd22d59f90cecec6d651b2aa3b9336:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/97f21c3295dd22d59f90cecec6d651b2aa3b9336 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/98a83ffd9d378d1fa9aa178fd9231c74e1f61514:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/98a83ffd9d378d1fa9aa178fd9231c74e1f61514 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/98e19a17ddc81ae6c2a52cd5f6d187b38b337a5b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/98e19a17ddc81ae6c2a52cd5f6d187b38b337a5b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/991ef720f6996c0d77c5398a1d9cf6fcb7a7906f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/991ef720f6996c0d77c5398a1d9cf6fcb7a7906f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/99a153ab3b5c23a6e9faa07d35a96278e4c4bd57:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/99a153ab3b5c23a6e9faa07d35a96278e4c4bd57 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/99b7bcf1b90222837fb62c8e7f11bf1bf032fbb6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/99b7bcf1b90222837fb62c8e7f11bf1bf032fbb6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9a44072f56e7e68bf031fd9ed92ec5e19b228f23:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9a44072f56e7e68bf031fd9ed92ec5e19b228f23 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9ad7283ffafef8cd94dc1699c79f3bfe455af1de:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9ad7283ffafef8cd94dc1699c79f3bfe455af1de \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9af3dcbbaa7e714ee98f5257148195912ed6d52a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9af3dcbbaa7e714ee98f5257148195912ed6d52a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9b133af9ad6ceabc0d778e9c3d0dd4daa3ffedd9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9b133af9ad6ceabc0d778e9c3d0dd4daa3ffedd9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9b8427596c1fca6737a65f3c4fc71282cb9b48cb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9b8427596c1fca6737a65f3c4fc71282cb9b48cb \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9bc0c8ddfd2e0eab4667765b77d5d15369cc2752:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9bc0c8ddfd2e0eab4667765b77d5d15369cc2752 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9cf8d52a7b3d24a6e69552b960c225ae04fb4fc4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9cf8d52a7b3d24a6e69552b960c225ae04fb4fc4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9da654f83626b32e912578fe51db812c3721ee60:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9da654f83626b32e912578fe51db812c3721ee60 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9fca9322f0f1a0efab3396cb85ffb23b7e3c06cd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9fca9322f0f1a0efab3396cb85ffb23b7e3c06cd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a1e8baf9d26c4126857eefa4c1e2de98663f64cc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a1e8baf9d26c4126857eefa4c1e2de98663f64cc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a2046f5022345fd3492f06679574591d09fc8361:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a2046f5022345fd3492f06679574591d09fc8361 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a2205c60674f138460207dbf0738028b387efdb4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a2205c60674f138460207dbf0738028b387efdb4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a298a746988621e1cd00123669c1428a33cf05b3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a298a746988621e1cd00123669c1428a33cf05b3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a386a2f1bf100017612aab08669ff36254378e9d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a386a2f1bf100017612aab08669ff36254378e9d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a456e42fdeb896ee6cec471b79939d166a81055c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a456e42fdeb896ee6cec471b79939d166a81055c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a591cc618f9977ddd160056888a1071b4f4817c8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a591cc618f9977ddd160056888a1071b4f4817c8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a6f0ec80fca49cb46f5fa0559b0d12731adaffa9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a6f0ec80fca49cb46f5fa0559b0d12731adaffa9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a700b60852c8178e20afe9026c6139d2d52d53e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a700b60852c8178e20afe9026c6139d2d52d53e9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a92685c6396572611cf712d08f686336a83e5ed2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a92685c6396572611cf712d08f686336a83e5ed2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ab2c0a8f1fce8a83803a41a3b60d43b1ef17b2f2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ab2c0a8f1fce8a83803a41a3b60d43b1ef17b2f2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ab3ef4ac8296191612f6ff11803ed3c9678d46b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ab3ef4ac8296191612f6ff11803ed3c9678d46b5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ab96b2f6b3b4e821fb057aea642605f979ec4a09:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ab96b2f6b3b4e821fb057aea642605f979ec4a09 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ac5b21ed60e3d237ba7c2ba55cbbb6c0d94c4f5f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ac5b21ed60e3d237ba7c2ba55cbbb6c0d94c4f5f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ac64353c429d31fe83e979ab2bc9ae3b1a16c64f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ac64353c429d31fe83e979ab2bc9ae3b1a16c64f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ac8c8c36cab1051fe400b0fa66021c185c015a94:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ac8c8c36cab1051fe400b0fa66021c185c015a94 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ae25acdb2708eefb2277dd01dd0f262e0e79d86b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ae25acdb2708eefb2277dd01dd0f262e0e79d86b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/afa0c89e80b6e83abc3a54da2bccc8677f9943d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/afa0c89e80b6e83abc3a54da2bccc8677f9943d6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b172c9680636bcc5d808c8515c5ecf47e93646e4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b172c9680636bcc5d808c8515c5ecf47e93646e4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b32ab88edbc4cf98c8fdd8fd3af3ec193f0dbd2f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b32ab88edbc4cf98c8fdd8fd3af3ec193f0dbd2f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b491bcd7486b331aeab9935204752ed853f3b28f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b491bcd7486b331aeab9935204752ed853f3b28f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b616bd04f2d2140435ac93c85cf75f1698e5c06a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b616bd04f2d2140435ac93c85cf75f1698e5c06a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b6484660c27d59bc4e4ef0de613c0e27a0e6a343:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b6484660c27d59bc4e4ef0de613c0e27a0e6a343 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b6de209150943d042bf46890dcb82ec98bad7676:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b6de209150943d042bf46890dcb82ec98bad7676 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b7dc1e85e27fe2d4a8fb4e7471dc29729912e11f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b7dc1e85e27fe2d4a8fb4e7471dc29729912e11f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b84e6f4a3b93747b58533338f2d1139c19e0bee2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b84e6f4a3b93747b58533338f2d1139c19e0bee2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b9822ce57a9fc63dea4cd26f952482ef2df6599b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b9822ce57a9fc63dea4cd26f952482ef2df6599b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ba8254e79750915cc959deb673d7ea6efc98739d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ba8254e79750915cc959deb673d7ea6efc98739d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bb9690bedd3a773917643cfaea1a6443a5e18326:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bb9690bedd3a773917643cfaea1a6443a5e18326 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bd9084af6146c918e02090556acf7a87fd92ec4a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bd9084af6146c918e02090556acf7a87fd92ec4a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bdade7a2388e3774dbe0ed255d9968148599893d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bdade7a2388e3774dbe0ed255d9968148599893d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/be763808fa5849e2629d7dcbab49af2f082930be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/be763808fa5849e2629d7dcbab49af2f082930be \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bed11e9f0837b3f9a7ab641fe174a60a6d21d2c7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bed11e9f0837b3f9a7ab641fe174a60a6d21d2c7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bf49ae24c7a3659c9c67947fdf1c23b3f9e38754:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bf49ae24c7a3659c9c67947fdf1c23b3f9e38754 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bfaa85cdefc55d005b4bd99ed2e81d3cebf7793d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bfaa85cdefc55d005b4bd99ed2e81d3cebf7793d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c10173c0f35e343997488ae3171758759a7cf292:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c10173c0f35e343997488ae3171758759a7cf292 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c17423be2c8518486838724e9c7fa21d072cf7e3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c17423be2c8518486838724e9c7fa21d072cf7e3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c419e44f2a57a542958c3fcf8cb3f3f5812bc2a0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c419e44f2a57a542958c3fcf8cb3f3f5812bc2a0 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c48c8c2815dd18e722baa1a86d3331d952a7e4dd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c48c8c2815dd18e722baa1a86d3331d952a7e4dd \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c4cbcc2b780ba8d30d2b1ba5d7e56c39e13961cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c4cbcc2b780ba8d30d2b1ba5d7e56c39e13961cf \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c551f2ea459e50f93a92158ac5fbccc219ddc789:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c551f2ea459e50f93a92158ac5fbccc219ddc789 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c6856012818d3531d810275df77b3307a849acda:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c6856012818d3531d810275df77b3307a849acda \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c6c5b0296c5c1cb94fec27e24de4137fd118d2c5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c6c5b0296c5c1cb94fec27e24de4137fd118d2c5 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c83afe6140d283548c5e8e99b90ffd738f38804f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c83afe6140d283548c5e8e99b90ffd738f38804f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c89a6b9cbb63b203a605f86fc6b17b35c6c318e1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c89a6b9cbb63b203a605f86fc6b17b35c6c318e1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c924ee9f98e15074f076ed5e275f5a2bab9a51d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c924ee9f98e15074f076ed5e275f5a2bab9a51d2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c93391b83e59c3ea880e6cd2b013065b806c9618:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c93391b83e59c3ea880e6cd2b013065b806c9618 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cc372ff6f8704777aae3f18848dc889910a38f4f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cc372ff6f8704777aae3f18848dc889910a38f4f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ccd4d17e75a9624e67637063802d9a3e80048ade:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ccd4d17e75a9624e67637063802d9a3e80048ade \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cd1fa290f8b893cf40e48d085fa3afe434e3e1aa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cd1fa290f8b893cf40e48d085fa3afe434e3e1aa \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ced56119bbd8dcc6b212b3a80adaf03fb2d8c963:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ced56119bbd8dcc6b212b3a80adaf03fb2d8c963 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d008c4cac2f83a942230e2a0c438245085739955:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d008c4cac2f83a942230e2a0c438245085739955 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d13c53850dbef1c2b4029ea99a47e5efcb70bc11:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d13c53850dbef1c2b4029ea99a47e5efcb70bc11 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d1f1477a23575775c7bb3a9aa3603f93c0cbb5a3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d1f1477a23575775c7bb3a9aa3603f93c0cbb5a3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d29569120b7f130d6380d2415cf4ad10071cef97:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d29569120b7f130d6380d2415cf4ad10071cef97 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d34c78a05f0ca24c7ae2f3baf3188888a5390fe3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d34c78a05f0ca24c7ae2f3baf3188888a5390fe3 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d34f6552d8a7874a6b7a752a540d96c6d3b1bee7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d34f6552d8a7874a6b7a752a540d96c6d3b1bee7 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d364792168ca1a841819348075119138bd322b2d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d364792168ca1a841819348075119138bd322b2d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d4967af58791f3f637bdbeccd55babd138c0b02d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d4967af58791f3f637bdbeccd55babd138c0b02d \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d61a5a5ae7279b2b922e0df9db1848ece4668d6c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d61a5a5ae7279b2b922e0df9db1848ece4668d6c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d633889808688e8673455e093518e265a71f899b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d633889808688e8673455e093518e265a71f899b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d6af4897528ddbbf055f6dfccbc19ab7fad2304b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d6af4897528ddbbf055f6dfccbc19ab7fad2304b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d8125cb652fdb79546b8538175d4f9a95e203cf2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d8125cb652fdb79546b8538175d4f9a95e203cf2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d86267ec3fdb6ed48bf712597b3d21795814717a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d86267ec3fdb6ed48bf712597b3d21795814717a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d9d7c7324d6431bb0c72e5b59ad727c94d3fc2cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d9d7c7324d6431bb0c72e5b59ad727c94d3fc2cf \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/dbca910f4984e875c3a9c9a781a28117bb7cec39:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/dbca910f4984e875c3a9c9a781a28117bb7cec39 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/dc91f26247e031e516b67cce42b9193ca18675ef:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/dc91f26247e031e516b67cce42b9193ca18675ef \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/dcbc4e0902fe8bed57b9a193022d50f2f4c79e69:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/dcbc4e0902fe8bed57b9a193022d50f2f4c79e69 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/dcc5c72d86bb7f6edc9a31fdaf3e78a39a236ea8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/dcc5c72d86bb7f6edc9a31fdaf3e78a39a236ea8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ddb68fa24953605297bc84cac935f30f4bcfcb17:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ddb68fa24953605297bc84cac935f30f4bcfcb17 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e2ce0687bd196e7cedab99960e2cde59d5e858a2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e2ce0687bd196e7cedab99960e2cde59d5e858a2 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e52cfb9801e949360c0ea2a3634ff7d5e194bb02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e52cfb9801e949360c0ea2a3634ff7d5e194bb02 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e5addc75d10ba6491bce1b398709f040e59b7905:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e5addc75d10ba6491bce1b398709f040e59b7905 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e60b725c9918b00219ccd009f4eb40190800ab4c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e60b725c9918b00219ccd009f4eb40190800ab4c \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e61c2b61afa375a398e6f6c183db6181fad36ddb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e61c2b61afa375a398e6f6c183db6181fad36ddb \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e8aa8b0b8586a09dc02e1b180a01803fb2092205:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e8aa8b0b8586a09dc02e1b180a01803fb2092205 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e8eba224900c7cb688ff4f27bcae0cb5ea0dd505:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e8eba224900c7cb688ff4f27bcae0cb5ea0dd505 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e91444c2ee645dd820ed0b0c94f0d83613ef7990:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e91444c2ee645dd820ed0b0c94f0d83613ef7990 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e97ca42f4e0b7b415512613c94f2594a922e8eb8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e97ca42f4e0b7b415512613c94f2594a922e8eb8 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e9c13cd33ac1fdb33033b7320a8c74c27eac1fce:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e9c13cd33ac1fdb33033b7320a8c74c27eac1fce \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ea17b5006e9cca6c6cc95050b31bdccd8ec88663:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ea17b5006e9cca6c6cc95050b31bdccd8ec88663 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ea4ac45be5fe6906c3d24e4a819b52d8c2192398:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ea4ac45be5fe6906c3d24e4a819b52d8c2192398 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/eafff7248b19eccbaa52110320bd7c56ec29b169:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/eafff7248b19eccbaa52110320bd7c56ec29b169 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ecbe1877e5b9a34fb36564593b6d976eb4a90218:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ecbe1877e5b9a34fb36564593b6d976eb4a90218 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ee2e5acc211e00ecaf79968622b8e5a296525619:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ee2e5acc211e00ecaf79968622b8e5a296525619 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f0c30ad34adaa4a2cc0234f2c69dfc7955c9578a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f0c30ad34adaa4a2cc0234f2c69dfc7955c9578a \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f110eb4911e9a1414e34350cac930b60b1381bdc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f110eb4911e9a1414e34350cac930b60b1381bdc \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f3a425907404dd5762d03d8a79c67158c48e7544:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f3a425907404dd5762d03d8a79c67158c48e7544 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f3e31e642dfb2d319cc110eb03e56c4e5977dae6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f3e31e642dfb2d319cc110eb03e56c4e5977dae6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f4179a0e53d8ec8e3e067d895a748b6aa20bbb7f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f4179a0e53d8ec8e3e067d895a748b6aa20bbb7f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f4723c7029ee3d4190148125621f9ce4899e14e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f4723c7029ee3d4190148125621f9ce4899e14e9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f709b741722122ffc543812c657e9bec5b2eae12:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f709b741722122ffc543812c657e9bec5b2eae12 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f7461f480b6a25c0543ace53abeedd7dfd92b3a1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f7461f480b6a25c0543ace53abeedd7dfd92b3a1 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f7d4aaf3c767e65a73c77f844de6c5f799f97f9f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f7d4aaf3c767e65a73c77f844de6c5f799f97f9f \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f87358d7514c0039da6b9810d302c4a0dc5ef976:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f87358d7514c0039da6b9810d302c4a0dc5ef976 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fa1bf14af1d1be6e43ad558adfa013a5c14e73b4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fa1bf14af1d1be6e43ad558adfa013a5c14e73b4 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fa76aa2fc0ebab6020c72ee4fb4820508a00665b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fa76aa2fc0ebab6020c72ee4fb4820508a00665b \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fcb2be5df86f236cd7750cb55ce9e9050d1084be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fcb2be5df86f236cd7750cb55ce9e9050d1084be \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fe1af96326aee372b684d2aa816c490e102ca4b6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fe1af96326aee372b684d2aa816c490e102ca4b6 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ff3438c0a5074cc5838317dc23c26ecb4ba4e9c9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ff3438c0a5074cc5838317dc23c26ecb4ba4e9c9 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ffb3471757c7ba8223691281a70018fbc2b67a53:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ffb3471757c7ba8223691281a70018fbc2b67a53 \
-    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ffb846beceb0a68747d9dd8007e6d1da1de738d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ffb846beceb0a68747d9dd8007e6d1da1de738d6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0120750b939f8f92616141febac2b1132bf0ab02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0120750b939f8f92616141febac2b1132bf0ab02 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/02505a64286cabdae784f4a8a9ac64a202432fc2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/02505a64286cabdae784f4a8a9ac64a202432fc2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/029dc9963c9111461068b2fa895f8bffbc52be2c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/029dc9963c9111461068b2fa895f8bffbc52be2c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/034bfc6df4060c622c9d71757ea4178fa117ae18:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/034bfc6df4060c622c9d71757ea4178fa117ae18 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/04830d3a9837c0a5123335e916f35e7afb05dee2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/04830d3a9837c0a5123335e916f35e7afb05dee2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/04b6f14670785149d4026d006ff09a3e690f5d1c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/04b6f14670785149d4026d006ff09a3e690f5d1c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/05901611180ce32e6e2b79c4b556c3dbe93b7480:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/05901611180ce32e6e2b79c4b556c3dbe93b7480 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/06dc3a0d75cb63d5dec8d4f0714c727c241ee2f1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/06dc3a0d75cb63d5dec8d4f0714c727c241ee2f1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/06eee200b6f77c98560b01df37ed9f976fa5218f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/06eee200b6f77c98560b01df37ed9f976fa5218f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/07a01db70075d55dd25449ae30192a206f07cc04:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/07a01db70075d55dd25449ae30192a206f07cc04 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/093cbebd9ed44748aebfe2788dfe98c794834239:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/093cbebd9ed44748aebfe2788dfe98c794834239 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/097c98578c81ce174aba09fb48559ccc5e1fe03a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/097c98578c81ce174aba09fb48559ccc5e1fe03a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0b638106b942cd443367e7f7a3aeee92690147e2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0b638106b942cd443367e7f7a3aeee92690147e2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0c72956dbc94bd46a116d8c08b030b1f693bde8b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0c72956dbc94bd46a116d8c08b030b1f693bde8b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0d99fe83b8a6415dd0a41ad6e591039a68648b17:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0d99fe83b8a6415dd0a41ad6e591039a68648b17 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0de064570561f6baf313f09246c636f8bd1b7993:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0de064570561f6baf313f09246c636f8bd1b7993 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0edbf0fb2229a289f10419e5877cd30af9c7e8d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0edbf0fb2229a289f10419e5877cd30af9c7e8d2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/0f1da9d3bd7c59348f6f35aa2b0b74ab11544d57:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/0f1da9d3bd7c59348f6f35aa2b0b74ab11544d57 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/101a1e6958c607f560086f1c170b53ecdf340eea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/101a1e6958c607f560086f1c170b53ecdf340eea \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/10201605ae4286257825ceb841e1ec6f4635d638:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/10201605ae4286257825ceb841e1ec6f4635d638 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/12328a7e32ad69e6cda53d2c0540ab32405ef4bd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/12328a7e32ad69e6cda53d2c0540ab32405ef4bd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/12c89d2a4a973fb4820b26d784e5f9bbb9044341:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/12c89d2a4a973fb4820b26d784e5f9bbb9044341 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/15033ae04a75c39650ed4c47a0b7c0c31604e004:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/15033ae04a75c39650ed4c47a0b7c0c31604e004 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1608f2ead56d61f73fa22470d13d42e75df11cb5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1608f2ead56d61f73fa22470d13d42e75df11cb5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/16d043cd8e05e0d114d0580befabf80970dba006:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/16d043cd8e05e0d114d0580befabf80970dba006 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/172ca3c44e27745cd090f378cfa94d64fc3290d9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/172ca3c44e27745cd090f378cfa94d64fc3290d9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/17a7894d3f1dd12b80a85e2142b9175f8290b3b6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/17a7894d3f1dd12b80a85e2142b9175f8290b3b6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/18c65650326c7b5613742e2e6203ff7125f78285:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/18c65650326c7b5613742e2e6203ff7125f78285 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/18e581de423896617cc0c570b8e66976fadf7a2e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/18e581de423896617cc0c570b8e66976fadf7a2e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/18fda5ab9b9c93220028ed83f62ee16f72f4b1cd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/18fda5ab9b9c93220028ed83f62ee16f72f4b1cd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1a3d7a85bbb60b3c4dcbdfbd7e0e578975e9ee8b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1a3d7a85bbb60b3c4dcbdfbd7e0e578975e9ee8b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1d8d11528dd42479f769b436c04f958f223322af:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1d8d11528dd42479f769b436c04f958f223322af \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1d959113feaf7718bcb9eb5f61a33b7020671869:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1d959113feaf7718bcb9eb5f61a33b7020671869 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1e4cdca0f29ce5b456417b0a0a42fe80963bb22d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1e4cdca0f29ce5b456417b0a0a42fe80963bb22d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1ecc1c41dce804698387a50c4bb8f1c2a6f385ce:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1ecc1c41dce804698387a50c4bb8f1c2a6f385ce \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/1ffa16400dced7bc80287d46cf777c2698c91b1c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/1ffa16400dced7bc80287d46cf777c2698c91b1c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2210d7ca6e0c3f460582d1339742cd91fadd941d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2210d7ca6e0c3f460582d1339742cd91fadd941d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/230f66925cd78b1e52991db5d76d43e0383195ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/230f66925cd78b1e52991db5d76d43e0383195ac \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2340bbab4d0391b4f64762fe19836a52f2d80b93:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2340bbab4d0391b4f64762fe19836a52f2d80b93 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2452424a352d1b42e30c1a780e5e8c1712b9c106:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2452424a352d1b42e30c1a780e5e8c1712b9c106 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2452a2fd0a1b4df7acc5a33e8904a4b1068bd41e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2452a2fd0a1b4df7acc5a33e8904a4b1068bd41e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/277ecd292bb53a0a4b67e486819142f15fd48982:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/277ecd292bb53a0a4b67e486819142f15fd48982 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/289c45431d29fe79c8bf170be23b737328b41623:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/289c45431d29fe79c8bf170be23b737328b41623 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2a6aa35655d8334c4ef6160e4ea177def518af3a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2a6aa35655d8334c4ef6160e4ea177def518af3a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2b97f665f41f347686c204e6ca80f7c3f1cfabcb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2b97f665f41f347686c204e6ca80f7c3f1cfabcb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2ed67bba041ade0a0c807b8c424ea21bef994d86:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2ed67bba041ade0a0c807b8c424ea21bef994d86 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/2f9f790cce603d03ec3bd869c239a8e25816667f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/2f9f790cce603d03ec3bd869c239a8e25816667f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/30624776eb13af4ed4d63380e22953d00f6ba64f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/30624776eb13af4ed4d63380e22953d00f6ba64f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3096884ddb8075adf16595f194b5f98a42851bdd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3096884ddb8075adf16595f194b5f98a42851bdd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/30fdf959462b1c2c5ff62e081da47e2c7a2f1fd9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/30fdf959462b1c2c5ff62e081da47e2c7a2f1fd9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/32a1d27886460ca05085eee11519793cfbb45a67:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/32a1d27886460ca05085eee11519793cfbb45a67 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/33d8730094e4246ab3df77cc2585e8136d68239c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/33d8730094e4246ab3df77cc2585e8136d68239c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/343f04a61efcfd387b9703c5ff863942e5be3a01:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/343f04a61efcfd387b9703c5ff863942e5be3a01 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/34acbb7d3b120ec8ea651d2c7b7405207ef116ea:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/34acbb7d3b120ec8ea651d2c7b7405207ef116ea \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/363a91d228372c56c11bf988fa4f2a765066d0e6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/363a91d228372c56c11bf988fa4f2a765066d0e6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/36e4f12549ea331d1d29c1f1d05af75fd9955ddf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/36e4f12549ea331d1d29c1f1d05af75fd9955ddf \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3765f29d6a69dc7cf82e7f825126af920334be5d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3765f29d6a69dc7cf82e7f825126af920334be5d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/38fc55660061ac98becd71d3279c4d266009be25:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/38fc55660061ac98becd71d3279c4d266009be25 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/396da2253cc63f792acaa2e95ca6065f11e3b2e5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/396da2253cc63f792acaa2e95ca6065f11e3b2e5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/399f2b31159bdf8392e2f067d5a3666d35ce0478:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/399f2b31159bdf8392e2f067d5a3666d35ce0478 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3a17a0a2c5caa8332c52715465093a340868749d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3a17a0a2c5caa8332c52715465093a340868749d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3bb9e260ac8e1ec34dac7a1867c3d30d9a3085ae:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3bb9e260ac8e1ec34dac7a1867c3d30d9a3085ae \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3c0d34ef866f87bd7bc8c496bf9886b2f0d048ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3c0d34ef866f87bd7bc8c496bf9886b2f0d048ee \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3ca82fb0461c26bbc938462895b82bcbf9dedc8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3ca82fb0461c26bbc938462895b82bcbf9dedc8e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/3d2e80022bb58daab14a22d569ed417a903b86ac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/3d2e80022bb58daab14a22d569ed417a903b86ac \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4081c8f269e27333b3bc3cde37e332b9ff9b7f2b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4081c8f269e27333b3bc3cde37e332b9ff9b7f2b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/41169cf4e96dd60b3a54327b219f430a07e99eb6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/41169cf4e96dd60b3a54327b219f430a07e99eb6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/415bebf67efcba0838a7dbf9ff982eeff8abb273:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/415bebf67efcba0838a7dbf9ff982eeff8abb273 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/41c1d0925be72705c388cd665fb6f1980c935aab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/41c1d0925be72705c388cd665fb6f1980c935aab \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/435ac3119dc558cb1182222ba0eecba9b655ff81:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/435ac3119dc558cb1182222ba0eecba9b655ff81 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/436f4c774439be019e9f352a0488832fc65700d2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/436f4c774439be019e9f352a0488832fc65700d2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/44a1e42ce577bd8bf2b7ee4def0a3950af48320c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/44a1e42ce577bd8bf2b7ee4def0a3950af48320c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/46ead63610c75b3576cef1bff3bd020fc0debbcb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/46ead63610c75b3576cef1bff3bd020fc0debbcb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/475a904c954dcca5aad6fce294a8db26fc02950e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/475a904c954dcca5aad6fce294a8db26fc02950e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/47ad4f41ddebc1940f8bc0b24260923cd12e2638:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/47ad4f41ddebc1940f8bc0b24260923cd12e2638 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4815cfe080efbd53f701578a33f87b10f0abd55c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4815cfe080efbd53f701578a33f87b10f0abd55c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4878f3e2309f2efd28ac3c01eb5d1b39c6439898:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4878f3e2309f2efd28ac3c01eb5d1b39c6439898 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4b1041b1f78d15b281e0357ca0dda08b7ef93054:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4b1041b1f78d15b281e0357ca0dda08b7ef93054 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4bc20176d9162d1d4f260475b3ce59393c1d4c32:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4bc20176d9162d1d4f260475b3ce59393c1d4c32 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4ce1fe7574c8822f5f7ff7a3c083191cc9eaebe6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4ce1fe7574c8822f5f7ff7a3c083191cc9eaebe6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4d1a5449d78ee2a46f1ccd05fedeccf0cc649cb8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4d1a5449d78ee2a46f1ccd05fedeccf0cc649cb8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/4f1c7bf492f7e010fddabe92c358738d14dae67b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/4f1c7bf492f7e010fddabe92c358738d14dae67b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/50bd774725ff5a56c8250d1255dca3a28d44f58b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/50bd774725ff5a56c8250d1255dca3a28d44f58b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/510ae6221786dcce25452df9640dd09ce772ca82:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/510ae6221786dcce25452df9640dd09ce772ca82 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/519502fe4d7f67855799532e6f89aa7cd9a52e88:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/519502fe4d7f67855799532e6f89aa7cd9a52e88 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5223877d720b1723c8fafe04fce24079953b28d6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5223877d720b1723c8fafe04fce24079953b28d6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/541db3bdfe74f53ce3aa7d37db9f2ae2f1f24548:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/541db3bdfe74f53ce3aa7d37db9f2ae2f1f24548 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/547abcfb910382e462bfae4120970a32e30c20ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/547abcfb910382e462bfae4120970a32e30c20ab \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/55a2e1c4c481e1e52a58a95703894c96fbdc973d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/55a2e1c4c481e1e52a58a95703894c96fbdc973d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/55b5790ead40a167a0007cf17ff81271d6192cb5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/55b5790ead40a167a0007cf17ff81271d6192cb5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5686ec6805eb916bafaef323cf0c912ce9b9d048:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5686ec6805eb916bafaef323cf0c912ce9b9d048 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/568dfbd1a739f9cd0ce8985baf6c0d8fdbc76db9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/568dfbd1a739f9cd0ce8985baf6c0d8fdbc76db9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/56c6f930b3f1d735bcc02424b1a0da56e8fd4bab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/56c6f930b3f1d735bcc02424b1a0da56e8fd4bab \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/57826a63d3e1442892d8bd5464177f3796d794ca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/57826a63d3e1442892d8bd5464177f3796d794ca \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/584e81b347fdc265d2830342fdd510f6cdd3e76a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/584e81b347fdc265d2830342fdd510f6cdd3e76a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/598a8c1906e56be704902bb9df93174aba56bf4b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/598a8c1906e56be704902bb9df93174aba56bf4b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5bad1977d9af87a89dfe896594a5999eec898f8d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5bad1977d9af87a89dfe896594a5999eec898f8d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/5c157bd6e23f0f7afd7ec6b4060cee287b645d30:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/5c157bd6e23f0f7afd7ec6b4060cee287b645d30 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/60ad3fb90ff98076d2bd7d83e226b18b9d4ad735:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/60ad3fb90ff98076d2bd7d83e226b18b9d4ad735 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/62a62f25b136b59e6ffc2573dfdc2a7b41ed2238:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/62a62f25b136b59e6ffc2573dfdc2a7b41ed2238 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/62dca1473182066b54e7e49341dce62add1f2651:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/62dca1473182066b54e7e49341dce62add1f2651 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/62f16bb3b4a86977b9e9f73f2855eb4475f5aec7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/62f16bb3b4a86977b9e9f73f2855eb4475f5aec7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6523ea18a5e2a950c681ff8670277e9feb7851cf:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6523ea18a5e2a950c681ff8670277e9feb7851cf \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6c5e74b43dd46ee75103773a38824ba9bf07ebca:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6c5e74b43dd46ee75103773a38824ba9bf07ebca \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6d7e8739cc15cd5ef775a91b6c4c158625233e41:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6d7e8739cc15cd5ef775a91b6c4c158625233e41 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6dd1c23e3a0f3f69c9ee1b5a8805e1d85887eb43:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6dd1c23e3a0f3f69c9ee1b5a8805e1d85887eb43 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6e2785bbf7a67657140272941d7f1f6c788d0381:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6e2785bbf7a67657140272941d7f1f6c788d0381 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6ebea2060e8e5a82fd1e31ccefd584053504711b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6ebea2060e8e5a82fd1e31ccefd584053504711b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6f00ec5b77d4eb7a81185733fe963e8605ab87b4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6f00ec5b77d4eb7a81185733fe963e8605ab87b4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/6fa1058208287c9ddf6594ede71bc11bd37018f4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/6fa1058208287c9ddf6594ede71bc11bd37018f4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7243ef718cabe1179171234fa195b076f07df7a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7243ef718cabe1179171234fa195b076f07df7a9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/72b967b4b32630545c6188b0cd470f5ef8298286:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/72b967b4b32630545c6188b0cd470f5ef8298286 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7461cc35a108a7d82d4615750fbc1a4db2209488:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7461cc35a108a7d82d4615750fbc1a4db2209488 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/746e39f3bd44043a3c5873c931bc741bf827e0fb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/746e39f3bd44043a3c5873c931bc741bf827e0fb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/74a777126d36a8ba829d0cadebe25e6f32d8d695:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/74a777126d36a8ba829d0cadebe25e6f32d8d695 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/76b7bbe84311f2082b0c8f20bdd572929a355a97:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/76b7bbe84311f2082b0c8f20bdd572929a355a97 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/76e78242549229091097b5009f4130f610809338:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/76e78242549229091097b5009f4130f610809338 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7942f6cf76f30946796a4ba16b0133401f53fffd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7942f6cf76f30946796a4ba16b0133401f53fffd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/794cdcd15023751906c1cbc35f01a0779b2bccf8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/794cdcd15023751906c1cbc35f01a0779b2bccf8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7ad7521691d36372f58a43c8bf4a8481d360ed02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7ad7521691d36372f58a43c8bf4a8481d360ed02 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7cf67353fd6b1f1f3aff351079d12d7720ad6e42:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7cf67353fd6b1f1f3aff351079d12d7720ad6e42 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7dc12f44f2bca4469ee794bae2fb43d7680e8a9d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7dc12f44f2bca4469ee794bae2fb43d7680e8a9d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7ef7e91e6961c4913cd059e32fc3b7928b9ce05f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7ef7e91e6961c4913cd059e32fc3b7928b9ce05f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7efd6c8ef836842bdb79e836ae2da6d07e129752:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7efd6c8ef836842bdb79e836ae2da6d07e129752 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/7fc9713931ab16ee471b376d68f158439fc9a4ec:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/7fc9713931ab16ee471b376d68f158439fc9a4ec \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/80710b6515c3d87a10482ed035b988d0040c7649:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/80710b6515c3d87a10482ed035b988d0040c7649 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/818359e71c716c0a14a746ba8a91f744893c3a3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/818359e71c716c0a14a746ba8a91f744893c3a3f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/836937075b7dfbc5dd02b046fc8f6682c916285a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/836937075b7dfbc5dd02b046fc8f6682c916285a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/84f15d7eddf759f58086cdd99301c9689767f8b5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/84f15d7eddf759f58086cdd99301c9689767f8b5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/86c6eb76452c22ed85ad26d85fb88cb49fc8fc99:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/86c6eb76452c22ed85ad26d85fb88cb49fc8fc99 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/87e67d5efc929ee08cbdfc8ed479331cdefcad99:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/87e67d5efc929ee08cbdfc8ed479331cdefcad99 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/88d21592cdaeee2a963e1af16b24709df6132af0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/88d21592cdaeee2a963e1af16b24709df6132af0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/895628deceab6e922d55e4276555dedbe44f04bd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/895628deceab6e922d55e4276555dedbe44f04bd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8b99721e6d03f875e7a11bd333a1ffd8613f4fc0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8b99721e6d03f875e7a11bd333a1ffd8613f4fc0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8c3f486e68dfb49f994d400f6601d6dc6defdc1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8c3f486e68dfb49f994d400f6601d6dc6defdc1a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8d4bb32347a594db70a56b2139bf98be12a269f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8d4bb32347a594db70a56b2139bf98be12a269f7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8d74b6de315ad017c9fb1aa4c188b5a300ffd44b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8d74b6de315ad017c9fb1aa4c188b5a300ffd44b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8ef93591baba6db65432a14d35657a409ef5c383:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8ef93591baba6db65432a14d35657a409ef5c383 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8eff2f0b2652c6f6f54529f8911784aefd98cb0e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8eff2f0b2652c6f6f54529f8911784aefd98cb0e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/8f735f8cc8af2290c213533bb4a23446112830a6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/8f735f8cc8af2290c213533bb4a23446112830a6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/906e4a9a873a6034744eefe499038dda83fca4bc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/906e4a9a873a6034744eefe499038dda83fca4bc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/90c9c2313e5f9d58fd42108c50c2b3a1028f23c2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/90c9c2313e5f9d58fd42108c50c2b3a1028f23c2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/935772e5a0ba2f7f4f8bcc29bdf1da82c0a08beb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/935772e5a0ba2f7f4f8bcc29bdf1da82c0a08beb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/950f55215943050b18852d2df0a2b1ef00519955:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/950f55215943050b18852d2df0a2b1ef00519955 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9543295d95f7bc276ecd4c5790a53965a5dd54b8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9543295d95f7bc276ecd4c5790a53965a5dd54b8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/970eb77a398723d3d4817df6d85ee689a83e7c29:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/970eb77a398723d3d4817df6d85ee689a83e7c29 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/971fc275485f7d4eedfbef851c6ba0067dbda3ba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/971fc275485f7d4eedfbef851c6ba0067dbda3ba \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9779b8f558647353b6ec9bb0b6d1f71a7d45a3e0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9779b8f558647353b6ec9bb0b6d1f71a7d45a3e0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/97a8bfca0ed1761e49646c04a6226e95a802f139:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/97a8bfca0ed1761e49646c04a6226e95a802f139 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/97b2ac8a4dfcd172c0d1f38f40ae37eb0dd7df75:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/97b2ac8a4dfcd172c0d1f38f40ae37eb0dd7df75 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/980c193e255401ddf5935f7a20e8c8a46808ea89:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/980c193e255401ddf5935f7a20e8c8a46808ea89 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9979d13cc2b232a6bbb6176a2bc0534eba0226a9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9979d13cc2b232a6bbb6176a2bc0534eba0226a9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/99b02efe51d5a3a45c18bd7bb7b7d3b7ffc832b1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/99b02efe51d5a3a45c18bd7bb7b7d3b7ffc832b1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9a25d6921eaf58eab09d30f2f73c17a77378816f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9a25d6921eaf58eab09d30f2f73c17a77378816f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9c3705bf72541f0e90fd4eb656942197d06c5c79:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9c3705bf72541f0e90fd4eb656942197d06c5c79 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9df2e9aa9a5cee9bbc124c49caab3f9a998c1f48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9df2e9aa9a5cee9bbc124c49caab3f9a998c1f48 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9e6d0e2e8eaf395c9b1bad260cc109e5307fcce5:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9e6d0e2e8eaf395c9b1bad260cc109e5307fcce5 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9e8442b8b9f3d4120d1c676fbfe43cac37ccfbfb:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9e8442b8b9f3d4120d1c676fbfe43cac37ccfbfb \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/9f3e6d1c596cd784fae9befc6c6cb70ed1fb61d0:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/9f3e6d1c596cd784fae9befc6c6cb70ed1fb61d0 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a01adf69d845b5e9de181a37d1b365d258d7a2be:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a01adf69d845b5e9de181a37d1b365d258d7a2be \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a0fa8aa9a2ae3d92041217bcd475def8988111df:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a0fa8aa9a2ae3d92041217bcd475def8988111df \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a11d560d371dab29b3cb1dac891985aa9ce86cb6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a11d560d371dab29b3cb1dac891985aa9ce86cb6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a1dee9cdbba4fb29a451902fff307804cb28af97:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a1dee9cdbba4fb29a451902fff307804cb28af97 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a245bf560b2bf097e7b247520353ebcd975f7c83:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a245bf560b2bf097e7b247520353ebcd975f7c83 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a3e99d8e7dbb5bd65764bd782c182149759b1cb1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a3e99d8e7dbb5bd65764bd782c182149759b1cb1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a41a4f855fb29e494434822828fd4bd4f1e02e80:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a41a4f855fb29e494434822828fd4bd4f1e02e80 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a4bcd28be08e0c0fa26085e6448a414aed8417a7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a4bcd28be08e0c0fa26085e6448a414aed8417a7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a5520d7a4356450a46f1dc8da810386bdc0f46e3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a5520d7a4356450a46f1dc8da810386bdc0f46e3 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a6338e9a511fa4d40f8385731a993c017d575047:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a6338e9a511fa4d40f8385731a993c017d575047 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a6f359137bef29d31edc2eeeec4d9a2be9f3bd54:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a6f359137bef29d31edc2eeeec4d9a2be9f3bd54 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a744ee5f948bb260b17f16918735b0a191c8988b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a744ee5f948bb260b17f16918735b0a191c8988b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a7468d85feef430c25a67fd05d3e7ba30f119aed:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a7468d85feef430c25a67fd05d3e7ba30f119aed \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a7f8e8d167ded790fa52ca6a7699bd5897e584fa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a7f8e8d167ded790fa52ca6a7699bd5897e584fa \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a84796ffda2113978a969e6208f49c761665ebc7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a84796ffda2113978a969e6208f49c761665ebc7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a872ada8ccac65e5204dc508e25c5efda2021a8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a872ada8ccac65e5204dc508e25c5efda2021a8e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/a9e2c65817ebf50572887f9d8ebc6118ba22716f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/a9e2c65817ebf50572887f9d8ebc6118ba22716f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/aaadc3f9d029cc3a583fa3cb90962408baa52f48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/aaadc3f9d029cc3a583fa3cb90962408baa52f48 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/aac3bb595f6f78030cf6cf382557362560880858:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/aac3bb595f6f78030cf6cf382557362560880858 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/aad506636f66604a7851ac83d238ce60c4621aba:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/aad506636f66604a7851ac83d238ce60c4621aba \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ab5880dac2ed5e6d168947f3ffaba793f9ebf3b1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ab5880dac2ed5e6d168947f3ffaba793f9ebf3b1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ac61fc5501aed928de61506976e5ea330baa054f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ac61fc5501aed928de61506976e5ea330baa054f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ad5093b10b3de81e4f7a260dee624a8396c42be7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ad5093b10b3de81e4f7a260dee624a8396c42be7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ad6327b9c1e19ab834397afff77d4b1a8ac10531:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ad6327b9c1e19ab834397afff77d4b1a8ac10531 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/adfc859cce85ec65ef783c78795325a74a040488:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/adfc859cce85ec65ef783c78795325a74a040488 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ae2cb5fdcf3e6374b7dcea3255acedfb4dd3192f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ae2cb5fdcf3e6374b7dcea3255acedfb4dd3192f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/aeab71f17ae7310bd5fc664b15f633f4cfc75298:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/aeab71f17ae7310bd5fc664b15f633f4cfc75298 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/af0796ac81ec617a903680a70059c825c49dab4d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/af0796ac81ec617a903680a70059c825c49dab4d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/af1e77323771c6b0c0acd9f24a4a3708d063e294:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/af1e77323771c6b0c0acd9f24a4a3708d063e294 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b0c6bcc4b955276071935e3df26f4193d7ee41ee:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b0c6bcc4b955276071935e3df26f4193d7ee41ee \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b190622422f34f4c428563b9fa71c460140b2377:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b190622422f34f4c428563b9fa71c460140b2377 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b1dc7e33d23a5b4015deb2651016b7985fed78a4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b1dc7e33d23a5b4015deb2651016b7985fed78a4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b1e2a1990733951f2ad160fc79df89a798f38134:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b1e2a1990733951f2ad160fc79df89a798f38134 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b4194948d0c3e1aed48c91c2691f83f75b5fde8d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b4194948d0c3e1aed48c91c2691f83f75b5fde8d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b5106b5d9c50df3f3786273d991c5366d5df5549:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b5106b5d9c50df3f3786273d991c5366d5df5549 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b5db49eb3109cfc2c31859e93d158afa6918c26c:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b5db49eb3109cfc2c31859e93d158afa6918c26c \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b60a1451df51406dd6031d1faa5139cff795cee4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b60a1451df51406dd6031d1faa5139cff795cee4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b77769211c0aca064181202e502e9b8d16ab1912:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b77769211c0aca064181202e502e9b8d16ab1912 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b7ae5b14e713dfc23bd88913864825979c132999:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b7ae5b14e713dfc23bd88913864825979c132999 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b8222fdad59593be75d1d99c299fec81109c3f8e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b8222fdad59593be75d1d99c299fec81109c3f8e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b8309d22d0fae5046a95f7345cd2f5fb172eba88:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b8309d22d0fae5046a95f7345cd2f5fb172eba88 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/b90097c1344a1416676847ede77a634cf93798b2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/b90097c1344a1416676847ede77a634cf93798b2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ba83f4a8e799edbcd9bc486fdb2ddf68974def1a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ba83f4a8e799edbcd9bc486fdb2ddf68974def1a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bb44dc664e259e56bca741a7c0e68ca96f895ecd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bb44dc664e259e56bca741a7c0e68ca96f895ecd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bce638f9c4fc6691835aa5a91b1caea3c345df00:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bce638f9c4fc6691835aa5a91b1caea3c345df00 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bd0336e561563b807eff3fcf4900925048ae9361:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bd0336e561563b807eff3fcf4900925048ae9361 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bd4fd14f0a1a81f64b529b447ce56faacbb81b6f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bd4fd14f0a1a81f64b529b447ce56faacbb81b6f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/be9631bd56f48fce930cfb1b53efd4c0b067fac3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/be9631bd56f48fce930cfb1b53efd4c0b067fac3 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bf75cd3199589651c49818c3c135c670afd6c1c2:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bf75cd3199589651c49818c3c135c670afd6c1c2 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/bf8b695db193418cabf10ea361d0f4605d0fae71:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/bf8b695db193418cabf10ea361d0f4605d0fae71 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c02c6f08d01f86be940b3e701a8557ebbd4a5ddc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c02c6f08d01f86be940b3e701a8557ebbd4a5ddc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c08b9e40988d813aeddaf7bb8858b81dc834f17b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c08b9e40988d813aeddaf7bb8858b81dc834f17b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c1ac8a7759d8b4b089e0a469671cbd924ed17ee9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c1ac8a7759d8b4b089e0a469671cbd924ed17ee9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c2aab8e3cd676c69dcedf3b4c725a65a7ad9db32:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c2aab8e3cd676c69dcedf3b4c725a65a7ad9db32 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c369609195f3727d5d049fcc35d4a8d11de1b4f7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c369609195f3727d5d049fcc35d4a8d11de1b4f7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c3a047a2eff01ecba2d33ac918862c4bafc990cd:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c3a047a2eff01ecba2d33ac918862c4bafc990cd \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c49d6b8aac589b07b141bed541f54339f978e51a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c49d6b8aac589b07b141bed541f54339f978e51a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c5fd607de98d1083de72755f4fe63a1bd2e60afc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c5fd607de98d1083de72755f4fe63a1bd2e60afc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c79693793bd19d504144173d364876824b9c0ee1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c79693793bd19d504144173d364876824b9c0ee1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c7b90d8294495d8c949c99a91029916328b1cf66:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c7b90d8294495d8c949c99a91029916328b1cf66 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/c9b61f409c27c3b75dc0afdb517b35508b5e5fbc:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/c9b61f409c27c3b75dc0afdb517b35508b5e5fbc \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/caef4215a0f7c84fb5a6ee53202b4f9885a88c81:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/caef4215a0f7c84fb5a6ee53202b4f9885a88c81 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cb8e590847bea495c81ee14abe29eafb3f766dc9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cb8e590847bea495c81ee14abe29eafb3f766dc9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cbff39821da3b1bf05f141573fdbdd50c378ba68:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cbff39821da3b1bf05f141573fdbdd50c378ba68 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cd2955723f6798fc40d3efb264064b198a675f02:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cd2955723f6798fc40d3efb264064b198a675f02 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cd63d9cade0f2482bcdcc1626fb3dc59754afc08:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cd63d9cade0f2482bcdcc1626fb3dc59754afc08 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ce6d902a8c3fbfdf63386c0e8745f2c2354af5ab:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ce6d902a8c3fbfdf63386c0e8745f2c2354af5ab \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cee8147c1a482583d321f350f90bab24f8f15aac:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cee8147c1a482583d321f350f90bab24f8f15aac \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/cfd67ebcd22958325b43d16a12ceb2a5bd7298f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/cfd67ebcd22958325b43d16a12ceb2a5bd7298f9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d06b3b5e2a04d4452b10e05387e0c1fa2d7b99e9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d06b3b5e2a04d4452b10e05387e0c1fa2d7b99e9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d118ed15453c17ba8cd1ec268d933916f2b3ed99:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d118ed15453c17ba8cd1ec268d933916f2b3ed99 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d1498f95ef39817896b0acbe6a661227b1862cc6:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d1498f95ef39817896b0acbe6a661227b1862cc6 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d23c7e2c50a76fa5e96e789be897c286d0795d19:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d23c7e2c50a76fa5e96e789be897c286d0795d19 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d260a3d477f7e032aa66347d10c69a8ac77ef03e:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d260a3d477f7e032aa66347d10c69a8ac77ef03e \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d32f2af46589c3a872bf0f21f75b274f4b4c9d3d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d32f2af46589c3a872bf0f21f75b274f4b4c9d3d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d545332c9f8a68a744b77def6550af40fd037278:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d545332c9f8a68a744b77def6550af40fd037278 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d6cc1713f52c7d27d4c422112ddac3da324d15e8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d6cc1713f52c7d27d4c422112ddac3da324d15e8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d954c260be5687c87a8c217d3997ecd5dc3e450a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d954c260be5687c87a8c217d3997ecd5dc3e450a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d9a88384b0f2f792f8377e1340cf93af62988056:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d9a88384b0f2f792f8377e1340cf93af62988056 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/d9f588d090f37d3580e32395a78ddbb4675440a1:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/d9f588d090f37d3580e32395a78ddbb4675440a1 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/da6f93b3826a1284733ed1b7facd1e66c30b7dd9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/da6f93b3826a1284733ed1b7facd1e66c30b7dd9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/dbb7c513100d495261549cf5de37d0cde79992e7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/dbb7c513100d495261549cf5de37d0cde79992e7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/de55166c3f235b8e0bf79a324e42295f1381c162:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/de55166c3f235b8e0bf79a324e42295f1381c162 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e184a50846fba666b78ef0db4bebc96b2e24fda9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e184a50846fba666b78ef0db4bebc96b2e24fda9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e184c6151c2d04dc7c2879812646c961efbf9d3f:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e184c6151c2d04dc7c2879812646c961efbf9d3f \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e23aa0a75f22bf38f811535035822fd2ec224e4b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e23aa0a75f22bf38f811535035822fd2ec224e4b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e366ffc6d6a9df710eda68d2890acd11ce5ebf48:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e366ffc6d6a9df710eda68d2890acd11ce5ebf48 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e3dc33a706c5f022525565dd12e39a8481146c5b:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e3dc33a706c5f022525565dd12e39a8481146c5b \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e54cea40845e55555ea12465a86faa258934af31:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e54cea40845e55555ea12465a86faa258934af31 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e57a11f4d936499cd5cebc5d580c08bf8d5b2c6a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e57a11f4d936499cd5cebc5d580c08bf8d5b2c6a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e5887210fb1d53bd4afb939e27d18bcae8bb9213:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e5887210fb1d53bd4afb939e27d18bcae8bb9213 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e5b5a0c580d81edd428ce5e84ea9e4afa3637a72:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e5b5a0c580d81edd428ce5e84ea9e4afa3637a72 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e6c6af6550654dabdbc3cb5609ffc67a0305a021:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e6c6af6550654dabdbc3cb5609ffc67a0305a021 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e6df44f4cf6fec70e8da55f5fd3ab54ef8dfadf8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e6df44f4cf6fec70e8da55f5fd3ab54ef8dfadf8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e75c5d103bbbb093c7b05b30da8f677455737c6d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e75c5d103bbbb093c7b05b30da8f677455737c6d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e7b776875c017585d2bee503d51cb9ab22e74d90:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e7b776875c017585d2bee503d51cb9ab22e74d90 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/e8c2ea977b138cae7e69e788e8374fd7ff6f6f37:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/e8c2ea977b138cae7e69e788e8374fd7ff6f6f37 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/eac74bfabcef062f76bae3d932788fd68fa83265:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/eac74bfabcef062f76bae3d932788fd68fa83265 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ec188579d0c069bdf5be0d9de9cf0f358017388a:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ec188579d0c069bdf5be0d9de9cf0f358017388a \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ecb2b1a3bad13a83fa1401dd22fe4eca2fe54046:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ecb2b1a3bad13a83fa1401dd22fe4eca2fe54046 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ed2771af34f0a662a80ec1009bd8165777222070:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ed2771af34f0a662a80ec1009bd8165777222070 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f09bc7ea742d2905c902387d6d65933125713050:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f09bc7ea742d2905c902387d6d65933125713050 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f0f98ff8ad9195b3d2a43739484119f05e05b1f3:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f0f98ff8ad9195b3d2a43739484119f05e05b1f3 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f1bc1c6767c4ac92196aeb3c218a9d92a8297168:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f1bc1c6767c4ac92196aeb3c218a9d92a8297168 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f28b3abb2f63d013bdbbe1da9981574e5b47ea78:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f28b3abb2f63d013bdbbe1da9981574e5b47ea78 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f3510d686e1ea1431ea6b4bfabad16b81bc9f5f9:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f3510d686e1ea1431ea6b4bfabad16b81bc9f5f9 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f4c9fa8babeecfaef4763b71b32736076561607d:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f4c9fa8babeecfaef4763b71b32736076561607d \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f4e852171028c0bbdc47c9305f70ba3d9175fce8:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f4e852171028c0bbdc47c9305f70ba3d9175fce8 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f6405ecb4794097e46f889f77d3d0a18a47baab7:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f6405ecb4794097e46f889f77d3d0a18a47baab7 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f8960a397c6f29daea69451fa0b47738a40a8161:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f8960a397c6f29daea69451fa0b47738a40a8161 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f99179a6c644c9cf3bf9f5d90bad2f25f4db5480:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f99179a6c644c9cf3bf9f5d90bad2f25f4db5480 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/f9df27d2a3fdfa3212565ff2b0fdfa039f61c2d4:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/f9df27d2a3fdfa3212565ff2b0fdfa039f61c2d4 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fab7c032895a036cf4341eaf9a3ed87dc2941f30:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fab7c032895a036cf4341eaf9a3ed87dc2941f30 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fac0a7d51c4b47643cacaf395a691b2b78d38652:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fac0a7d51c4b47643cacaf395a691b2b78d38652 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fc027248225d5572bb0c33d2660e17389c1aadfa:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fc027248225d5572bb0c33d2660e17389c1aadfa \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fc7bac44b52f16e481cf2a592451151b3a26b004:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fc7bac44b52f16e481cf2a592451151b3a26b004 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/fd3879de5c94f5f6d0cae7d48ffec8100c9d8e98:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/fd3879de5c94f5f6d0cae7d48ffec8100c9d8e98 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ff90c949efecb724ffaa5be0f96b5e3aeca31c99:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ff90c949efecb724ffaa5be0f96b5e3aeca31c99 \
+    vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests/ffbda33138e2e09156ce0468480fc71fad0f2203:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests/ffbda33138e2e09156ce0468480fc71fad0f2203 \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/manifests_symbolic_link_mapping:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/manifests_symbolic_link_mapping \
     vendor/google/caiman/proprietary/vendor/firmware/carrierconfig/release-label:$(TARGET_COPY_OUT_VENDOR)/firmware/carrierconfig/release-label \
     vendor/google/caiman/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali.bin \
@@ -2372,11 +2566,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/caiman/proprietary/vendor/firmware/gxp_callisto_fw_core1:$(TARGET_COPY_OUT_VENDOR)/firmware/gxp_callisto_fw_core1 \
     vendor/google/caiman/proprietary/vendor/firmware/gxp_callisto_fw_core2:$(TARGET_COPY_OUT_VENDOR)/firmware/gxp_callisto_fw_core2 \
     vendor/google/caiman/proprietary/vendor/firmware/kepler.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kepler.bin \
+    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-legacy-r56p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-legacy-r56p0.bin \
     vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r51p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r51p0.bin \
-    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r52p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r52p0.bin \
-    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r53p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r53p0.bin \
-    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r54p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r54p0.bin \
     vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r54p1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r54p1.bin \
+    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r54p2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r54p2.bin \
+    vendor/google/caiman/proprietary/vendor/firmware/mali_csffw-r54p3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw-r54p3.bin \
     vendor/google/caiman/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/google/caiman/proprietary/vendor/firmware/ntn_modem/RF_CFG_05918f171fb009ee9f426ce22eebafc3c795a454:$(TARGET_COPY_OUT_VENDOR)/firmware/ntn_modem/RF_CFG_05918f171fb009ee9f426ce22eebafc3c795a454 \
     vendor/google/caiman/proprietary/vendor/firmware/ntn_modem/RF_CFG_0787d377e22541fa06cbc876a4506a6b7f42c014:$(TARGET_COPY_OUT_VENDOR)/firmware/ntn_modem/RF_CFG_0787d377e22541fa06cbc876a4506a6b7f42c014 \
@@ -3861,23 +4055,27 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     PixelVibratorFlagsL26 \
+    aconfig_gpu_flags_c_lib \
+    aconfig_gsc_flags_c_lib \
+    aconfig_ultrasonic_udfps_flags_c_lib \
     android.hardware.authsecret-impl.nos \
     android.hardware.oemlock-impl.nos \
     android.hardware.power.stats-impl.gs-common \
+    android.hardware.power.stats-impl.pixel \
     android.hardware.power.stats-impl.zumapro \
     android.hardware.security.keymint-impl.nos \
     android.hardware.weaver-bridge.nos \
     android.hardware.weaver-impl.nos \
     android.hardware.weaver2-impl.nos \
     aoc_aconfig_flags_c_lib \
-    aocx-V2-ndk \
+    aocx-V3-ndk \
     arm.graphics-V1-ndk \
     com.google.edgetpu.tachyon-ndk \
     com.google.edgetpu_app_service-V6-ndk_vendor \
     com.google.edgetpu_vendor_service-V2-ndk_vendor \
-    com.google.hardware.biometrics.fingerprint.fingerprint-ext-V2-ndk \
+    com.google.hardware.biometrics.fingerprint.fingerprint-ext-V3-ndk \
     com.google.input-V2-ndk \
-    com.google.input-V6-ndk \
+    com.google.input-V8-ndk \
     com.google.pixel.modem.logmasklibrary-V1-ndk \
     libGLES_mali \
     fake_gxp_telemetry_reader \
@@ -3909,6 +4107,7 @@ PRODUCT_PACKAGES += \
     lib_jpg_encoder \
     lib_reader \
     lib_vendor_gsc_atoms \
+    libaconfig_mte_launcher_flags_rust \
     libacryl \
     libacryl_hdr_plugin \
     libalertv3 \
@@ -3919,12 +4118,12 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
     libcustomgnss \
-    libdapparamstorage \
     libdarwinn_hal \
-    libdeccfg \
     libdeeptouch \
+    libdisplay_tflite \
     libdisplaycolor \
     libdisplaypanel \
+    libdisppower-pixel \
     libdrmresource \
     libdump \
     libedgetpu_client.google \
@@ -3947,6 +4146,7 @@ PRODUCT_PACKAGES += \
     libgooglerilaudio \
     libgooglerilmemmonitor \
     libgpudataproducer \
+    libgpuflag_aconfig_rust \
     libgril_oem-google \
     libgxp \
     libhwjpeg \
@@ -3956,11 +4156,14 @@ PRODUCT_PACKAGES += \
     libmetrics_logger \
     libmodem_ml_svc_proto \
     libmodem_svc_proto_legacy_soong \
-    libmosey_daemon_ffi \
     libnos_citadeld_proxy \
     liboemcrypto \
     liboemservice \
+    libperfmgr \
+    libpixelatoms_defs \
+    libpixelhealth \
     libpixelstats \
+    libpixelstatsflags \
     libqfp-service \
     libqfpsuez \
     libqfstrusty_intf \
@@ -3996,20 +4199,26 @@ PRODUCT_PACKAGES += \
     modem_log_dumper \
     modem_ml_pw_rpc_gen \
     modemml-tflite-service-aidl-V1-ndk \
+    pixel_stateresidency_provider_aidl_interface-ndk \
+    pixelatoms-cpp \
+    pixelstats_flags_c_lib \
     sensors.usf \
     libspatialaudio \
+    thermal-budget-interface-ndk \
     vendor-pixelatoms-cpp \
     vendor.google.aam-V3-ndk \
     vendor.google.battery_mitigation-V1-ndk \
     vendor.google.battery_mitigation.service_static \
     vendor.google.bluetooth_ext-V1-ndk \
     vendor.google.bluetooth_ext-V4-ndk \
+    vendor.google.gnss.gnss_manager.controller-V1-ndk \
     vendor.google.gnss_ext-V1-ndk \
     vendor.google.google_battery-V5-ndk \
+    vendor.google.plat_security-V1-ndk \
     vendor.google.radio_ext-V1-ndk \
     vendor.google.whitechapel.audio.audioext@4.0_vendor \
     vendor.google.whitechapel.audio.extension-V5-ndk \
-    vendor.google.whitechapel.audio.extension-V7-ndk_vendor \
+    vendor.google.whitechapel.audio.extension-V8-ndk_vendor \
     vendor.google.whitechapel.audio.hal.utils.adaptedinfo.repeated_thread \
     vendor.google.whitechapel.audio.hal.utils.adaptedinfo \
     vendor.google.whitechapel.audio.hal.utils.aoc \
@@ -4017,7 +4226,7 @@ PRODUCT_PACKAGES += \
     vendor.google.whitechapel.audio.hal.utils.pipe \
     vendor.google.whitechapel.audio.hal.utils \
     vendor.google.whitechapel.audio_flags \
-    vendor.google.wireless_charger-V5-ndk \
+    vendor.google.wireless_charger-V7-ndk \
     vendor.google.wireless_charger.service-V2-ndk \
     vendor.qti.hardware.fingerprint.aidl-V1-ndk \
     vendor.radio.base \
@@ -4030,7 +4239,7 @@ PRODUCT_PACKAGES += \
     vendor_chre_atoms_log \
     vendor_chre_metrics-cpp \
     com.google.android.hardware.biometrics.face \
-    com.google.android.widevine-13130248 \
+    com.google.android.widevine-15027108-cp2a \
     com.google.pixel.camera.hal \
     com.google.pixel.euicc.update \
     com.google.pixel.wifi.ext \
@@ -4038,35 +4247,42 @@ PRODUCT_PACKAGES += \
     com.google.android.camera.experimental2024 \
     android.hardware.audio.service-aidl.aoc.xml \
     android.hardware.authsecret-service.citadel.xml \
-    android.hardware.camera.provider@2.7-service-google-apex.xml \
+    android.hardware.bluetooth.socket-service.pixel.xml \
     android.hardware.contexthub-service.generic.xml \
     android.hardware.dumpstate.3-service.xml \
     android.hardware.gnss@lassen.xml \
+    android.hardware.health-service.zumapro.xml \
     android.hardware.neuralnetworks@service-darwinn-aidl.xml \
     android.hardware.oemlock-service.citadel.xml \
+    android.hardware.power-service.pixel.xml \
+    android.hardware.power.stats-service.pixel.xml \
     android.hardware.qorvo.uwb-service.xml \
-    android.hardware.security.keymint-service.citadel.xml \
+    android.hardware.security.keymint-service-v3.citadel.xml \
+    android.hardware.security.sharesecret-service.citadel.xml \
+    android.hardware.thermal-service.pixel.xml \
+    android.hardware.usb-service.xml \
+    android.hardware.usb.gadget-service.xml \
     android.hardware.vibrator-service.cs40l26.xml \
     android.hardware.weaver-service.citadel.xml \
     dmd.xml \
     hwc3-default.xml \
     liboemservice_proxy.xml \
-    manifest.xml \
+    manifest_mapper_framework.xml \
     manifest_aocx.xml \
     manifest_gralloc_aidl2.xml \
     manifest_input.processor-service.xml \
-    manifest_mosey.xml \
     manifest_radioext.xml \
     memtrack.xml \
     pixel-display-default.xml \
     pixel-gnss-default.xml \
     qfp-daemon.xml \
     shared_modem_platform.xml \
-    vendor.dolby.media.c2@1.0-service.xml \
+    vendor.dolby.media.c2-default-service.xml \
     vendor.google.aam.xml \
     vendor.google.battery_mitigation-default.xml \
     vendor.google.edgetpu_vendor_service@1.0-service.xml \
     vendor.google.google_battery-default.xml \
+    vendor.google.plat_security-service.xml \
     vendor.google.radio_ext-default.xml \
     vendor.google.wireless_charger-default.xml \
     vendor.google.wireless_charger.service-default.xml \
@@ -4075,6 +4291,7 @@ PRODUCT_PACKAGES += \
     bipchmgr \
     cbd \
     copy_efs_files_to_data \
+    devcoredump_action \
     dmd \
     dump_aoc \
     dump_devfreq \
@@ -4082,6 +4299,7 @@ PRODUCT_PACKAGES += \
     dump_exynos_display \
     dump_fingerprint \
     dump_gsc \
+    dump_modem \
     dump_modemlog \
     dump_pcie \
     dump_perf \
@@ -4091,15 +4309,15 @@ PRODUCT_PACKAGES += \
     dump_soc \
     dump_storage \
     dump_thermal \
-    dump_touch \
     dump_tpu \
     dump_trusty \
-    predump_gti0 \
     qm35_poll \
     gia \
+    gpuflag \
     android.hardware.audio.service-aidl.aoc \
     android.hardware.authsecret-service.citadel \
     android.hardware.bluetooth-service.bcmbtlinux \
+    android.hardware.boot-service.default-pixel \
     android.hardware.composer.hwc3-service.pixel \
     android.hardware.contexthub-service.generic \
     android.hardware.dumpstate.3-service \
@@ -4108,17 +4326,23 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.pixel \
     android.hardware.graphics.allocator-V2-service \
     android.hardware.gxp.logging@service-gxp-logging \
+    android.hardware.health-service.zumapro \
     android.hardware.input.processor-service \
     android.hardware.memtrack-service.pixel \
     android.hardware.neuralnetworks@service-darwinn-aidl \
     android.hardware.oemlock-service.citadel \
+    android.hardware.power-service.pixel-libperfmgr \
     android.hardware.power.stats-service.pixel \
     android.hardware.qorvo.uwb-service \
     android.hardware.secure_element-service.uicc \
     android.hardware.security.keymint-service.citadel \
+    android.hardware.thermal-service.pixel \
+    android.hardware.usb-service \
+    android.hardware.usb.gadget-service \
     android.hardware.vibrator-service.cs40l26 \
     android.hardware.weaver-service.citadel \
     battery_mitigation \
+    block_queue_depth \
     citadel_updater \
     citadeld \
     com.google.edgetpu.tachyon-service \
@@ -4130,10 +4354,13 @@ PRODUCT_PACKAGES += \
     qfp-daemon \
     rild_exynos \
     samsung.hardware.media.c2@1.2-service \
-    vendor.dolby.media.c2@1.0-service \
+    usboffmode \
+    vendor.dolby.media.c2-default-service \
     vendor.google.aam-service \
     vendor.google.edgetpu_vendor_service@1.0-service \
     vendor.google.google_battery-service \
+    vendor.google.mte_launcher \
+    vendor.google.plat_security-service \
     vendor.google.radio_ext-service \
     vendor.google.radioext@1.0-service \
     vendor.google.wireless_charger-default \
@@ -4145,17 +4372,16 @@ PRODUCT_PACKAGES += \
     liboemservice_proxy_default \
     modem_logging_control \
     modem_ml_svc_sit \
-    mosey_server \
     pcie_power_control \
     pixel-experiments-recovery \
     pixelstats-vendor \
-    predump_touch \
     rfsd \
+    sendhint \
     shamp \
     shared_modem_platform \
     sscoredump \
     storage_init \
-    touch_gti_ical \
+    thermal_symlinks \
     trusty_metricsd \
     twoshay \
     usf_stats \

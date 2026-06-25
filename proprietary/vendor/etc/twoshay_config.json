@@ -14,9 +14,14 @@
 					"blocked_by": ["segmentation"],
 				},
 				{
+					"class": "CoordstateAlgorithm",
+					"name": "coordstate",
+					"blocked_by": ["touchflow"]
+				},
+				{
 					"class": "PeakTrackerAlgorithm",
 					"name": "peak_tracker",
-					"blocked_by": ["touchflow"],
+					"blocked_by": ["coordstate"],
 				},
 				{
 					"class": "GripSuppressionAlgorithm",

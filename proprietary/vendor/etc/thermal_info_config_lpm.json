@@ -91,9 +91,6 @@
             "SendCallback": true,
             "PollingDelay": 300000,
             "PassiveDelay": 7000,
-            "PredictorInfo": {
-                "Sensor": "VIRTUAL-SKIN-LSTM-MODEL"
-            },
             "BindedCdevInfo": [
                 {
                     "CdevRequest": "gxp-cooling",

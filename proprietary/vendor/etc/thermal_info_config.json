@@ -1,4 +1,5 @@
 {
+    "Include": ["thermal_info_config_bg_tasks_throttling.json"],
     "Sensors":[
         {
             "Name":"north_therm",
@@ -282,126 +283,6 @@
             "PassiveDelay": 7000
         },
         {
-            "Name": "VIRTUAL-SKIN-LSTM-MODEL",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "ModelPath": "vt_prediction_lstm_model.tflite",
-            "Formula": "USE_ML_MODEL",
-            "Combination": ["north_therm", "soc_therm", "charging_therm", "disp_therm", "quiet_therm", "usb_pwr_therm", "rfpa_therm", "btmspkr_therm"],
-            "PreviousSampleCount": 11,
-            "OutputLabelCount": 6,
-            "Multiplier": 0.001,
-            "SupportUnderSampling": true,
-            "ValidateInput": true,
-            "SupportPrediction": true,
-            "SampleDuration": 7000,
-            "TimeResolution": 7000
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-7SEC-BACK",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 7000,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-14SEC-BACK",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 14000,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-21SEC-BACK",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 21000,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-28SEC-BACK",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 28000,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-35SEC-BACK",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 35000,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-NOW",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Formula": "PREVIOUSLY_PREDICTED",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL"],
-            "PredictionDuration": 0,
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-ERROR-7SEC",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["LSTM-VT-PREDICTION-7SEC-BACK", "LSTM-VT-PREDICTION-NOW"],
-            "Coefficient": [1.0, -1.0],
-            "Multiplier": 1
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-ERROR-14SEC",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["LSTM-VT-PREDICTION-14SEC-BACK", "LSTM-VT-PREDICTION-NOW"],
-            "Coefficient": [1.0, -1.0],
-            "Multiplier": 1
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-ERROR-21SEC",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["LSTM-VT-PREDICTION-21SEC-BACK", "LSTM-VT-PREDICTION-NOW"],
-            "Coefficient": [1.0, -1.0],
-            "Multiplier": 1
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-ERROR-28SEC",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["LSTM-VT-PREDICTION-28SEC-BACK", "LSTM-VT-PREDICTION-NOW"],
-            "Coefficient": [1.0, -1.0],
-            "Multiplier": 1
-        },
-        {
-            "Name": "LSTM-VT-PREDICTION-ERROR-35SEC",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["LSTM-VT-PREDICTION-35SEC-BACK", "LSTM-VT-PREDICTION-NOW"],
-            "Coefficient": [1.0, -1.0],
-            "Multiplier": 1
-        },
-        {
             "Name": "STATS-UPDATOR",
             "Type": "UNKNOWN",
             "VirtualSensor": true,
@@ -410,20 +291,6 @@
             "Formula": "WEIGHTED_AVG",
             "Combination": ["VIRTUAL-SKIN-MODEL", "VIRTUAL-SKIN-LEGACY", "VIRTUAL-SKIN-MODEL-LEGACY-DIFF"],
             "Coefficient": [0.0, 0.0, 0.0],
-            "Multiplier": 1,
-            "SendPowerHint": true,
-            "PollingDelay": 300000,
-            "PassiveDelay": 7000
-        },
-        {
-            "Name": "STATS-UPDATOR-LSTM",
-            "Type": "UNKNOWN",
-            "VirtualSensor": true,
-            "Hidden": true,
-            "TriggerSensor": ["north_therm", "soc_therm", "charging_therm", "disp_therm", "quiet_therm", "usb_pwr_therm", "rfpa_therm", "btmspkr_therm"],
-            "Formula": "WEIGHTED_AVG",
-            "Combination": ["VIRTUAL-SKIN-LSTM-MODEL", "LSTM-VT-PREDICTION-ERROR-7SEC", "LSTM-VT-PREDICTION-ERROR-14SEC", "LSTM-VT-PREDICTION-ERROR-21SEC", "LSTM-VT-PREDICTION-ERROR-28SEC", "LSTM-VT-PREDICTION-ERROR-35SEC"],
-            "Coefficient": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
             "Multiplier": 1,
             "SendPowerHint": true,
             "PollingDelay": 300000,
@@ -445,9 +312,6 @@
             "SendCallback": true,
             "PollingDelay": 300000,
             "PassiveDelay": 7000,
-            "PredictorInfo": {
-                "Sensor": "VIRTUAL-SKIN-LSTM-MODEL"
-            },
             "BindedCdevInfo": [
                 {
                     "CdevRequest": "gxp-cooling",
@@ -1735,46 +1599,6 @@
                     "Thresholds": [
                         -13000, -12000, -11000, -10000, -9000, -8000, -7000, -6000, -5000,
                         -4000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000
-                    ]
-                },
-                {
-                    "Name": "LSTM-VT-PREDICTION-ERROR-7SEC",
-                    "LoggingName": "LSTM-PREDICTION-ERROR-7SEC",
-                    "Thresholds": [
-                        -4500, -4000, -3500, -3000, -2500, -2000, -1500, -1000, -500, 0,
-                        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
-                    ]
-                },
-                {
-                    "Name": "LSTM-VT-PREDICTION-ERROR-14SEC",
-                    "LoggingName": "LSTM-PREDICTION-ERROR-14SEC",
-                    "Thresholds": [
-                        -4500, -4000, -3500, -3000, -2500, -2000, -1500, -1000, -500, 0,
-                        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
-                    ]
-                },
-                {
-                    "Name": "LSTM-VT-PREDICTION-ERROR-21SEC",
-                    "LoggingName": "LSTM-PREDICTION-ERROR-21SEC",
-                    "Thresholds": [
-                        -4500, -4000, -3500, -3000, -2500, -2000, -1500, -1000, -500, 0,
-                        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
-                    ]
-                },
-                {
-                    "Name": "LSTM-VT-PREDICTION-ERROR-28SEC",
-                    "LoggingName": "LSTM-PREDICTION-ERROR-28SEC",
-                    "Thresholds": [
-                        -4500, -4000, -3500, -3000, -2500, -2000, -1500, -1000, -500, 0,
-                        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
-                    ]
-                },
-                {
-                    "Name": "LSTM-VT-PREDICTION-ERROR-35SEC",
-                    "LoggingName": "LSTM-PREDICTION-ERROR-35SEC",
-                    "Thresholds": [
-                        -4500, -4000, -3500, -3000, -2500, -2000, -1500, -1000, -500, 0,
-                        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
                     ]
                 },
                 {

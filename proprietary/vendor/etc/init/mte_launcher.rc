@@ -1,0 +1,10 @@
+service vendor.google.mte_launcher /vendor/bin/hw/vendor.google.mte_launcher
+    user system
+    group system
+    oneshot
+    disabled
+
+# NOTE: This could be on early-init once the property is RO
+# Ensure all properties and data is mounted before executing
+on post-fs-data
+    start vendor.google.mte_launcher

@@ -329,13 +329,16 @@
       "ResetOnInit": true
     },
     {
-      "Name": "BGUClampMaxBoost",
+      "Name": "BGUClampMax",
       "Path": "/proc/vendor_sched/groups/bg/uclamp_max",
       "Values": [
+        "10",
+        "60",
+        "100",
         "130",
         "512"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -1056,6 +1059,33 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedLibMaskIn",
+      "Path": "/proc/vendor_sched/sched_lib_mask_in",
+      "Values": [
+        "0x80",
+        "0x0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "SchedLibMaskOut",
+      "Path": "/proc/vendor_sched/sched_lib_mask_out",
+      "Values": [
+        "0xf0",
+        "0x0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "DisableSchedSetAffinityMask",
+      "Path": "/proc/vendor_sched/groups/ta/disable_sched_setaffinity_mask",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "ADPF_WEB_PROFILES",
       "Path": "<AdpfConfig>:CHROME",
       "Values": [
@@ -1157,7 +1187,7 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "BGUClampMaxBoost",
+      "Node": "BGUClampMax",
       "Duration": 5000,
       "Value": "512"
     },
@@ -1349,7 +1379,7 @@
     },
     {
       "PowerHint": "LAUNCH_EXTEND",
-      "Node": "BGUClampMaxBoost",
+      "Node": "BGUClampMax",
       "Duration": 2000,
       "Value": "512"
     },
@@ -1555,6 +1585,12 @@
       "Node": "TAPreferHighCap",
       "Duration": 33,
       "Value": "1"
+    },
+    {
+      "PowerHint": "WEB_SESSIONS_CPU_LOAD_UP",
+      "Node": "TARampupMultiplier",
+      "Duration": 300,
+      "Value": "4"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
@@ -3384,7 +3420,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "419000"
+      "Value": "580000"
     },
     {
       "PowerHint": "THERMAL_VIRTUAL-SKIN-HINT_LIGHT",
@@ -3505,6 +3541,24 @@
       "Node": "ntc_hot_trip",
       "Duration": 0,
       "Value": "75000"
+    },
+    {
+      "PowerHint": "THERMAL_BG-TASKS-THROTTLING-HINT_LIGHT",
+      "Node": "BGUClampMax",
+      "Duration": 0,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "THERMAL_BG-TASKS-THROTTLING-HINT_MODERATE",
+      "Node": "BGUClampMax",
+      "Duration": 0,
+      "Value": "60"
+    },
+    {
+      "PowerHint": "THERMAL_BG-TASKS-THROTTLING-HINT_SEVERE",
+      "Node": "BGUClampMax",
+      "Duration": 1800000,
+      "Value": "10"
     },
     {
       "PowerHint": "GAME",
@@ -3633,6 +3687,24 @@
       "Node": "PerTaskMaxIowaitBoost",
       "Duration": 0,
       "Value": "512"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "SchedLibMaskIn",
+      "Duration": 0,
+      "Value": "0x80"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "SchedLibMaskOut",
+      "Duration": 0,
+      "Value": "0xf0"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "DisableSchedSetAffinityMask",
+      "Duration": 0,
+      "Value": "1"
     },
     {
       "PowerHint": "FACE_UNLOCK_BOOST",
@@ -4209,5 +4281,9 @@
       "GpuBoost": true,
       "GpuCapacityBoostMax": 25000
     }
-  ]
+  ],
+  "OtherConfigs": {
+    "EnableMetricCollection": true,
+    "MaxNumOfCachedSessionMetrics": 100
+  }
 }

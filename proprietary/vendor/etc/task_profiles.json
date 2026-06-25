@@ -5,8 +5,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/ta/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/ta/set_proc_group",
             "Value": "<pid>",
@@ -20,8 +19,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/cam/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/cam/set_proc_group",
             "Value": "<pid>",
@@ -35,8 +33,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/cam_power/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/cam_power/set_proc_group",
             "Value": "<pid>",
@@ -50,8 +47,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/dex2oat/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/dex2oat/set_proc_group",
             "Value": "<pid>",
@@ -65,8 +61,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/ota/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/ota/set_proc_group",
             "Value": "<pid>",
@@ -80,8 +75,7 @@
       "Actions": [
         {
           "Name": "JoinCgroup",
-          "Params":
-          {
+          "Params": {
             "Controller": "cpuset",
             "Path": "camera-daemon-high-group"
           }
@@ -93,8 +87,7 @@
       "Actions": [
         {
           "Name": "JoinCgroup",
-          "Params":
-          {
+          "Params": {
             "Controller": "cpuset",
             "Path": "camera-daemon-mid-group"
           }
@@ -106,8 +99,7 @@
       "Actions": [
         {
           "Name": "JoinCgroup",
-          "Params":
-          {
+          "Params": {
             "Controller": "cpuset",
             "Path": "camera-daemon-mid-high-group"
           }
@@ -119,8 +111,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/bg/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/bg/set_proc_group",
             "Value": "<pid>",
@@ -134,8 +125,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/sys/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/sys/set_proc_group",
             "Value": "<pid>",
@@ -149,8 +139,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/fg/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/fg/set_proc_group",
             "Value": "<pid>",
@@ -164,8 +153,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/fg_wi/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/fg_wi/set_proc_group",
             "Value": "<pid>",
@@ -179,8 +167,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/ta/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/ta/set_proc_group",
             "Value": "<pid>",
@@ -194,8 +181,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/nnapi/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/nnapi/set_proc_group",
             "Value": "<pid>",
@@ -209,8 +195,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/sys_bg/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/sys_bg/set_proc_group",
             "Value": "<pid>",
@@ -224,16 +209,14 @@
       "Actions": [
         {
           "Name": "JoinCgroup",
-          "Params":
-          {
+          "Params": {
             "Controller": "cpuset",
             "Path": "top-app"
           }
         },
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/sf/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/sf/set_proc_group",
             "Value": "<pid>",
@@ -247,16 +230,14 @@
       "Actions": [
         {
           "Name": "JoinCgroup",
-          "Params":
-          {
+          "Params": {
             "Controller": "cpuset",
             "Path": "top-app"
           }
         },
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/groups/rt/set_task_group",
             "ProcFilePath": "/proc/vendor_sched/groups/rt/set_proc_group",
             "Value": "<pid>",
@@ -270,8 +251,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/adpf_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -284,8 +264,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/adpf_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -298,8 +277,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/boost_prio_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -312,8 +290,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/boost_prio_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -326,8 +303,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/preempt_wakeup_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -340,8 +316,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/preempt_wakeup_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -354,8 +329,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_fit_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -368,8 +342,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_fit_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -382,8 +355,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_idle_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -396,8 +368,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_idle_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -410,8 +381,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/auto_uclamp_max_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -424,8 +394,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/auto_uclamp_max_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -438,8 +407,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_high_cap_set",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -452,8 +420,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/prefer_high_cap_clear",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -466,8 +433,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/sched_qos_none",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -480,8 +446,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/sched_qos_power_efficiency",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -494,8 +459,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/sched_qos_sensitive_extreme",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -508,8 +472,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/sched_qos_sensitive_high",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -522,8 +485,7 @@
       "Actions": [
         {
           "Name": "WriteFile",
-          "Params":
-          {
+          "Params": {
             "FilePath": "/proc/vendor_sched/sched_qos/sched_qos_sensitive_standard",
             "Value": "<pid>",
             "LogFailures": "false"
@@ -536,28 +498,63 @@
       "Actions": [
         {
           "Name": "SetSchedulerPolicy",
-          "Params":
-          {
+          "Params": {
             "Policy": "SCHED_OTHER",
             "Nice": "-20"
           }
         }
       ]
+    },
+    {
+      "Name": "SystemServerMemoryHighLimitP95",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params": {
+            "Name": "MemHigh",
+            "Value": "2015M"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SystemServerMemoryHighLimitP99",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params": {
+            "Name": "MemHigh",
+            "Value": "4930M"
+          }
+        }
+      ]
     }
   ],
-
   "AggregateProfiles": [
     {
       "Name": "Dex2OatBootComplete",
-      "Profiles": [ "Dex2oatPerformance", "ProcessCapacityNormal", "LowIoPriority", "TimerSlackHigh" ]
+      "Profiles": [
+        "Dex2oatPerformance",
+        "ProcessCapacityNormal",
+        "LowIoPriority",
+        "TimerSlackHigh"
+      ]
     },
     {
       "Name": "OtaProfiles",
-      "Profiles": [ "OtaPerformance", "ServiceCapacityLow", "LowIoPriority", "TimerSlackHigh" ]
+      "Profiles": [
+        "OtaPerformance",
+        "ServiceCapacityLow",
+        "LowIoPriority",
+        "TimerSlackHigh"
+      ]
     },
     {
       "Name": "InputPolicy",
-      "Profiles": [ "MaxPerformance", "SCHED_QOS_SENSITIVE_EXTREME" ]
+      "Profiles": [
+        "MaxPerformance",
+        "SCHED_QOS_SENSITIVE_EXTREME"
+      ]
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+    "targets" :
+    [
+        {
+            "target_cmd": "system_server",
+            "uid": 1000,
+            "mem_limit_profile": "SystemServerMemoryHighLimitP99",
+            "anon_limit_in_mb": 509,
+            "additional_task_profiles": []
+        }
+    ]
+}

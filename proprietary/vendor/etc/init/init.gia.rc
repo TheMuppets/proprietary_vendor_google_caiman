@@ -1,0 +1,23 @@
+service gia_predump /vendor/bin/gia -c pre-dump
+    class main
+    user system
+    group input
+    oneshot
+    disabled
+
+on property:init.svc.dumpstatez=running
+    start gia_predump
+
+on post-fs-data
+    mkdir /data/vendor/dump_touch 0775 system system
+
+# TODO: b/472928933 - remove this service after BetterBug integration
+service vendor.touch_dumpstate /vendor/bin/gia -c pre-dump
+    class main
+    user system
+    group input
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start com.google.input.gia.giacore

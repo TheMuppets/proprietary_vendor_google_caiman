@@ -19,6 +19,7 @@ on init
 
     # Pca Charge stats (write 0)
     chown system system /sys/class/power_supply/dc-mains/device/chg_stats
+    chown system system /sys/class/power_supply/ln8411-mains/device/chg_stats
 
     # Wireless Charge stats (write 0)
     chown system system /sys/class/power_supply/wireless/device/charge_stats
@@ -82,6 +83,9 @@ on init
     # Important to include dd_state as it's used in battery defender in charger mode
     chown system system /sys/devices/platform/google,charger/dd_state
     chown system system /sys/devices/platform/google,charger/dd_settings
+
+    # Permission for USB controller power control
+    chown system system /sys/devices/platform/11210000.usb/power/control
 
 on early-boot
     # Wait for insmod_sh to finish all common modules
