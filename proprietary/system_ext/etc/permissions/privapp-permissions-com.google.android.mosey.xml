@@ -26,5 +26,7 @@
         <!-- Needed to use restricted networks -->
         <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
         <permission name="android.permission.LOCATION_HARDWARE" />
+        <!-- Needed for WiFi autojoin disable/enable -->
+        <permission name="android.permission.MANAGE_WIFI_NETWORK_SELECTION" />
     </privapp-permissions>
 </permissions>
