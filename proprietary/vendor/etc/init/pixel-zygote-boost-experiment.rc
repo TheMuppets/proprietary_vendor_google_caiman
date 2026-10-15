@@ -1,0 +1,10 @@
+# The zygote_priority_boost setting is one-way toggle only; therefore, there is no
+# way to ramp it down.
+
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__zygote_priority_boost_experiment=true
+    write /proc/vendor_sched/priority_task_name "ExoPlayer:Place,wpr_go,d.chrome_zygote"
+
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__zygote_priority_boost_experiment=default
+    write /proc/vendor_sched/priority_task_name "ExoPlayer:Place"

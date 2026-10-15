@@ -155,7 +155,7 @@
         </brightnessLimitMap>
     </luxThrottling>
 
-    <proxSensor featureFlag="com.android.server.display.feature.flags.use_fusion_prox_sensor">
+    <proxSensor>
         <type>com.google.sensor.prox_voice_call</type>
         <name>Proximity(Voice Calls) Sensor (wake-up)</name>
     </proxSensor>

@@ -1,0 +1,7 @@
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__ubp_experiment=true
+    write /sys/module/samsung_dma_heap/parameters/skip_deferred_free 1
+
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__ubp_experiment=""
+    write /sys/module/samsung_dma_heap/parameters/skip_deferred_free 0

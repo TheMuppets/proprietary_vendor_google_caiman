@@ -1,6 +1,6 @@
 service gia_predump /vendor/bin/gia -c pre-dump
     class main
-    user system
+    user root
     group input
     oneshot
     disabled
@@ -9,12 +9,17 @@ on property:init.svc.dumpstatez=running
     start gia_predump
 
 on post-fs-data
-    mkdir /data/vendor/dump_touch 0775 system system
+    mkdir /data/vendor/dump_touch 0770 root input
+
+    # migrate folers and files created by previous versions
+    chmod 0770 /data/vendor/dump_touch
+    chown root input /data/vendor/dump_touch
+    chown root input /data/vendor/dump_touch/dump.log
 
 # TODO: b/472928933 - remove this service after BetterBug integration
 service vendor.touch_dumpstate /vendor/bin/gia -c pre-dump
     class main
-    user system
+    user root
     group input
     oneshot
     disabled

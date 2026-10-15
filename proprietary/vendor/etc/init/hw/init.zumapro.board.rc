@@ -108,6 +108,10 @@ on init
     # Enable CPU Idle histograms
     write /sys/kernel/metrics/cpuidle_histogram/enable 1
 
+on load_persist_props_action
+    setprop mmd.zram.size ${persist.vendor.zram_swap_size_v2:-50%}
+    setprop mmd.zram.writeback.device_size ${persist.vendor.zram_writeback_size_v2:-1073741824}
+
 # ZRAM setup: use EH in 4kb kernels.
 on load_persist_props_action && property:ro.boot.hardware.cpu.pagesize=4096
     setprop mmd.zram.comp_algorithm ${persist.vendor.zram_comp_algorithm:-lz77eh}

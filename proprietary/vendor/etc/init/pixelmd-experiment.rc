@@ -1,0 +1,11 @@
+# Relays experimental PixelMD config to the daemon
+
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__pixelmd_config=*
+    # Empty properties are very tricky: setting .Perf__pixelmd_config to empty
+    # will trigger this block, but will fail to expand in the setprop later,
+    # preventing setprop from updating the config value. To handle this case we
+    # first explicitly set the config to empty.
+    setprop vendor.pixelmd.config ""
+    setprop vendor.pixelmd.config ${vendor.pixel.system.phenotype.Perf__pixelmd_config}
+    restart vendor.pixelmd

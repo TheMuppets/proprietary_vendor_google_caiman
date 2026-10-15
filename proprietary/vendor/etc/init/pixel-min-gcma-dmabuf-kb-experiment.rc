@@ -1,0 +1,9 @@
+# min_gcma_dmabuf_kb experiment - enable/disable features to control GCMA min_gcma_dmabuf_kb size
+# (the device type for experiment is configured from the mendel server)
+
+on property:vendor.perf.allow_experiments=1 \
+    && property:vendor.pixel.system.phenotype.Perf__min_gcma_dmabuf_kb_experiment=disable
+    setprop persist.vendor.min_gcma_dmabuf_kb 131072
+
+on property:vendor.pixel.system.phenotype.Perf__min_gcma_dmabuf_kb_experiment=default
+    setprop persist.vendor.min_gcma_dmabuf_kb 512

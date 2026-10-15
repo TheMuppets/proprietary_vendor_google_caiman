@@ -285,11 +285,11 @@
         </MediaCodec>
         <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
             <!-- measured 90%:198-374 med:199 SLOW N=2 -->
-            <Limit name="measured-frame-rate-320x240" range="91-272" /> <!-- v90%=1.4 -->
+            <Limit name="measured-frame-rate-320x240" range="195-380" /> <!-- v90%=1.4 -->
             <!-- measured 90%:16-67 med:17 SLOW N=2 FLAKY(8 - 68) variance:2.0 -->
-            <Limit name="measured-frame-rate-720x480" range="32-72" />
+            <Limit name="measured-frame-rate-720x480" range="72-140" />
             <!-- measured 90%:23-28 med:23 N=2 -->
-            <Limit name="measured-frame-rate-1280x720" range="23-45" /> <!-- v90%=1.1 -->
+            <Limit name="measured-frame-rate-1280x720" range="31-59" /> <!-- v90%=1.1 -->
         </MediaCodec>
 
     </Encoders>

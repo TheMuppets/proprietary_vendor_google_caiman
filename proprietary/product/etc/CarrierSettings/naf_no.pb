@@ -1,5 +1,5 @@
 
-naf_noÅÑªÏû42
+naf_noÅ¨ë¶¶42
 mki-slice.phonero.nomki-slice.phonero.nopx"q)
 #carrier_nr_availabilities_int_array:
 cellular_usage_setting_int$

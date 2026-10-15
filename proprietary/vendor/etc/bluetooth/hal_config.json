@@ -16,5 +16,7 @@
     "PROTO1.1",
     "EVT1.0"
   ],
-  "hp_uart_skip_suspend_enabled": true
+  "hp_uart_skip_suspend_enabled": true,
+  "using_realtime_thread": true
+
 }
