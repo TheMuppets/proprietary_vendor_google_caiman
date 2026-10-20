@@ -973,6 +973,86 @@ prebuilt_etc_xml {
     recovery: true,
 }
 
+rust_prebuilt_binary {
+    name: "dump_modem",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/dump/dump_modem",
+            ],
+            shared_libs: [
+                "libc",
+            ],
+            rustlibs: [
+                "libstd",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "dump",
+    soc_specific: true,
+}
+
+rust_prebuilt_binary {
+    name: "gpuflag",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/gpuflag",
+            ],
+            shared_libs: [
+                "libc",
+            ],
+            rustlibs: [
+                "libandroid_logger",
+                "librustutils",
+                "liblog_rust",
+                "libstd",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+rust_prebuilt_binary {
+    name: "vendor.google.mte_launcher",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.google.mte_launcher",
+            ],
+            shared_libs: [
+                "libc",
+            ],
+            rustlibs: [
+                "libandroid_logger",
+                "librustutils",
+                "liblog_rust",
+                "libstd",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "gs_watchdogd",
     owner: "google",
@@ -7567,31 +7647,6 @@ sh_binary {
     soc_specific: true,
 }
 
-rust_prebuilt_binary {
-    name: "dump_modem",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dump/dump_modem",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-            rustlibs: [
-                "libstd",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "dump",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "dump_modemlog",
     owner: "google",
@@ -7878,33 +7933,6 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "liblog",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-rust_prebuilt_binary {
-    name: "gpuflag",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/gpuflag",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-            rustlibs: [
-                "libandroid_logger",
-                "librustutils",
-                "liblog_rust",
-                "libstd",
             ],
         },
     },
@@ -9501,34 +9529,6 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-rust_prebuilt_binary {
-    name: "vendor.google.mte_launcher",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.google.mte_launcher",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-            rustlibs: [
-                "libandroid_logger",
-                "librustutils",
-                "liblog_rust",
-                "libstd",
             ],
         },
     },
